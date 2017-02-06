@@ -15,97 +15,97 @@ public class CraftingRecipes {
 
     public static void addCraftingRecipes() {
         GameRegistry.addRecipe(new ItemStack(ModItems.EmeraldHelmet, 1),
-                "EEE", "E E", "   ", Character.valueOf('E'), Items.emerald);
+                "EEE", "E E", "   ", 'E', Items.emerald);
         GameRegistry.addRecipe(new ItemStack(ModItems.EmeraldChestplate, 1),
-                "E E", "EEE", "EEE", Character.valueOf('E'), Items.emerald);
+                "E E", "EEE", "EEE", 'E', Items.emerald);
         GameRegistry.addRecipe(new ItemStack(ModItems.EmeraldLeggings, 1),
-                "EEE", "E E", "E E", Character.valueOf('E'), Items.emerald);
+                "EEE", "E E", "E E", 'E', Items.emerald);
         GameRegistry.addRecipe(new ItemStack(ModItems.EmeraldBoots, 1),
-                "   ", "E E", "E E", Character.valueOf('E'), Items.emerald);
+                "   ", "E E", "E E", 'E', Items.emerald);
 
         GameRegistry.addRecipe(new ItemStack(ModItems.ObsidianHelmet, 1),
-                "OOO", "O O", "   ", Character.valueOf('O'), ModItems.ObsidianShard);
+                "OOO", "O O", "   ", 'O', ModItems.ObsidianShard);
         GameRegistry.addRecipe(new ItemStack(ModItems.ObsidianChestplate, 1),
-                "O O", "OOO", "OOO", Character.valueOf('O'), ModItems.ObsidianShard);
+                "O O", "OOO", "OOO", 'O', ModItems.ObsidianShard);
         GameRegistry.addRecipe(new ItemStack(ModItems.ObsidianLeggings, 1),
-                "OOO", "O O", "O O", Character.valueOf('O'), ModItems.ObsidianShard);
+                "OOO", "O O", "O O", 'O', ModItems.ObsidianShard);
         GameRegistry.addRecipe(new ItemStack(ModItems.ObsidianBoots, 1),
-                "   ", "O O", "O O", Character.valueOf('O'), ModItems.ObsidianShard);
+                "   ", "O O", "O O", 'O', ModItems.ObsidianShard);
 
         GameRegistry.addRecipe(new ItemStack(ModItems.RubyHelmet, 1),
-                "RRR", "R R", "   ", Character.valueOf('R'), ModItems.Ruby);
+                "RRR", "R R", "   ", 'R', ModItems.Ruby);
         GameRegistry.addRecipe(new ItemStack(ModItems.RubyChestplate, 1),
-                "R R", "RRR", "RRR", Character.valueOf('R'), ModItems.Ruby);
+                "R R", "RRR", "RRR", 'R', ModItems.Ruby);
         GameRegistry.addRecipe(new ItemStack(ModItems.RubyLeggings, 1),
-                "RRR", "R R", "R R", Character.valueOf('R'), ModItems.Ruby);
+                "RRR", "R R", "R R", 'R', ModItems.Ruby);
         GameRegistry.addRecipe(new ItemStack(ModItems.RubyBoots, 1),
-                "   ", "R R", "R R", Character.valueOf('R'), ModItems.Ruby);
+                "   ", "R R", "R R", 'R', ModItems.Ruby);
 
         GameRegistry.addRecipe(new ItemStack(Items.chainmail_helmet, 1),
-                "CCC", "C C", "   ", Character.valueOf('C'), ModItems.ChainLink);
+                "CCC", "C C", "   ", 'C', ModItems.ChainLink);
         GameRegistry.addRecipe(new ItemStack(Items.chainmail_chestplate, 1),
-                "C C", "CCC", "CCC", Character.valueOf('C'), ModItems.ChainLink);
+                "C C", "CCC", "CCC", 'C', ModItems.ChainLink);
         GameRegistry.addRecipe(new ItemStack(Items.chainmail_leggings, 1),
-                "CCC", "C C", "C C", Character.valueOf('C'), ModItems.ChainLink);
+                "CCC", "C C", "C C", 'C', ModItems.ChainLink);
         GameRegistry.addRecipe(new ItemStack(Items.chainmail_boots, 1),
-                "   ", "C C", "C C", Character.valueOf('C'), ModItems.ChainLink);
+                "   ", "C C", "C C", 'C', ModItems.ChainLink);
 
         GameRegistry.addRecipe(new ItemStack(ModItems.EmeraldSword, 1),
-                " E ", " E ", " S ", Character.valueOf('S'), Items.stick, Character.valueOf('E'), Items.emerald);
+                " E ", " E ", " S ", 'S', Items.stick, 'E', Items.emerald);
         GameRegistry.addRecipe(new ItemStack(ModItems.EmeraldAxe, 1),
-                "EE ", "ES ", " S ", Character.valueOf('S'), Items.stick, Character.valueOf('E'), Items.emerald);
+                "EE ", "ES ", " S ", 'S', Items.stick, 'E', Items.emerald);
         GameRegistry.addRecipe(new ItemStack(ModItems.EmeraldShovel, 1),
-                " E ", " S ", " S ", Character.valueOf('S'), Items.stick, Character.valueOf('E'), Items.emerald);
+                " E ", " S ", " S ", 'S', Items.stick, 'E', Items.emerald);
         GameRegistry.addRecipe(new ItemStack(ModItems.EmeraldPickaxe, 1),
-                "EEE", " S ", " S ", Character.valueOf('S'), Items.stick, Character.valueOf('E'), Items.emerald);
+                "EEE", " S ", " S ", 'S', Items.stick, 'E', Items.emerald);
         GameRegistry.addRecipe(new ItemStack(ModItems.EmeraldHoe, 1),
-                "EE ", " S ", " S ", Character.valueOf('S'), Items.stick, Character.valueOf('E'), Items.emerald);
+                "EE ", " S ", " S ", 'S', Items.stick, 'E', Items.emerald);
 
         GameRegistry.addRecipe(new ItemStack(ModItems.ObsidianSword, 1),
-                " O ", " O ", " S ", Character.valueOf('S'), Items.stick, Character.valueOf('O'), ModItems.ObsidianShard);
+                " O ", " O ", " S ", 'S', Items.stick, 'O', ModItems.ObsidianShard);
         GameRegistry.addRecipe(new ItemStack(ModItems.ObsidianAxe, 1),
-                "OO ", "OS ", " S ", Character.valueOf('S'), Items.stick, Character.valueOf('O'), ModItems.ObsidianShard);
+                "OO ", "OS ", " S ", 'S', Items.stick, 'O', ModItems.ObsidianShard);
         GameRegistry.addRecipe(new ItemStack(ModItems.ObsidianShovel, 1),
-                " O ", " S ", " S ", Character.valueOf('S'), Items.stick, Character.valueOf('O'), ModItems.ObsidianShard);
+                " O ", " S ", " S ", 'S', Items.stick, 'O', ModItems.ObsidianShard);
         GameRegistry.addRecipe(new ItemStack(ModItems.ObsidianPickaxe, 1),
-                "OOO", " S ", " S ", Character.valueOf('S'), Items.stick, Character.valueOf('O'), ModItems.ObsidianShard);
+                "OOO", " S ", " S ", 'S', Items.stick, 'O', ModItems.ObsidianShard);
         GameRegistry.addRecipe(new ItemStack(ModItems.ObsidianHoe, 1),
-                "OO ", " S ", " S ", Character.valueOf('S'), Items.stick, Character.valueOf('O'), ModItems.ObsidianShard);
+                "OO ", " S ", " S ", 'S', Items.stick, 'O', ModItems.ObsidianShard);
 
         GameRegistry.addRecipe(new ItemStack(ModItems.RubySword, 1),
-                " R ", " R ", " S ", Character.valueOf('S'), Items.stick, Character.valueOf('R'), ModItems.Ruby);
+                " R ", " R ", " S ", 'S', Items.stick, 'R', ModItems.Ruby);
         GameRegistry.addRecipe(new ItemStack(ModItems.RubyAxe, 1),
-                "RR ", "RS ", " S ", Character.valueOf('S'), Items.stick, Character.valueOf('R'), ModItems.Ruby);
+                "RR ", "RS ", " S ", 'S', Items.stick, 'R', ModItems.Ruby);
         GameRegistry.addRecipe(new ItemStack(ModItems.RubyShovel, 1),
-                " R ", " S ", " S ", Character.valueOf('S'), Items.stick, Character.valueOf('R'), ModItems.Ruby);
+                " R ", " S ", " S ", 'S', Items.stick, 'R', ModItems.Ruby);
         GameRegistry.addRecipe(new ItemStack(ModItems.RubyPickaxe, 1),
-                "RRR", " S ", " S ", Character.valueOf('S'), Items.stick, Character.valueOf('R'), ModItems.Ruby);
+                "RRR", " S ", " S ", 'S', Items.stick, 'R', ModItems.Ruby);
         GameRegistry.addRecipe(new ItemStack(ModItems.RubyHoe, 1),
-                "RR ", " S ", " S ", Character.valueOf('S'), Items.stick, Character.valueOf('R'), ModItems.Ruby);
+                "RR ", " S ", " S ", 'S', Items.stick, 'R', ModItems.Ruby);
 
         GameRegistry.addRecipe(new ItemStack(Items.saddle, 1),
-                "LLL", "LIL", "S S", Character.valueOf('L'), Items.leather, Character.valueOf('I'), Items.iron_ingot, Character.valueOf('S'), Items.string);
+                "LLL", "LIL", "S S", 'L', Items.leather, 'I', Items.iron_ingot, 'S', Items.string);
         GameRegistry.addRecipe(new ItemStack(Items.name_tag, 2),
-                " S ", " S ", "TPT", Character.valueOf('S'), Items.string, Character.valueOf('T'), Items.stick, Character.valueOf('P'), Items.paper);
+                " S ", " S ", "TPT", 'S', Items.string, 'T', Items.stick, 'P', Items.paper);
         GameRegistry.addRecipe(new ItemStack(Items.lead, 1),
-                "SS ", "SS ", "  S", Character.valueOf('S'), Items.string);
+                "SS ", "SS ", "  S", 'S', Items.string);
         GameRegistry.addRecipe(new ItemStack(Blocks.web, 3),
-                "SSS", "SSS", "SSS", Character.valueOf('S'), Items.string);
+                "SSS", "SSS", "SSS", 'S', Items.string);
 
         GameRegistry.addRecipe(new ItemStack(Blocks.obsidian, 1),
-                "   ", " OO", " OO", Character.valueOf('O'), ModItems.ObsidianShard);
+                "   ", " OO", " OO", 'O', ModItems.ObsidianShard);
         GameRegistry.addRecipe(new ItemStack(ModBlocks.SulfurBlock, 1),
-                "   ", " SS", " SS", Character.valueOf('S'), ModItems.Sulfur);
+                "   ", " SS", " SS", 'S', ModItems.Sulfur);
 
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.Sulfur, 4),
                 ModBlocks.SulfurBlock);
 
         GameRegistry.addRecipe(new ItemStack(Items.iron_horse_armor, 1),
-                "  P", "PPP", "PWP", Character.valueOf('P'), ModItems.IronPlating, Character.valueOf('W'), Blocks.wool);
+                "  P", "PPP", "PWP", 'P', ModItems.IronPlating, 'W', Blocks.wool);
         GameRegistry.addRecipe(new ItemStack(Items.golden_horse_armor, 1),
-                "  G", "GGG", "GWG", Character.valueOf('W'), Blocks.wool, Character.valueOf('G'), ModItems.GoldPlating);
+                "  G", "GGG", "GWG", 'W', Blocks.wool, 'G', ModItems.GoldPlating);
         GameRegistry.addRecipe(new ItemStack(Items.diamond_horse_armor, 1),
-                "DDD", "DAD", "DDD", Character.valueOf('A'), Items.iron_horse_armor, Character.valueOf('D'), Items.diamond);
+                "DDD", "DAD", "DDD", 'A', Items.iron_horse_armor, 'D', Items.diamond);
 
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.Ruby, 9),
                 ModBlocks.RubyBlock);
@@ -121,7 +121,7 @@ public class CraftingRecipes {
 
 
         GameRegistry.addRecipe(new ItemStack(ModBlocks.RubyBlock, 1),
-                "RRR", "RRR", "RRR", Character.valueOf('R'), ModItems.Ruby);
+                "RRR", "RRR", "RRR", 'R', ModItems.Ruby);
     }
 
     public static void addSmeltingRecipes() {
