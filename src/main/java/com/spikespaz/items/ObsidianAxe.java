@@ -12,9 +12,3 @@ public class ObsidianAxe extends ItemAxe
     setUnlocalizedName("ObsidianAxe").setCreativeTab(net.minecraft.creativetab.CreativeTabs.tabTools).setTextureName("essentialadditions:ObsidianAxe");
   }
 }
-
-
-/* Location:              C:\Users\spike\Desktop\EssentialAdditions_1.2.8-1.7.10-deobf.jar!\com\spikespaz\items\ObsidianAxe.class
- * Java compiler version: 6 (50.0)
- * JD-Core Version:       0.7.1
- */

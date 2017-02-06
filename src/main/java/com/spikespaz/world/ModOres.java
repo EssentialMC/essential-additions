@@ -53,9 +53,3 @@ public class ModOres
 
   private void generateEnd(Random random, int chunkX, int chunkZ, World world) {}
 }
-
-
-/* Location:              C:\Users\spike\Desktop\EssentialAdditions_1.2.8-1.7.10-deobf.jar!\com\spikespaz\world\ModOres.class
- * Java compiler version: 6 (50.0)
- * JD-Core Version:       0.7.1
- */

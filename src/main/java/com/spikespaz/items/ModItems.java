@@ -167,9 +167,3 @@ public class ModItems { public static Item EmeraldHelmet;
     cpw.mods.fml.common.registry.GameRegistry.registerItem(CharcoalDust, CharcoalDust.getUnlocalizedName());
   }
 }
-
-
-/* Location:              C:\Users\spike\Desktop\EssentialAdditions_1.2.8-1.7.10-deobf.jar!\com\spikespaz\items\ModItems.class
- * Java compiler version: 6 (50.0)
- * JD-Core Version:       0.7.1
- */

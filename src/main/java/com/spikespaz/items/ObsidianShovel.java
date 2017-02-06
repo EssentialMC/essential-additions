@@ -12,9 +12,3 @@ public class ObsidianShovel extends ItemSpade
     setUnlocalizedName("ObsidianShovel").setCreativeTab(net.minecraft.creativetab.CreativeTabs.tabTools).setTextureName("essentialadditions:ObsidianShovel");
   }
 }
-
-
-/* Location:              C:\Users\spike\Desktop\EssentialAdditions_1.2.8-1.7.10-deobf.jar!\com\spikespaz\items\ObsidianShovel.class
- * Java compiler version: 6 (50.0)
- * JD-Core Version:       0.7.1
- */

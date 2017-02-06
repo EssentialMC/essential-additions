@@ -12,9 +12,3 @@ public class RubyHoe extends ItemHoe
     setUnlocalizedName("RubyHoe").setCreativeTab(net.minecraft.creativetab.CreativeTabs.tabTools).setTextureName("essentialadditions:RubyHoe");
   }
 }
-
-
-/* Location:              C:\Users\spike\Desktop\EssentialAdditions_1.2.8-1.7.10-deobf.jar!\com\spikespaz\items\RubyHoe.class
- * Java compiler version: 6 (50.0)
- * JD-Core Version:       0.7.1
- */
