@@ -1,15 +1,15 @@
 [
 {
-  "modid": "examplemod",
-  "name": "Example Mod",
-  "description": "Example placeholder mod.",
+  "modid": "essentialadditions",
+  "name": "Essential Additions",
+  "description": "A mod that adds what Mojang forgot.\nEssential Additions is a Minecraft mod that adds what many people think should have been in the Vanilla game.",
   "version": "${version}",
   "mcversion": "${mcversion}",
-  "url": "",
+  "url": "http://spikespaz.com/essentialadditions",
   "updateUrl": "",
-  "authorList": ["ExampleDude"],
-  "credits": "The Forge and FML guys, for making this example",
-  "logoFile": "",
+  "authorList": ["spikespaz"],
+  "credits": "Jacob \"Dasepos\" Dachenhaus (AKA Invisibru) for the logo.",
+  "logoFile": "banner.png",
   "screenshots": [],
   "dependencies": []
 }
