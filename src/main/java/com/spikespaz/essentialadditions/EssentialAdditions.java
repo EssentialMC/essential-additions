@@ -1,5 +1,7 @@
-package com.spikespaz.essentialadditions.Main;
+package com.spikespaz.essentialadditions;
 
+import com.spikespaz.essentialadditions.Main.CraftingRecipes;
+import com.spikespaz.essentialadditions.Main.ServerProxy;
 import com.spikespaz.essentialadditions.blocks.ModBlocks;
 import com.spikespaz.essentialadditions.lib.ReferenceStrings;
 import com.spikespaz.essentialadditions.world.ModWorld;
@@ -12,7 +14,7 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
 
 @Mod(modid=ReferenceStrings.MODID, name=ReferenceStrings.NAME, version=ReferenceStrings.VERSION)
-public class MainRegistry
+public class EssentialAdditions
 {
   @SidedProxy(clientSide=ReferenceStrings.CLIENTSIDE, serverSide=ReferenceStrings.SERVERSIDE)
   public static ServerProxy proxy;
