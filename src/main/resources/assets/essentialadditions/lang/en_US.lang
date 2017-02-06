@@ -1,0 +1,49 @@
+item.EmeraldHelmet.name=Emerald Helmet
+item.EmeraldChestplate.name=Emerald Chestplate
+item.EmeraldLeggings.name=Emerald Leggings
+item.EmeraldBoots.name=Emerald Boots
+
+item.ObsidianHelmet.name=Obsidian Helmet
+item.ObsidianChestplate.name=Obsidian Chestplate
+item.ObsidianLeggings.name=Obsidian Leggings
+item.ObsidianBoots.name=Obsidian Boots
+
+item.RubyHelmet.name=Ruby Helmet
+item.RubyChestplate.name=Ruby Chestplate
+item.RubyLeggings.name=Ruby Leggings
+item.RubyBoots.name=Ruby Boots
+
+item.EmeraldSword.name=Emerald Sword
+item.EmeraldAxe.name=Emerald Axe
+item.EmeraldShovel.name=Emerald Shovel
+item.EmeraldPickaxe.name=Emerald Pickaxe
+item.EmeraldHoe.name=Emerald Hoe
+
+item.ObsidianSword.name=Obsidian Sword
+item.ObsidianAxe.name=Obsidian Axe
+item.ObsidianShovel.name=Obsidian Shovel
+item.ObsidianPickaxe.name=Obsidian Pickaxe
+item.ObsidianHoe.name=Obsidian Hoe
+
+item.RubySword.name=Ruby Sword
+item.RubyAxe.name=Ruby Axe
+item.RubyShovel.name=Ruby Shovel
+item.RubyPickaxe.name=Ruby Pickaxe
+item.RubyHoe.name=Ruby Hoe
+
+item.ObsidianShard.name=Obsidian Shard
+item.Sulfur.name=Sulfur
+
+item.Ruby.name=Ruby
+item.IronPlating.name=Iron Plating
+item.GoldPlating.name=Gold Plating
+item.ChainLink.name=Chain Link
+
+item.CharcoalDust.name=Charcoal Dust
+item.CompressedCharcoal.name=Compressed Charcoal
+
+item.SugarBeet.name=Sugar Beet
+
+tile.SulfurBlock.name=Sulfur Block
+tile.RubyOre.name=Ruby Ore
+tile.RubyBlock.name=Ruby Block
