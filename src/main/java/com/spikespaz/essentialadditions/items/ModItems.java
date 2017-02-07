@@ -12,24 +12,29 @@ public class ModItems {
     public static Item EmeraldChestplate;
     public static Item EmeraldLeggings;
     public static Item EmeraldBoots;
+
     public static Item ObsidianHelmet;
     public static Item ObsidianChestplate;
     public static Item ObsidianLeggings;
     public static Item ObsidianBoots;
+
     public static Item RubyHelmet;
     public static Item RubyChestplate;
     public static Item RubyLeggings;
     public static Item RubyBoots;
+
     public static Item EmeraldSword;
     public static Item EmeraldAxe;
     public static Item EmeraldShovel;
     public static Item EmeraldPickaxe;
     public static Item EmeraldHoe;
+
     public static Item ObsidianSword;
     public static Item ObsidianAxe;
     public static Item ObsidianShovel;
     public static Item ObsidianPickaxe;
     public static Item ObsidianHoe;
+
     public static Item RubySword;
     public static Item RubyAxe;
     public static Item RubyShovel;
