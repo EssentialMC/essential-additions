@@ -1,7 +1,11 @@
 package com.spikespaz.essentialadditions.items;
 
 import com.spikespaz.essentialadditions.EssentialAdditions;
+import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.item.Item;
+
+import static net.minecraft.item.ItemArmor.*;
+import static net.minecraftforge.common.util.EnumHelper.*;
 
 public class ModItems {
     public static Item EmeraldHelmet;
@@ -32,12 +36,12 @@ public class ModItems {
     public static Item RubyPickaxe;
     public static Item RubyHoe;
 
-    private static net.minecraft.item.ItemArmor.ArmorMaterial EmeraldArmor = net.minecraftforge.common.util.EnumHelper.addArmorMaterial("EmeraldArmor", 44, new int[]{4, 8, 5, 4}, 18);
-    private static net.minecraft.item.ItemArmor.ArmorMaterial ObsidianArmor = net.minecraftforge.common.util.EnumHelper.addArmorMaterial("ObsidianArmor", 34, new int[]{5, 6, 5, 4}, 18);
-    private static net.minecraft.item.ItemArmor.ArmorMaterial RubyArmor = net.minecraftforge.common.util.EnumHelper.addArmorMaterial("RubyArmor", 44, new int[]{4, 8, 5, 4}, 25);
-    private static net.minecraft.item.Item.ToolMaterial EmeraldGem = net.minecraftforge.common.util.EnumHelper.addToolMaterial("Emerald", 3, 2000, 15.0F, 4.5F, 8);
-    private static net.minecraft.item.Item.ToolMaterial ObsidianToolShard = net.minecraftforge.common.util.EnumHelper.addToolMaterial("Obsidian", 2, 2100, 15.0F, 4.5F, 8);
-    private static net.minecraft.item.Item.ToolMaterial RubyGem = net.minecraftforge.common.util.EnumHelper.addToolMaterial("Ruby", 3, 2000, 15.0F, 4.5F, 8);
+    private static ArmorMaterial EmeraldArmor = addArmorMaterial("EmeraldArmor", 44, new int[]{4, 8, 5, 4}, 18);
+    private static ArmorMaterial ObsidianArmor = addArmorMaterial("ObsidianArmor", 34, new int[]{5, 6, 5, 4}, 18);
+    private static ArmorMaterial RubyArmor = addArmorMaterial("RubyArmor", 44, new int[]{4, 8, 5, 4}, 25);
+    private static Item.ToolMaterial EmeraldGem = addToolMaterial("Emerald", 3, 2000, 15.0F, 4.5F, 8);
+    private static Item.ToolMaterial ObsidianToolShard = addToolMaterial("Obsidian", 2, 2100, 15.0F, 4.5F, 8);
+    private static Item.ToolMaterial RubyGem = addToolMaterial("Ruby", 3, 2000, 15.0F, 4.5F, 8);
 
     public static Item ObsidianShard;
     public static Item Sulfur;
@@ -99,47 +103,47 @@ public class ModItems {
 
 
     private static void registerItem() {
-        cpw.mods.fml.common.registry.GameRegistry.registerItem(EmeraldHelmet, EmeraldHelmet.getUnlocalizedName());
-        cpw.mods.fml.common.registry.GameRegistry.registerItem(EmeraldChestplate, EmeraldChestplate.getUnlocalizedName());
-        cpw.mods.fml.common.registry.GameRegistry.registerItem(EmeraldLeggings, EmeraldLeggings.getUnlocalizedName());
-        cpw.mods.fml.common.registry.GameRegistry.registerItem(EmeraldBoots, EmeraldBoots.getUnlocalizedName());
+        GameRegistry.registerItem(EmeraldHelmet, EmeraldHelmet.getUnlocalizedName());
+        GameRegistry.registerItem(EmeraldChestplate, EmeraldChestplate.getUnlocalizedName());
+        GameRegistry.registerItem(EmeraldLeggings, EmeraldLeggings.getUnlocalizedName());
+        GameRegistry.registerItem(EmeraldBoots, EmeraldBoots.getUnlocalizedName());
 
-        cpw.mods.fml.common.registry.GameRegistry.registerItem(ObsidianHelmet, ObsidianHelmet.getUnlocalizedName());
-        cpw.mods.fml.common.registry.GameRegistry.registerItem(ObsidianChestplate, ObsidianChestplate.getUnlocalizedName());
-        cpw.mods.fml.common.registry.GameRegistry.registerItem(ObsidianLeggings, ObsidianLeggings.getUnlocalizedName());
-        cpw.mods.fml.common.registry.GameRegistry.registerItem(ObsidianBoots, ObsidianBoots.getUnlocalizedName());
+        GameRegistry.registerItem(ObsidianHelmet, ObsidianHelmet.getUnlocalizedName());
+        GameRegistry.registerItem(ObsidianChestplate, ObsidianChestplate.getUnlocalizedName());
+        GameRegistry.registerItem(ObsidianLeggings, ObsidianLeggings.getUnlocalizedName());
+        GameRegistry.registerItem(ObsidianBoots, ObsidianBoots.getUnlocalizedName());
 
-        cpw.mods.fml.common.registry.GameRegistry.registerItem(RubyHelmet, RubyHelmet.getUnlocalizedName());
-        cpw.mods.fml.common.registry.GameRegistry.registerItem(RubyChestplate, RubyChestplate.getUnlocalizedName());
-        cpw.mods.fml.common.registry.GameRegistry.registerItem(RubyLeggings, RubyLeggings.getUnlocalizedName());
-        cpw.mods.fml.common.registry.GameRegistry.registerItem(RubyBoots, RubyBoots.getUnlocalizedName());
+        GameRegistry.registerItem(RubyHelmet, RubyHelmet.getUnlocalizedName());
+        GameRegistry.registerItem(RubyChestplate, RubyChestplate.getUnlocalizedName());
+        GameRegistry.registerItem(RubyLeggings, RubyLeggings.getUnlocalizedName());
+        GameRegistry.registerItem(RubyBoots, RubyBoots.getUnlocalizedName());
 
-        cpw.mods.fml.common.registry.GameRegistry.registerItem(EmeraldSword, EmeraldSword.getUnlocalizedName());
-        cpw.mods.fml.common.registry.GameRegistry.registerItem(EmeraldAxe, EmeraldAxe.getUnlocalizedName());
-        cpw.mods.fml.common.registry.GameRegistry.registerItem(EmeraldShovel, EmeraldShovel.getUnlocalizedName());
-        cpw.mods.fml.common.registry.GameRegistry.registerItem(EmeraldPickaxe, EmeraldPickaxe.getUnlocalizedName());
-        cpw.mods.fml.common.registry.GameRegistry.registerItem(EmeraldHoe, EmeraldHoe.getUnlocalizedName());
+        GameRegistry.registerItem(EmeraldSword, EmeraldSword.getUnlocalizedName());
+        GameRegistry.registerItem(EmeraldAxe, EmeraldAxe.getUnlocalizedName());
+        GameRegistry.registerItem(EmeraldShovel, EmeraldShovel.getUnlocalizedName());
+        GameRegistry.registerItem(EmeraldPickaxe, EmeraldPickaxe.getUnlocalizedName());
+        GameRegistry.registerItem(EmeraldHoe, EmeraldHoe.getUnlocalizedName());
 
-        cpw.mods.fml.common.registry.GameRegistry.registerItem(ObsidianSword, ObsidianSword.getUnlocalizedName());
-        cpw.mods.fml.common.registry.GameRegistry.registerItem(ObsidianAxe, ObsidianAxe.getUnlocalizedName());
-        cpw.mods.fml.common.registry.GameRegistry.registerItem(ObsidianShovel, ObsidianShovel.getUnlocalizedName());
-        cpw.mods.fml.common.registry.GameRegistry.registerItem(ObsidianPickaxe, ObsidianPickaxe.getUnlocalizedName());
-        cpw.mods.fml.common.registry.GameRegistry.registerItem(ObsidianHoe, ObsidianHoe.getUnlocalizedName());
+        GameRegistry.registerItem(ObsidianSword, ObsidianSword.getUnlocalizedName());
+        GameRegistry.registerItem(ObsidianAxe, ObsidianAxe.getUnlocalizedName());
+        GameRegistry.registerItem(ObsidianShovel, ObsidianShovel.getUnlocalizedName());
+        GameRegistry.registerItem(ObsidianPickaxe, ObsidianPickaxe.getUnlocalizedName());
+        GameRegistry.registerItem(ObsidianHoe, ObsidianHoe.getUnlocalizedName());
 
-        cpw.mods.fml.common.registry.GameRegistry.registerItem(RubySword, RubySword.getUnlocalizedName());
-        cpw.mods.fml.common.registry.GameRegistry.registerItem(RubyAxe, RubyAxe.getUnlocalizedName());
-        cpw.mods.fml.common.registry.GameRegistry.registerItem(RubyShovel, RubyShovel.getUnlocalizedName());
-        cpw.mods.fml.common.registry.GameRegistry.registerItem(RubyPickaxe, RubyPickaxe.getUnlocalizedName());
-        cpw.mods.fml.common.registry.GameRegistry.registerItem(RubyHoe, RubyHoe.getUnlocalizedName());
+        GameRegistry.registerItem(RubySword, RubySword.getUnlocalizedName());
+        GameRegistry.registerItem(RubyAxe, RubyAxe.getUnlocalizedName());
+        GameRegistry.registerItem(RubyShovel, RubyShovel.getUnlocalizedName());
+        GameRegistry.registerItem(RubyPickaxe, RubyPickaxe.getUnlocalizedName());
+        GameRegistry.registerItem(RubyHoe, RubyHoe.getUnlocalizedName());
 
-        cpw.mods.fml.common.registry.GameRegistry.registerItem(ObsidianShard, ObsidianShard.getUnlocalizedName());
-        cpw.mods.fml.common.registry.GameRegistry.registerItem(Sulfur, Sulfur.getUnlocalizedName());
+        GameRegistry.registerItem(ObsidianShard, ObsidianShard.getUnlocalizedName());
+        GameRegistry.registerItem(Sulfur, Sulfur.getUnlocalizedName());
 
-        cpw.mods.fml.common.registry.GameRegistry.registerItem(Ruby, Ruby.getUnlocalizedName());
-        cpw.mods.fml.common.registry.GameRegistry.registerItem(IronPlating, IronPlating.getUnlocalizedName());
-        cpw.mods.fml.common.registry.GameRegistry.registerItem(GoldPlating, GoldPlating.getUnlocalizedName());
-        cpw.mods.fml.common.registry.GameRegistry.registerItem(ChainLink, ChainLink.getUnlocalizedName());
+        GameRegistry.registerItem(Ruby, Ruby.getUnlocalizedName());
+        GameRegistry.registerItem(IronPlating, IronPlating.getUnlocalizedName());
+        GameRegistry.registerItem(GoldPlating, GoldPlating.getUnlocalizedName());
+        GameRegistry.registerItem(ChainLink, ChainLink.getUnlocalizedName());
 
-        cpw.mods.fml.common.registry.GameRegistry.registerItem(CharcoalDust, CharcoalDust.getUnlocalizedName());
+        GameRegistry.registerItem(CharcoalDust, CharcoalDust.getUnlocalizedName());
     }
 }

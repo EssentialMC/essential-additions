@@ -2,6 +2,7 @@ package com.spikespaz.essentialadditions.blocks;
 
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 
 public class ModBlocks {
@@ -16,10 +17,10 @@ public class ModBlocks {
 
 
     private static void initializeBlock() {
-        SulfurBlock = new SulfurBlock(net.minecraft.block.material.Material.ground).setBlockName("SulfurBlock").setCreativeTab(CreativeTabs.tabBlock).setBlockTextureName("essentialadditions:SulfurBlock");
+        SulfurBlock = new SulfurBlock(Material.ground).setBlockName("SulfurBlock").setCreativeTab(CreativeTabs.tabBlock).setBlockTextureName("essentialadditions:SulfurBlock");
 
-        RubyBlock = new RubyBlock(net.minecraft.block.material.Material.ground).setBlockName("RubyBlock").setCreativeTab(CreativeTabs.tabBlock).setBlockTextureName("essentialadditions:RubyBlock");
-        RubyOre = new RubyOre(net.minecraft.block.material.Material.ground).setBlockName("RubyOre").setCreativeTab(CreativeTabs.tabBlock).setBlockTextureName("essentialadditions:RubyOre");
+        RubyBlock = new RubyBlock(Material.ground).setBlockName("RubyBlock").setCreativeTab(CreativeTabs.tabBlock).setBlockTextureName("essentialadditions:RubyBlock");
+        RubyOre = new RubyOre(Material.ground).setBlockName("RubyOre").setCreativeTab(CreativeTabs.tabBlock).setBlockTextureName("essentialadditions:RubyOre");
     }
 
     private static void registerItem() {

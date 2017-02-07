@@ -8,7 +8,7 @@ import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 
 public class CraftingRecipes {
-    public static void mainRegistry() {
+    static void mainRegistry() {
         addCraftingRecipes();
         addSmeltingRecipes();
     }
