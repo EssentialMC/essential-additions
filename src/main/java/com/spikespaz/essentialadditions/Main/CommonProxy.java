@@ -1,6 +1,6 @@
 package com.spikespaz.essentialadditions.Main;
 
-public class ServerProxy {
+public class CommonProxy {
     public void registerRenderInfo() {
     }
 
