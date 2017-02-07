@@ -1,6 +1,6 @@
 package com.spikespaz.essentialadditions;
 
-import com.spikespaz.essentialadditions.Proxy.CommonProxy;
+import com.spikespaz.essentialadditions.proxy.CommonProxy;
 import com.spikespaz.essentialadditions.blocks.ModBlocks;
 import com.spikespaz.essentialadditions.items.ModItems;
 import com.spikespaz.essentialadditions.world.ModWorld;
@@ -14,8 +14,8 @@ public class EssentialAdditions {
     static final String MODID = "essentialadditions";
     static final String NAME = "Essential Additions";
     static final String VERSION = "1.3.0";
-    private static final String CLIENTSIDE = "com.spikespaz.essentialadditions.Proxy.ClientProxy";
-    private static final String SERVERSIDE = "com.spikespaz.essentialadditions.Proxy.CommonProxy";
+    private static final String CLIENTSIDE = "com.spikespaz.essentialadditions.proxy.ClientProxy";
+    private static final String SERVERSIDE = "com.spikespaz.essentialadditions.proxy.CommonProxy";
 
     @SidedProxy(clientSide = EssentialAdditions.CLIENTSIDE, serverSide = EssentialAdditions.SERVERSIDE)
     public static CommonProxy proxy;

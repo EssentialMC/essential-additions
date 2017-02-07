@@ -1,4 +1,4 @@
-package com.spikespaz.essentialadditions.Proxy;
+package com.spikespaz.essentialadditions.proxy;
 
 public class CommonProxy {
     public void registerRenderInfo() {
