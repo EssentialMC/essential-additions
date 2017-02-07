@@ -1,5 +1,6 @@
 package com.spikespaz.essentialadditions.items;
 
+import com.spikespaz.essentialadditions.EssentialAdditions;
 import net.minecraft.entity.Entity;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
@@ -11,9 +12,9 @@ public class EmeraldArmor extends ItemArmor {
 
     public String getArmorTexture(ItemStack stack, Entity entity, int slot, String type) {
         if ((stack.getItem() == ModItems.EmeraldHelmet) || (stack.getItem() == ModItems.EmeraldChestplate) || (stack.getItem() == ModItems.EmeraldBoots))
-            return "essentialadditions:textures/armor/emerald_layer_1.png";
+            return EssentialAdditions.MODID + ":textures/armor/emerald_layer_1.png";
         if ((stack.getItem() == ModItems.EmeraldLeggings) || (stack.getItem() == ModItems.EmeraldBoots)) {
-            return "essentialadditions:textures/armor/emerald_layer_2.png";
+            return EssentialAdditions.MODID + ":textures/armor/emerald_layer_2.png";
         }
         return null;
     }
