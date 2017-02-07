@@ -31,12 +31,14 @@ public class ModItems {
     public static Item RubyShovel;
     public static Item RubyPickaxe;
     public static Item RubyHoe;
-    public static net.minecraft.item.ItemArmor.ArmorMaterial EmeraldArmor = net.minecraftforge.common.util.EnumHelper.addArmorMaterial("EmeraldArmor", 44, new int[]{4, 8, 5, 4}, 18);
-    public static net.minecraft.item.ItemArmor.ArmorMaterial ObsidianArmor = net.minecraftforge.common.util.EnumHelper.addArmorMaterial("ObsidianArmor", 34, new int[]{5, 6, 5, 4}, 18);
-    public static net.minecraft.item.ItemArmor.ArmorMaterial RubyArmor = net.minecraftforge.common.util.EnumHelper.addArmorMaterial("RubyArmor", 44, new int[]{4, 8, 5, 4}, 25);
-    public static net.minecraft.item.Item.ToolMaterial EmeraldGem = net.minecraftforge.common.util.EnumHelper.addToolMaterial("Emerald", 3, 2000, 15.0F, 4.5F, 8);
-    public static net.minecraft.item.Item.ToolMaterial ObsidianToolShard = net.minecraftforge.common.util.EnumHelper.addToolMaterial("Obsidian", 2, 2100, 15.0F, 4.5F, 8);
-    public static net.minecraft.item.Item.ToolMaterial RubyGem = net.minecraftforge.common.util.EnumHelper.addToolMaterial("Ruby", 3, 2000, 15.0F, 4.5F, 8);
+
+    private static net.minecraft.item.ItemArmor.ArmorMaterial EmeraldArmor = net.minecraftforge.common.util.EnumHelper.addArmorMaterial("EmeraldArmor", 44, new int[]{4, 8, 5, 4}, 18);
+    private static net.minecraft.item.ItemArmor.ArmorMaterial ObsidianArmor = net.minecraftforge.common.util.EnumHelper.addArmorMaterial("ObsidianArmor", 34, new int[]{5, 6, 5, 4}, 18);
+    private static net.minecraft.item.ItemArmor.ArmorMaterial RubyArmor = net.minecraftforge.common.util.EnumHelper.addArmorMaterial("RubyArmor", 44, new int[]{4, 8, 5, 4}, 25);
+    private static net.minecraft.item.Item.ToolMaterial EmeraldGem = net.minecraftforge.common.util.EnumHelper.addToolMaterial("Emerald", 3, 2000, 15.0F, 4.5F, 8);
+    private static net.minecraft.item.Item.ToolMaterial ObsidianToolShard = net.minecraftforge.common.util.EnumHelper.addToolMaterial("Obsidian", 2, 2100, 15.0F, 4.5F, 8);
+    private static net.minecraft.item.Item.ToolMaterial RubyGem = net.minecraftforge.common.util.EnumHelper.addToolMaterial("Ruby", 3, 2000, 15.0F, 4.5F, 8);
+
     public static Item ObsidianShard;
     public static Item Sulfur;
     public static Item Ruby;
@@ -50,7 +52,7 @@ public class ModItems {
         registerItem();
     }
 
-    public static void initializeItem() {
+    private static void initializeItem() {
         EmeraldHelmet = new EmeraldArmor(EmeraldArmor, EssentialAdditions.proxy.addArmor("EmeraldArmor"), 0).setUnlocalizedName("EmeraldHelmet").setCreativeTab(net.minecraft.creativetab.CreativeTabs.tabCombat).setTextureName("essentialadditions:EmeraldHelmet");
         EmeraldChestplate = new EmeraldArmor(EmeraldArmor, EssentialAdditions.proxy.addArmor("EmeraldArmor"), 1).setUnlocalizedName("EmeraldChestplate").setCreativeTab(net.minecraft.creativetab.CreativeTabs.tabCombat).setTextureName("essentialadditions:EmeraldChestplate");
         EmeraldLeggings = new EmeraldArmor(EmeraldArmor, EssentialAdditions.proxy.addArmor("EmeraldArmor"), 2).setUnlocalizedName("EmeraldLeggings").setCreativeTab(net.minecraft.creativetab.CreativeTabs.tabCombat).setTextureName("essentialadditions:EmeraldLeggings");
@@ -96,7 +98,7 @@ public class ModItems {
     }
 
 
-    public static void registerItem() {
+    private static void registerItem() {
         cpw.mods.fml.common.registry.GameRegistry.registerItem(EmeraldHelmet, EmeraldHelmet.getUnlocalizedName());
         cpw.mods.fml.common.registry.GameRegistry.registerItem(EmeraldChestplate, EmeraldChestplate.getUnlocalizedName());
         cpw.mods.fml.common.registry.GameRegistry.registerItem(EmeraldLeggings, EmeraldLeggings.getUnlocalizedName());

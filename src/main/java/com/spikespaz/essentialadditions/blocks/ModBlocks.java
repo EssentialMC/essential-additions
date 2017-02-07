@@ -15,14 +15,14 @@ public class ModBlocks {
     }
 
 
-    public static void initializeBlock() {
+    private static void initializeBlock() {
         SulfurBlock = new SulfurBlock(net.minecraft.block.material.Material.ground).setBlockName("SulfurBlock").setCreativeTab(CreativeTabs.tabBlock).setBlockTextureName("essentialadditions:SulfurBlock");
 
         RubyBlock = new RubyBlock(net.minecraft.block.material.Material.ground).setBlockName("RubyBlock").setCreativeTab(CreativeTabs.tabBlock).setBlockTextureName("essentialadditions:RubyBlock");
         RubyOre = new RubyOre(net.minecraft.block.material.Material.ground).setBlockName("RubyOre").setCreativeTab(CreativeTabs.tabBlock).setBlockTextureName("essentialadditions:RubyOre");
     }
 
-    public static void registerItem() {
+    private static void registerItem() {
         GameRegistry.registerBlock(SulfurBlock, SulfurBlock.getUnlocalizedName());
 
         GameRegistry.registerBlock(RubyOre, RubyOre.getUnlocalizedName());

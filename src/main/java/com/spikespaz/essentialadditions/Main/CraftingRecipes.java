@@ -13,7 +13,7 @@ public class CraftingRecipes {
         addSmeltingRecipes();
     }
 
-    public static void addCraftingRecipes() {
+    private static void addCraftingRecipes() {
         GameRegistry.addRecipe(new ItemStack(ModItems.EmeraldHelmet, 1),
                 "EEE", "E E", "   ", 'E', Items.emerald);
         GameRegistry.addRecipe(new ItemStack(ModItems.EmeraldChestplate, 1),
@@ -124,7 +124,7 @@ public class CraftingRecipes {
                 "RRR", "RRR", "RRR", 'R', ModItems.Ruby);
     }
 
-    public static void addSmeltingRecipes() {
+    private static void addSmeltingRecipes() {
         GameRegistry.addSmelting(ModBlocks.RubyOre, new ItemStack(ModItems.Ruby, 1), 2.0F);
 
         GameRegistry.addSmelting(Blocks.obsidian, new ItemStack(ModItems.ObsidianShard, 4), 2.0F);
