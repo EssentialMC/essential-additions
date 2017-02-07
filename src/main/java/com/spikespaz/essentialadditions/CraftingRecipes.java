@@ -1,4 +1,4 @@
-package com.spikespaz.essentialadditions.Main;
+package com.spikespaz.essentialadditions;
 
 import com.spikespaz.essentialadditions.blocks.ModBlocks;
 import com.spikespaz.essentialadditions.items.ModItems;

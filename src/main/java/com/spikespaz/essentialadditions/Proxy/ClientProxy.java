@@ -1,4 +1,4 @@
-package com.spikespaz.essentialadditions.Main;
+package com.spikespaz.essentialadditions.Proxy;
 
 import cpw.mods.fml.client.registry.RenderingRegistry;
 
