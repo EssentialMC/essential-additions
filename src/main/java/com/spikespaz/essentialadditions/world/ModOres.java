@@ -27,10 +27,10 @@ public class ModOres
 
     }
 
-    private void addOre(Block block, Block blockspawn, Random random, World world, int posX, int posZ, int minY, int maxY, int veinSize, int spawnChance) {
+    private void addOre(Block block, Block blockspawn, Random random, World world, int posX, int posZ, int maxY, int veinSize, int spawnChance) {
         for (int chunkX = 0; chunkX < spawnChance; chunkX++) {
             int xPos = posX + random.nextInt(16);
-            int yPos = minY + random.nextInt(maxY - minY);
+            int yPos = 5 + random.nextInt(maxY - 5);
             int zPos = posZ + random.nextInt(16);
 
             new WorldGenMinable(block, veinSize, blockspawn).generate(world, random, xPos, yPos, zPos);
@@ -38,11 +38,11 @@ public class ModOres
     }
 
     private void generateNether(Random random, int chunkX, int chunkZ, World world) {
-        addOre(ModBlocks.SulfurBlock, Blocks.netherrack, random, world, chunkX, chunkZ, 5, 120, 8, 25);
+        addOre(ModBlocks.SulfurBlock, Blocks.netherrack, random, world, chunkX, chunkZ, 120, 8, 25);
     }
 
     private void generateOverworld(Random random, int chunkX, int chunkZ, World world) {
-        addOre(ModBlocks.RubyOre, Blocks.stone, random, world, chunkX, chunkZ, 5, 50, 2, 1);
+        addOre(ModBlocks.RubyOre, Blocks.stone, random, world, chunkX, chunkZ, 50, 2, 1);
     }
 
     private void generateEnd(Random random, int chunkX, int chunkZ, World world) {
