@@ -1,9 +1,11 @@
 package com.spikespaz.essentialadditions.items;
 
-import com.spikespaz.essentialadditions.EssentialAdditions;
 import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 
+import static com.spikespaz.essentialadditions.EssentialAdditions.MODID;
+import static com.spikespaz.essentialadditions.EssentialAdditions.proxy;
 import static net.minecraft.item.ItemArmor.ArmorMaterial;
 import static net.minecraftforge.common.util.EnumHelper.addArmorMaterial;
 import static net.minecraftforge.common.util.EnumHelper.addToolMaterial;
@@ -42,12 +44,12 @@ public class ModItems {
     public static Item RubyPickaxe;
     public static Item RubyHoe;
 
-    private static ArmorMaterial EmeraldArmor = addArmorMaterial("EmeraldArmor", 44, new int[]{4, 8, 5, 4}, 18);
-    private static ArmorMaterial ObsidianArmor = addArmorMaterial("ObsidianArmor", 34, new int[]{5, 6, 5, 4}, 18);
-    private static ArmorMaterial RubyArmor = addArmorMaterial("RubyArmor", 44, new int[]{4, 8, 5, 4}, 25);
-    private static Item.ToolMaterial EmeraldGem = addToolMaterial("Emerald", 3, 2000, 15.0F, 4.5F, 8);
-    private static Item.ToolMaterial ObsidianToolShard = addToolMaterial("Obsidian", 2, 2100, 15.0F, 4.5F, 8);
-    private static Item.ToolMaterial RubyGem = addToolMaterial("Ruby", 3, 2000, 15.0F, 4.5F, 8);
+    private static ArmorMaterial EmeraldArmor =          addArmorMaterial("EmeraldArmor", 92, new int[]{4, 8, 5, 4}, 6);
+    private static ArmorMaterial ObsidianArmor =         addArmorMaterial("ObsidianArmor", 47, new int[]{6, 7, 6, 5}, 5);
+    private static ArmorMaterial RubyArmor =             addArmorMaterial("RubyArmor", 85, new int[]{4, 8, 5, 4}, 6);
+    private static Item.ToolMaterial EmeraldGem =        addToolMaterial("Emerald", 3, 2740, 14.0F, 4.0F, 8);
+    private static Item.ToolMaterial ObsidianToolShard = addToolMaterial("Obsidian", 2, 1210, 17.0F, 6.5F, 5);
+    private static Item.ToolMaterial RubyGem =           addToolMaterial("Ruby", 2, 2290, 15.0F, 4.5F, 7);
 
     public static Item ObsidianShard;
     public static Item Sulfur;
@@ -64,48 +66,48 @@ public class ModItems {
     }
 
     private static void initializeItem() {
-        EmeraldHelmet = new EmeraldArmor(EmeraldArmor, EssentialAdditions.proxy.addArmor("EmeraldArmor"), 0).setUnlocalizedName("EmeraldHelmet").setCreativeTab(net.minecraft.creativetab.CreativeTabs.tabCombat).setTextureName(EssentialAdditions.MODID + ":EmeraldHelmet");
-        EmeraldChestplate = new EmeraldArmor(EmeraldArmor, EssentialAdditions.proxy.addArmor("EmeraldArmor"), 1).setUnlocalizedName("EmeraldChestplate").setCreativeTab(net.minecraft.creativetab.CreativeTabs.tabCombat).setTextureName(EssentialAdditions.MODID + ":EmeraldChestplate");
-        EmeraldLeggings = new EmeraldArmor(EmeraldArmor, EssentialAdditions.proxy.addArmor("EmeraldArmor"), 2).setUnlocalizedName("EmeraldLeggings").setCreativeTab(net.minecraft.creativetab.CreativeTabs.tabCombat).setTextureName(EssentialAdditions.MODID + ":EmeraldLeggings");
-        EmeraldBoots = new EmeraldArmor(EmeraldArmor, EssentialAdditions.proxy.addArmor("EmeraldArmor"), 3).setUnlocalizedName("EmeraldBoots").setCreativeTab(net.minecraft.creativetab.CreativeTabs.tabCombat).setTextureName(EssentialAdditions.MODID + ":EmeraldBoots");
+        EmeraldHelmet =     new EmeraldArmor(EmeraldArmor, proxy.addArmor("EmeraldArmor"), 0).setUnlocalizedName("EmeraldHelmet").setCreativeTab(CreativeTabs.tabCombat).setTextureName(MODID + ":EmeraldHelmet");
+        EmeraldChestplate = new EmeraldArmor(EmeraldArmor, proxy.addArmor("EmeraldArmor"), 1).setUnlocalizedName("EmeraldChestplate").setCreativeTab(CreativeTabs.tabCombat).setTextureName(MODID + ":EmeraldChestplate");
+        EmeraldLeggings =   new EmeraldArmor(EmeraldArmor, proxy.addArmor("EmeraldArmor"), 2).setUnlocalizedName("EmeraldLeggings").setCreativeTab(CreativeTabs.tabCombat).setTextureName(MODID + ":EmeraldLeggings");
+        EmeraldBoots =      new EmeraldArmor(EmeraldArmor, proxy.addArmor("EmeraldArmor"), 3).setUnlocalizedName("EmeraldBoots").setCreativeTab(CreativeTabs.tabCombat).setTextureName(MODID + ":EmeraldBoots");
 
-        ObsidianHelmet = new ObsidianArmor(ObsidianArmor, EssentialAdditions.proxy.addArmor("ObsidianArmor"), 0).setUnlocalizedName("ObsidianHelmet").setCreativeTab(net.minecraft.creativetab.CreativeTabs.tabCombat).setTextureName(EssentialAdditions.MODID + ":ObsidianHelmet");
-        ObsidianChestplate = new ObsidianArmor(ObsidianArmor, EssentialAdditions.proxy.addArmor("ObsidianArmor"), 1).setUnlocalizedName("ObsidianChestplate").setCreativeTab(net.minecraft.creativetab.CreativeTabs.tabCombat).setTextureName(EssentialAdditions.MODID + ":ObsidianChestplate");
-        ObsidianLeggings = new ObsidianArmor(ObsidianArmor, EssentialAdditions.proxy.addArmor("ObsidianArmor"), 2).setUnlocalizedName("ObsidianLeggings").setCreativeTab(net.minecraft.creativetab.CreativeTabs.tabCombat).setTextureName(EssentialAdditions.MODID + ":ObsidianLeggings");
-        ObsidianBoots = new ObsidianArmor(ObsidianArmor, EssentialAdditions.proxy.addArmor("ObsidianArmor"), 3).setUnlocalizedName("ObsidianBoots").setCreativeTab(net.minecraft.creativetab.CreativeTabs.tabCombat).setTextureName(EssentialAdditions.MODID + ":ObsidianBoots");
+        ObsidianHelmet =     new ObsidianArmor(ObsidianArmor, proxy.addArmor("ObsidianArmor"), 0).setUnlocalizedName("ObsidianHelmet").setCreativeTab(CreativeTabs.tabCombat).setTextureName(MODID + ":ObsidianHelmet");
+        ObsidianChestplate = new ObsidianArmor(ObsidianArmor, proxy.addArmor("ObsidianArmor"), 1).setUnlocalizedName("ObsidianChestplate").setCreativeTab(CreativeTabs.tabCombat).setTextureName(MODID + ":ObsidianChestplate");
+        ObsidianLeggings =   new ObsidianArmor(ObsidianArmor, proxy.addArmor("ObsidianArmor"), 2).setUnlocalizedName("ObsidianLeggings").setCreativeTab(CreativeTabs.tabCombat).setTextureName(MODID + ":ObsidianLeggings");
+        ObsidianBoots =      new ObsidianArmor(ObsidianArmor, proxy.addArmor("ObsidianArmor"), 3).setUnlocalizedName("ObsidianBoots").setCreativeTab(CreativeTabs.tabCombat).setTextureName(MODID + ":ObsidianBoots");
 
-        RubyHelmet = new RubyArmor(RubyArmor, EssentialAdditions.proxy.addArmor("RubyArmor"), 0).setUnlocalizedName("RubyHelmet").setCreativeTab(net.minecraft.creativetab.CreativeTabs.tabCombat).setTextureName(EssentialAdditions.MODID + ":RubyHelmet");
-        RubyChestplate = new RubyArmor(RubyArmor, EssentialAdditions.proxy.addArmor("RubyArmor"), 1).setUnlocalizedName("RubyChestplate").setCreativeTab(net.minecraft.creativetab.CreativeTabs.tabCombat).setTextureName(EssentialAdditions.MODID + ":RubyChestplate");
-        RubyLeggings = new RubyArmor(RubyArmor, EssentialAdditions.proxy.addArmor("RubyArmor"), 2).setUnlocalizedName("RubyLeggings").setCreativeTab(net.minecraft.creativetab.CreativeTabs.tabCombat).setTextureName(EssentialAdditions.MODID + ":RubyLeggings");
-        RubyBoots = new RubyArmor(RubyArmor, EssentialAdditions.proxy.addArmor("RubyArmor"), 3).setUnlocalizedName("RubyBoots").setCreativeTab(net.minecraft.creativetab.CreativeTabs.tabCombat).setTextureName(EssentialAdditions.MODID + ":RubyBoots");
+        RubyHelmet =     new RubyArmor(RubyArmor, proxy.addArmor("RubyArmor"), 0).setUnlocalizedName("RubyHelmet").setCreativeTab(CreativeTabs.tabCombat).setTextureName(MODID + ":RubyHelmet");
+        RubyChestplate = new RubyArmor(RubyArmor, proxy.addArmor("RubyArmor"), 1).setUnlocalizedName("RubyChestplate").setCreativeTab(CreativeTabs.tabCombat).setTextureName(MODID + ":RubyChestplate");
+        RubyLeggings =   new RubyArmor(RubyArmor, proxy.addArmor("RubyArmor"), 2).setUnlocalizedName("RubyLeggings").setCreativeTab(CreativeTabs.tabCombat).setTextureName(MODID + ":RubyLeggings");
+        RubyBoots =      new RubyArmor(RubyArmor, proxy.addArmor("RubyArmor"), 3).setUnlocalizedName("RubyBoots").setCreativeTab(CreativeTabs.tabCombat).setTextureName(MODID + ":RubyBoots");
 
-        EmeraldSword = new BaseSword(EmeraldGem, "EmeraldSword");
-        EmeraldAxe = new BaseAxe(EmeraldGem, "EmeraldAxe");
-        EmeraldShovel = new BaseSpade(EmeraldGem, "EmeraldShovel");
+        EmeraldSword =   new BaseSword(EmeraldGem, "EmeraldSword");
+        EmeraldAxe =     new BaseAxe(EmeraldGem, "EmeraldAxe");
+        EmeraldShovel =  new BaseSpade(EmeraldGem, "EmeraldShovel");
         EmeraldPickaxe = new BasePickaxe(EmeraldGem, "EmeraldPickaxe");
-        EmeraldHoe = new BaseHoe(EmeraldGem, "EmeraldHoe");
+        EmeraldHoe =     new BaseHoe(EmeraldGem, "EmeraldHoe");
         
-        ObsidianSword = new BaseSword(ObsidianToolShard, "ObsidianSword");
-        ObsidianAxe = new BaseAxe(ObsidianToolShard, "ObsidianAxe");
-        ObsidianShovel = new BaseSpade(ObsidianToolShard, "ObsidianShovel");
+        ObsidianSword =   new BaseSword(ObsidianToolShard, "ObsidianSword");
+        ObsidianAxe =     new BaseAxe(ObsidianToolShard, "ObsidianAxe");
+        ObsidianShovel =  new BaseSpade(ObsidianToolShard, "ObsidianShovel");
         ObsidianPickaxe = new BasePickaxe(ObsidianToolShard, "ObsidianPickaxe");
-        ObsidianHoe = new BaseHoe(ObsidianToolShard, "ObsidianHoe");
+        ObsidianHoe =     new BaseHoe(ObsidianToolShard, "ObsidianHoe");
 
-        RubySword = new BaseSword(RubyGem, "RubySword");
-        RubyAxe = new BaseAxe(RubyGem, "RubyAxe");
-        RubyShovel = new BaseSpade(RubyGem, "RubyShovel");
+        RubySword =   new BaseSword(RubyGem, "RubySword");
+        RubyAxe =     new BaseAxe(RubyGem, "RubyAxe");
+        RubyShovel =  new BaseSpade(RubyGem, "RubyShovel");
         RubyPickaxe = new BasePickaxe(RubyGem, "RubyPickaxe");
-        RubyHoe = new BaseHoe(RubyGem, "RubyHoe");
+        RubyHoe =     new BaseHoe(RubyGem, "RubyHoe");
 
-        ObsidianShard = new Item().setUnlocalizedName("ObsidianShard").setCreativeTab(net.minecraft.creativetab.CreativeTabs.tabMaterials).setTextureName(EssentialAdditions.MODID + ":ObsidianShard");
-        Sulfur = new Item().setUnlocalizedName("Sulfur").setCreativeTab(net.minecraft.creativetab.CreativeTabs.tabMaterials).setTextureName(EssentialAdditions.MODID + ":Sulfur");
+        ObsidianShard = new Item().setUnlocalizedName("ObsidianShard").setCreativeTab(CreativeTabs.tabMaterials).setTextureName(MODID + ":ObsidianShard");
+        Sulfur =        new Item().setUnlocalizedName("Sulfur").setCreativeTab(CreativeTabs.tabMaterials).setTextureName(MODID + ":Sulfur");
 
-        Ruby = new Item().setUnlocalizedName("Ruby").setCreativeTab(net.minecraft.creativetab.CreativeTabs.tabMaterials).setTextureName(EssentialAdditions.MODID + ":Ruby");
-        IronPlating = new Item().setUnlocalizedName("IronPlating").setCreativeTab(net.minecraft.creativetab.CreativeTabs.tabMaterials).setTextureName(EssentialAdditions.MODID + ":IronPlating");
-        GoldPlating = new Item().setUnlocalizedName("GoldPlating").setCreativeTab(net.minecraft.creativetab.CreativeTabs.tabMaterials).setTextureName(EssentialAdditions.MODID + ":GoldPlating");
-        ChainLink = new Item().setUnlocalizedName("ChainLink").setCreativeTab(net.minecraft.creativetab.CreativeTabs.tabMaterials).setTextureName(EssentialAdditions.MODID + ":ChainLink");
+        Ruby =        new Item().setUnlocalizedName("Ruby").setCreativeTab(CreativeTabs.tabMaterials).setTextureName(MODID + ":Ruby");
+        IronPlating = new Item().setUnlocalizedName("IronPlating").setCreativeTab(CreativeTabs.tabMaterials).setTextureName(MODID + ":IronPlating");
+        GoldPlating = new Item().setUnlocalizedName("GoldPlating").setCreativeTab(CreativeTabs.tabMaterials).setTextureName(MODID + ":GoldPlating");
+        ChainLink =   new Item().setUnlocalizedName("ChainLink").setCreativeTab(CreativeTabs.tabMaterials).setTextureName(MODID + ":ChainLink");
 
-        CharcoalDust = new Item().setUnlocalizedName("CharcoalDust").setCreativeTab(net.minecraft.creativetab.CreativeTabs.tabMaterials).setTextureName(EssentialAdditions.MODID + ":CharcoalDust");
+        CharcoalDust = new Item().setUnlocalizedName("CharcoalDust").setCreativeTab(CreativeTabs.tabMaterials).setTextureName(MODID + ":CharcoalDust");
     }
 
 
