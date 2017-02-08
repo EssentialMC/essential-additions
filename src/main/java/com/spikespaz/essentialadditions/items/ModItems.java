@@ -4,8 +4,9 @@ import com.spikespaz.essentialadditions.EssentialAdditions;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.item.Item;
 
-import static net.minecraft.item.ItemArmor.*;
-import static net.minecraftforge.common.util.EnumHelper.*;
+import static net.minecraft.item.ItemArmor.ArmorMaterial;
+import static net.minecraftforge.common.util.EnumHelper.addArmorMaterial;
+import static net.minecraftforge.common.util.EnumHelper.addToolMaterial;
 
 public class ModItems {
     public static Item EmeraldHelmet;
@@ -51,6 +52,7 @@ public class ModItems {
     public static Item ObsidianShard;
     public static Item Sulfur;
     public static Item Ruby;
+
     public static Item IronPlating;
     public static Item GoldPlating;
     public static Item ChainLink;
@@ -83,17 +85,17 @@ public class ModItems {
         EmeraldPickaxe = new BasePickaxe(EmeraldGem, "EmeraldPickaxe");
         EmeraldHoe = new BaseHoe(EmeraldGem, "EmeraldHoe");
         
-        ObsidianSword = new ObsidianSword(ObsidianToolShard);
-        ObsidianAxe = new ObsidianAxe(ObsidianToolShard);
-        ObsidianShovel = new ObsidianShovel(ObsidianToolShard);
-        ObsidianPickaxe = new ObsidianPickaxe(ObsidianToolShard);
-        ObsidianHoe = new ObsidianHoe(ObsidianToolShard);
+        ObsidianSword = new BaseSword(ObsidianToolShard, "ObsidianSword");
+        ObsidianAxe = new BaseAxe(ObsidianToolShard, "ObsidianAxe");
+        ObsidianShovel = new BaseSpade(ObsidianToolShard, "ObsidianShovel");
+        ObsidianPickaxe = new BasePickaxe(ObsidianToolShard, "ObsidianPickaxe");
+        ObsidianHoe = new BaseHoe(ObsidianToolShard, "ObsidianHoe");
 
-        RubySword = new RubySword(RubyGem);
-        RubyAxe = new RubyAxe(RubyGem);
-        RubyShovel = new RubyShovel(RubyGem);
-        RubyPickaxe = new RubyPickaxe(RubyGem);
-        RubyHoe = new RubyHoe(RubyGem);
+        RubySword = new BaseSword(RubyGem, "RubySword");
+        RubyAxe = new BaseAxe(RubyGem, "RubyAxe");
+        RubyShovel = new BaseSpade(RubyGem, "RubyShovel");
+        RubyPickaxe = new BasePickaxe(RubyGem, "RubyPickaxe");
+        RubyHoe = new BaseHoe(RubyGem, "RubyHoe");
 
         ObsidianShard = new Item().setUnlocalizedName("ObsidianShard").setCreativeTab(net.minecraft.creativetab.CreativeTabs.tabMaterials).setTextureName(EssentialAdditions.MODID + ":ObsidianShard");
         Sulfur = new Item().setUnlocalizedName("Sulfur").setCreativeTab(net.minecraft.creativetab.CreativeTabs.tabMaterials).setTextureName(EssentialAdditions.MODID + ":Sulfur");
