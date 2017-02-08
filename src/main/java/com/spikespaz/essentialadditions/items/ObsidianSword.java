@@ -8,6 +8,6 @@ import net.minecraft.item.ItemSword;
 public class ObsidianSword extends ItemSword {
     public ObsidianSword(Item.ToolMaterial ObsidianToolShard) {
         super(ObsidianToolShard);
-        setUnlocalizedName("ObsidianSword").setCreativeTab(CreativeTabs.tabCombat).setTextureName(EssentialAdditions.MODID + ":ObsidianSword");
+        this.setUnlocalizedName("ObsidianSword").setCreativeTab(CreativeTabs.tabCombat).setTextureName(EssentialAdditions.MODID + ":ObsidianSword");
     }
 }
