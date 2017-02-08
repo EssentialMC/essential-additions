@@ -77,12 +77,12 @@ public class ModItems {
         RubyLeggings = new RubyArmor(RubyArmor, EssentialAdditions.proxy.addArmor("RubyArmor"), 2).setUnlocalizedName("RubyLeggings").setCreativeTab(net.minecraft.creativetab.CreativeTabs.tabCombat).setTextureName(EssentialAdditions.MODID + ":RubyLeggings");
         RubyBoots = new RubyArmor(RubyArmor, EssentialAdditions.proxy.addArmor("RubyArmor"), 3).setUnlocalizedName("RubyBoots").setCreativeTab(net.minecraft.creativetab.CreativeTabs.tabCombat).setTextureName(EssentialAdditions.MODID + ":RubyBoots");
 
-        EmeraldSword = new EmeraldSword(EmeraldGem);
-        EmeraldAxe = new EmeraldAxe(EmeraldGem);
-        EmeraldShovel = new EmeraldShovel(EmeraldGem);
-        EmeraldPickaxe = new EmeraldPickaxe(EmeraldGem);
-        EmeraldHoe = new EmeraldHoe(EmeraldGem);
-
+        EmeraldSword = new BaseSword(EmeraldGem, "EmeraldSword");
+        EmeraldAxe = new BaseAxe(EmeraldGem, "EmeraldAxe");
+        EmeraldShovel = new BaseSpade(EmeraldGem, "EmeraldShovel");
+        EmeraldPickaxe = new BasePickaxe(EmeraldGem, "EmeraldPickaxe");
+        EmeraldHoe = new BaseHoe(EmeraldGem, "EmeraldHoe");
+        
         ObsidianSword = new ObsidianSword(ObsidianToolShard);
         ObsidianAxe = new ObsidianAxe(ObsidianToolShard);
         ObsidianShovel = new ObsidianShovel(ObsidianToolShard);
