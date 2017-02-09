@@ -31,6 +31,7 @@ public class WorldGeneration implements IWorldGenerator {
     }
 
     private void generateOverworld(World world, Random random, int x, int z, Block replaceBlock) {
+        generateOre(ModBlocks.RubyOre, world, random, x, z, 1, 2, 40, 4, 32, replaceBlock);
     }
 
     private void generateEnd(World world, Random random, int x, int z, Block replaceBlock) {
