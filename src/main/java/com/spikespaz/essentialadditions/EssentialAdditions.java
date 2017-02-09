@@ -1,12 +1,13 @@
 package com.spikespaz.essentialadditions;
 
-import com.spikespaz.essentialadditions.proxy.CommonProxy;
 import com.spikespaz.essentialadditions.blocks.ModBlocks;
 import com.spikespaz.essentialadditions.items.ModItems;
-import com.spikespaz.essentialadditions.world.ModWorld;
+import com.spikespaz.essentialadditions.proxy.CommonProxy;
+import com.spikespaz.essentialadditions.world.WorldGeneration;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.registry.GameRegistry;
 
 
 @Mod(modid = EssentialAdditions.MODID, name = EssentialAdditions.NAME, version = EssentialAdditions.VERSION)
@@ -24,7 +25,7 @@ public class EssentialAdditions {
     public static void PreLoad(FMLPreInitializationEvent PreEvent) {
         ModBlocks.mainRegistry();
         ModItems.mainRegistry();
-        ModWorld.mainRegistry();
+        GameRegistry.registerWorldGenerator(new WorldGeneration(), 10);
         CraftingRecipes.mainRegistry();
         proxy.registerRenderInfo();
     }
