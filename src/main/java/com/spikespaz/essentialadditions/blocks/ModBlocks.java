@@ -1,10 +1,13 @@
 package com.spikespaz.essentialadditions.blocks;
 
-import com.spikespaz.essentialadditions.EssentialAdditions;
+import com.spikespaz.essentialadditions.items.ModItems;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item;
+
+import java.util.Random;
 
 public class ModBlocks {
     public static Block SulfurBlock;
@@ -16,12 +19,23 @@ public class ModBlocks {
         registerItem();
     }
 
-
     private static void initializeBlock() {
-        SulfurBlock = new SulfurBlock(Material.ground).setBlockName("SulfurBlock").setCreativeTab(CreativeTabs.tabBlock).setBlockTextureName(EssentialAdditions.MODID + ":SulfurBlock");
+        SulfurBlock = new BaseBlock(Material.sand, "SulfurBlock", 0.4F, 3F, "pickaxe", 0, CreativeTabs.tabBlock) {
+            public Item getItemDropped(int par1, Random random, int par2) {
+                return ModItems.Sulfur;
+            }
 
-        RubyBlock = new RubyBlock(Material.ground).setBlockName("RubyBlock").setCreativeTab(CreativeTabs.tabBlock).setBlockTextureName(EssentialAdditions.MODID + ":RubyBlock");
-        RubyOre = new RubyOre(Material.ground).setBlockName("RubyOre").setCreativeTab(CreativeTabs.tabBlock).setBlockTextureName(EssentialAdditions.MODID + ":RubyOre");
+            public int quantityDropped(Random par1Random) {
+                return 4;
+            }
+        };
+
+        RubyBlock = new BaseBlock(Material.rock, "RubyBlock", 5.0F, 10.0F, "pickaxe", 1, CreativeTabs.tabBlock);
+        RubyOre = new BaseBlock(Material.rock, "RubyOre", 3.0F, 5.0F, "pickaxe", 3, CreativeTabs.tabBlock) {
+            public Item getItemDropped(int par1, Random random, int par2) {
+                return ModItems.Ruby;
+            }
+        };
     }
 
     private static void registerItem() {

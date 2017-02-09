@@ -110,7 +110,6 @@ public class ModItems {
         CharcoalDust = new Item().setUnlocalizedName("CharcoalDust").setCreativeTab(CreativeTabs.tabMaterials).setTextureName(MODID + ":CharcoalDust");
     }
 
-
     private static void registerItem() {
         GameRegistry.registerItem(EmeraldHelmet, EmeraldHelmet.getUnlocalizedName());
         GameRegistry.registerItem(EmeraldChestplate, EmeraldChestplate.getUnlocalizedName());
