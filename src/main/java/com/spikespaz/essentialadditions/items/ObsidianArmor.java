@@ -11,10 +11,10 @@ public class ObsidianArmor extends ItemArmor {
     }
 
     public String getArmorTexture(ItemStack stack, Entity entity, int slot, String type) {
-        if ((stack.getItem() == ModItems.ObsidianHelmet) || (stack.getItem() == ModItems.ObsidianChestplate) || (stack.getItem() == ModItems.ObsidianBoots))
-            return EssentialAdditions.MODID + ":textures/armor/obsidian_layer_1.png";
-        if ((stack.getItem() == ModItems.ObsidianLeggings) || (stack.getItem() == ModItems.ObsidianBoots)) {
-            return EssentialAdditions.MODID + ":textures/armor/obsidian_layer_2.png";
+        if ((stack.getItem() == ModItems.EmeraldHelmet) || (stack.getItem() == ModItems.EmeraldChestplate) || (stack.getItem() == ModItems.EmeraldBoots))
+            return EssentialAdditions.MODID + ":textures/armor/" + getClass().getSimpleName() + "_1.png";
+        if ((stack.getItem() == ModItems.EmeraldLeggings) || (stack.getItem() == ModItems.EmeraldBoots)) {
+            return EssentialAdditions.MODID + ":textures/armor/" + getClass().getSimpleName() + "_2.png";
         }
         return null;
     }
