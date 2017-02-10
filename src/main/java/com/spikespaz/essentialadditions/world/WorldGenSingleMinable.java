@@ -11,17 +11,15 @@ import java.util.Random;
 public class WorldGenSingleMinable extends WorldGenerator {
 
     private Block block;
-    private int numberOfBlocks;
     private Block target;
 
     //init of worldGen by constructor chaining.
-    public WorldGenSingleMinable(Block block, int blockVeinSize, Block target) {
+    WorldGenSingleMinable(Block block, int blockVeinSize, Block target) {
         this.block = block;
-        this.numberOfBlocks = blockVeinSize;
         this.target = target;
     }
 
-    public WorldGenSingleMinable(Block block, Block target) {
+    private WorldGenSingleMinable(Block block, Block target) {
         this(block, 0, target);
     }
 

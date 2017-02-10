@@ -32,7 +32,7 @@ public class WorldGeneration implements IWorldGenerator {
     // All ore entries in these three.
 
     private void generateNether(World world, Random random, int x, int z, Block replaceBlock) {
-        generateOre(ModBlocks.SulfurBlock, world, random, x, z, 6, 10, 50, 0, 256, replaceBlock);
+        generateOre(ModBlocks.SulfurBlock, world, random, x, z, 8, 10, 60, 0, 256, replaceBlock);
     }
 
 
