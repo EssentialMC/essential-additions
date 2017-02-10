@@ -36,6 +36,8 @@ public class WorldGeneration implements IWorldGenerator {
             case 1:
                 generateEnd(world, random, chunkX, chunkZ, Blocks.end_stone);
                 break;
+            default:
+                break;
         }
     }
 
