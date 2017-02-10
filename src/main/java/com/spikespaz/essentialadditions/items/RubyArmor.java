@@ -11,12 +11,11 @@ public class RubyArmor extends ItemArmor {
     }
 
     public String getArmorTexture(ItemStack stack, Entity entity, int slot, String type) {
-        if ((stack.getItem() == ModItems.EmeraldHelmet) || (stack.getItem() == ModItems.EmeraldChestplate) || (stack.getItem() == ModItems.EmeraldBoots))
-            return EssentialAdditions.MODID + ":textures/armor/" + getClass().getSimpleName() + "_1.png";
-        if ((stack.getItem() == ModItems.EmeraldLeggings) || (stack.getItem() == ModItems.EmeraldBoots)) {
-            return EssentialAdditions.MODID + ":textures/armor/" + getClass().getSimpleName() + "_2.png";
+        if ((stack.getItem() == ModItems.RubyHelmet) || (stack.getItem() == ModItems.RubyChestplate) || (stack.getItem() == ModItems.RubyBoots))
+            return EssentialAdditions.MODID + ":textures/armor/ruby_layer_1.png";
+        if ((stack.getItem() == ModItems.RubyLeggings) || (stack.getItem() == ModItems.RubyBoots)) {
+            return EssentialAdditions.MODID + ":textures/armor/ruby_layer_2.png";
         }
         return null;
     }
 }
-
