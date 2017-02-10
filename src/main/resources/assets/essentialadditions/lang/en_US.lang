@@ -45,5 +45,8 @@ item.CompressedCharcoal.name=Compressed Charcoal
 item.SugarBeet.name=Sugar Beet
 
 tile.SulfurBlock.name=Sulfur Block
+
+tile.EyeOre.name=End Ore
+
 tile.RubyOre.name=Ruby Ore
 tile.RubyBlock.name=Ruby Block

@@ -106,8 +106,9 @@ class CraftingRecipes {
                 "  G", "GGG", "GWG", 'W', Blocks.wool, 'G', ModItems.GoldPlating);
         GameRegistry.addRecipe(new ItemStack(Items.diamond_horse_armor, 1),
                 "DDD", "DAD", "DDD", 'A', Items.iron_horse_armor, 'D', Items.diamond);
-//        GameRegistry.addRecipe(new ItemStack(Blocks.obsidian, 1),
-//                "OOO", "OOO", "OOO", "O", ModItems.ObsidianShard);
+
+        GameRegistry.addRecipe(new ItemStack(Blocks.obsidian, 1),
+                "OOO", "OOO", "OOO", 'O', ModItems.ObsidianShard);
 
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.Ruby, 9),
                 ModBlocks.RubyBlock);
