@@ -6,6 +6,7 @@ import com.spikespaz.essentialadditions.proxy.CommonProxy;
 import com.spikespaz.essentialadditions.world.WorldGeneration;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
+import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 
@@ -25,8 +26,14 @@ public class EssentialAdditions {
     public static void PreLoad(FMLPreInitializationEvent PreEvent) {
         ModBlocks.mainRegistry();
         ModItems.mainRegistry();
-        GameRegistry.registerWorldGenerator(new WorldGeneration(), 10);
         CraftingRecipes.mainRegistry();
         proxy.registerRenderInfo();
     }
+
+    @Mod.EventHandler
+    public static void Load(FMLInitializationEvent event){
+        GameRegistry.registerWorldGenerator(new WorldGeneration(), 10);
+        //You should Init the world gen in INIT method to avoid errors.
+    }
+
 }

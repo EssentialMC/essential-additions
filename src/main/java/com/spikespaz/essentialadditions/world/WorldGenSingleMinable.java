@@ -1,19 +1,23 @@
 package com.spikespaz.essentialadditions.world;
 
-/*
-I AM MAKING THIS CLASS WITHOUT ANY IDE SO.... XD YOU WILL HAVE TO FIX SOME THINGS
-*/
+
+import net.minecraft.block.Block;
+import net.minecraft.init.Blocks;
+import net.minecraft.world.World;
+import net.minecraft.world.gen.feature.WorldGenerator;
+
+import java.util.Random;
 
 public class WorldGenSingleMinable extends WorldGenerator {
 
  private Block block;
-    private int blockmeta;
+    private int numberOfBlocks;
     private Block target;
 
 //init of worldGen by constructor chaining.
-    public WorldGenSingleMinable(Block block, int meta, Block target) {
+    public WorldGenSingleMinable(Block block, int blockVeinSize, Block target) {
         this.block = block;
-        this.blockmeta = meta;
+        this.numberOfBlocks = blockVeinSize;
         this.target = target;
     }
 
@@ -26,13 +30,15 @@ public class WorldGenSingleMinable extends WorldGenerator {
     }
 
 
-//This is to check if the block at xyz is replaceable or not
+//This is to check if the block at xyz is replaceable or not and place the block.
     @Override
-    public boolean generate(World world, Random random, int x, int y, int z) {
-    if (world.getBlock(x, y, z).isReplaceableOreGen(world, x, y, z, this.target))
-        world.setBlock(x, y, z, this.block, this.blockmeta, 2);
-    return true;
+    public boolean generate(World world, Random rand, int x, int y, int z) {
+    if (world.getBlock(x, y, z).isReplaceableOreGen(world, x, y, z, this.target)) {
+        world.setBlock(x, y, z, this.block);
+        }
+        return true;
     }
+
 
 
 
