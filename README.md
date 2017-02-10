@@ -3,9 +3,8 @@
 ***THIS MOD IS CURRENTLY IN REWRITE STAGE!***
 
 **Updated versions for newer versions of the game will come out.
-Please be patient, and wait for the updates.**
-
-**This is an old mod, that I have chosen to continue developing.**
+Please be patient, and wait for the updates.
+This is an old mod, that I have chosen to continue developing.**
  
 **Essential Additions** is a simple Minecraft mod that adds what many people think should be in the Vanilla game. It does not add any new properties or elements to the game, just a few things that were planned by Mojang *(Ruby Gems for example)* or requested by many people, but never added. It adds a few crafting recipes to make Vanilla items, and a few items from Vanilla are used to make their respective armor and tool sets.
  
