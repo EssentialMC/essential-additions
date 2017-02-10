@@ -10,11 +10,11 @@ import java.util.Random;
 
 public class WorldGenSingleMinable extends WorldGenerator {
 
- private Block block;
+    private Block block;
     private int numberOfBlocks;
     private Block target;
 
-//init of worldGen by constructor chaining.
+    //init of worldGen by constructor chaining.
     public WorldGenSingleMinable(Block block, int blockVeinSize, Block target) {
         this.block = block;
         this.numberOfBlocks = blockVeinSize;
@@ -30,18 +30,14 @@ public class WorldGenSingleMinable extends WorldGenerator {
     }
 
 
-//This is to check if the block at xyz is replaceable or not and place the block.
+    //This is to check if the block at xyz is replaceable or not and place the block.
     @Override
     public boolean generate(World world, Random rand, int x, int y, int z) {
-    if (world.getBlock(x, y, z).isReplaceableOreGen(world, x, y, z, this.target)) {
-        world.setBlock(x, y, z, this.block);
+        if (world.getBlock(x, y, z).isReplaceableOreGen(world, x, y, z, this.target)) {
+            world.setBlock(x, y, z, this.block);
         }
         return true;
     }
-
-
-
-
 
 
 }

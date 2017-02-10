@@ -29,7 +29,6 @@ public class WorldGeneration implements IWorldGenerator {
      */
 
 
-
     // All ore entries in these three.
 
     private void generateNether(World world, Random random, int x, int z, Block replaceBlock) {
@@ -55,7 +54,7 @@ public class WorldGeneration implements IWorldGenerator {
                 generateOverworld(world, random, chunkX, chunkZ, Blocks.stone);
                 break;
             case 1:
-               generateEnd(world,random,chunkX,chunkZ,Blocks.end_stone);
+                generateEnd(world, random, chunkX, chunkZ, Blocks.end_stone);
                 break;
             default:
                 break;
@@ -69,14 +68,14 @@ public class WorldGeneration implements IWorldGenerator {
         int veinSize = random.nextInt(maxVeinSize - minVeinSize + 1) + minVeinSize;
         int heightRange = maxY - minY;
         WorldGenerator gen;
-        if(veinSize<4){
-         gen = new WorldGenSingleMinable(ore, veinSize, replaceBlock);}
-        else{
-        gen=new WorldGenMinable(ore,0,veinSize,replaceBlock);
+        if (veinSize < 4) {
+            gen = new WorldGenSingleMinable(ore, veinSize, replaceBlock);
+        } else {
+            gen = new WorldGenMinable(ore, 0, veinSize, replaceBlock);
 
         }
 
-        for(int i = 0; i < chance; i++) {
+        for (int i = 0; i < chance; i++) {
             int randomX = chunkX * 16 + random.nextInt(16);
             int randomY = random.nextInt(heightRange) + minY;
             int randomZ = chunkZ * 16 + random.nextInt(16);

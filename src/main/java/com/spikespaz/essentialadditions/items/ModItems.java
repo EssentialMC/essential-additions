@@ -43,22 +43,19 @@ public class ModItems {
     public static Item RubyShovel;
     public static Item RubyPickaxe;
     public static Item RubyHoe;
-
-    private static ArmorMaterial EmeraldArmor =          addArmorMaterial("EmeraldArmor", 92, new int[]{4, 8, 5, 4}, 6);
-    private static ArmorMaterial ObsidianArmor =         addArmorMaterial("ObsidianArmor", 47, new int[]{6, 7, 6, 5}, 5);
-    private static ArmorMaterial RubyArmor =             addArmorMaterial("RubyArmor", 85, new int[]{4, 8, 5, 4}, 6);
-    private static Item.ToolMaterial EmeraldGem =        addToolMaterial("Emerald", 3, 2740, 16.5F, 4.0F, 8);
-    private static Item.ToolMaterial ObsidianToolShard = addToolMaterial("Obsidian", 2, 1210, 23.5F, 6.5F, 5);
-    private static Item.ToolMaterial RubyGem =           addToolMaterial("Ruby", 3, 2290, 16.0F, 4.5F, 7);
-
     public static Item ObsidianShard;
     public static Item Sulfur;
     public static Item Ruby;
-
     public static Item IronPlating;
     public static Item GoldPlating;
     public static Item ChainLink;
     public static Item CharcoalDust;
+    private static ArmorMaterial EmeraldArmor = addArmorMaterial("EmeraldArmor", 92, new int[]{4, 8, 5, 4}, 6);
+    private static ArmorMaterial ObsidianArmor = addArmorMaterial("ObsidianArmor", 47, new int[]{6, 7, 6, 5}, 5);
+    private static ArmorMaterial RubyArmor = addArmorMaterial("RubyArmor", 85, new int[]{4, 8, 5, 4}, 6);
+    private static Item.ToolMaterial EmeraldGem = addToolMaterial("Emerald", 3, 2740, 16.5F, 4.0F, 8);
+    private static Item.ToolMaterial ObsidianToolShard = addToolMaterial("Obsidian", 2, 1210, 23.5F, 6.5F, 5);
+    private static Item.ToolMaterial RubyGem = addToolMaterial("Ruby", 3, 2290, 16.0F, 4.5F, 7);
 
     public static void mainRegistry() {
         initializeItem();
@@ -66,46 +63,46 @@ public class ModItems {
     }
 
     private static void initializeItem() {
-        EmeraldHelmet =     new EmeraldArmor(EmeraldArmor, proxy.addArmor("EmeraldArmor"), 0).setUnlocalizedName("EmeraldHelmet").setCreativeTab(CreativeTabs.tabCombat).setTextureName(MODID + ":EmeraldHelmet");
+        EmeraldHelmet = new EmeraldArmor(EmeraldArmor, proxy.addArmor("EmeraldArmor"), 0).setUnlocalizedName("EmeraldHelmet").setCreativeTab(CreativeTabs.tabCombat).setTextureName(MODID + ":EmeraldHelmet");
         EmeraldChestplate = new EmeraldArmor(EmeraldArmor, proxy.addArmor("EmeraldArmor"), 1).setUnlocalizedName("EmeraldChestplate").setCreativeTab(CreativeTabs.tabCombat).setTextureName(MODID + ":EmeraldChestplate");
-        EmeraldLeggings =   new EmeraldArmor(EmeraldArmor, proxy.addArmor("EmeraldArmor"), 2).setUnlocalizedName("EmeraldLeggings").setCreativeTab(CreativeTabs.tabCombat).setTextureName(MODID + ":EmeraldLeggings");
-        EmeraldBoots =      new EmeraldArmor(EmeraldArmor, proxy.addArmor("EmeraldArmor"), 3).setUnlocalizedName("EmeraldBoots").setCreativeTab(CreativeTabs.tabCombat).setTextureName(MODID + ":EmeraldBoots");
+        EmeraldLeggings = new EmeraldArmor(EmeraldArmor, proxy.addArmor("EmeraldArmor"), 2).setUnlocalizedName("EmeraldLeggings").setCreativeTab(CreativeTabs.tabCombat).setTextureName(MODID + ":EmeraldLeggings");
+        EmeraldBoots = new EmeraldArmor(EmeraldArmor, proxy.addArmor("EmeraldArmor"), 3).setUnlocalizedName("EmeraldBoots").setCreativeTab(CreativeTabs.tabCombat).setTextureName(MODID + ":EmeraldBoots");
 
-        ObsidianHelmet =     new ObsidianArmor(ObsidianArmor, proxy.addArmor("ObsidianArmor"), 0).setUnlocalizedName("ObsidianHelmet").setCreativeTab(CreativeTabs.tabCombat).setTextureName(MODID + ":ObsidianHelmet");
+        ObsidianHelmet = new ObsidianArmor(ObsidianArmor, proxy.addArmor("ObsidianArmor"), 0).setUnlocalizedName("ObsidianHelmet").setCreativeTab(CreativeTabs.tabCombat).setTextureName(MODID + ":ObsidianHelmet");
         ObsidianChestplate = new ObsidianArmor(ObsidianArmor, proxy.addArmor("ObsidianArmor"), 1).setUnlocalizedName("ObsidianChestplate").setCreativeTab(CreativeTabs.tabCombat).setTextureName(MODID + ":ObsidianChestplate");
-        ObsidianLeggings =   new ObsidianArmor(ObsidianArmor, proxy.addArmor("ObsidianArmor"), 2).setUnlocalizedName("ObsidianLeggings").setCreativeTab(CreativeTabs.tabCombat).setTextureName(MODID + ":ObsidianLeggings");
-        ObsidianBoots =      new ObsidianArmor(ObsidianArmor, proxy.addArmor("ObsidianArmor"), 3).setUnlocalizedName("ObsidianBoots").setCreativeTab(CreativeTabs.tabCombat).setTextureName(MODID + ":ObsidianBoots");
+        ObsidianLeggings = new ObsidianArmor(ObsidianArmor, proxy.addArmor("ObsidianArmor"), 2).setUnlocalizedName("ObsidianLeggings").setCreativeTab(CreativeTabs.tabCombat).setTextureName(MODID + ":ObsidianLeggings");
+        ObsidianBoots = new ObsidianArmor(ObsidianArmor, proxy.addArmor("ObsidianArmor"), 3).setUnlocalizedName("ObsidianBoots").setCreativeTab(CreativeTabs.tabCombat).setTextureName(MODID + ":ObsidianBoots");
 
-        RubyHelmet =     new RubyArmor(RubyArmor, proxy.addArmor("RubyArmor"), 0).setUnlocalizedName("RubyHelmet").setCreativeTab(CreativeTabs.tabCombat).setTextureName(MODID + ":RubyHelmet");
+        RubyHelmet = new RubyArmor(RubyArmor, proxy.addArmor("RubyArmor"), 0).setUnlocalizedName("RubyHelmet").setCreativeTab(CreativeTabs.tabCombat).setTextureName(MODID + ":RubyHelmet");
         RubyChestplate = new RubyArmor(RubyArmor, proxy.addArmor("RubyArmor"), 1).setUnlocalizedName("RubyChestplate").setCreativeTab(CreativeTabs.tabCombat).setTextureName(MODID + ":RubyChestplate");
-        RubyLeggings =   new RubyArmor(RubyArmor, proxy.addArmor("RubyArmor"), 2).setUnlocalizedName("RubyLeggings").setCreativeTab(CreativeTabs.tabCombat).setTextureName(MODID + ":RubyLeggings");
-        RubyBoots =      new RubyArmor(RubyArmor, proxy.addArmor("RubyArmor"), 3).setUnlocalizedName("RubyBoots").setCreativeTab(CreativeTabs.tabCombat).setTextureName(MODID + ":RubyBoots");
+        RubyLeggings = new RubyArmor(RubyArmor, proxy.addArmor("RubyArmor"), 2).setUnlocalizedName("RubyLeggings").setCreativeTab(CreativeTabs.tabCombat).setTextureName(MODID + ":RubyLeggings");
+        RubyBoots = new RubyArmor(RubyArmor, proxy.addArmor("RubyArmor"), 3).setUnlocalizedName("RubyBoots").setCreativeTab(CreativeTabs.tabCombat).setTextureName(MODID + ":RubyBoots");
 
-        EmeraldSword =   new BaseSword(EmeraldGem, "EmeraldSword");
-        EmeraldAxe =     new BaseAxe(EmeraldGem, "EmeraldAxe");
-        EmeraldShovel =  new BaseSpade(EmeraldGem, "EmeraldShovel");
+        EmeraldSword = new BaseSword(EmeraldGem, "EmeraldSword");
+        EmeraldAxe = new BaseAxe(EmeraldGem, "EmeraldAxe");
+        EmeraldShovel = new BaseSpade(EmeraldGem, "EmeraldShovel");
         EmeraldPickaxe = new BasePickaxe(EmeraldGem, "EmeraldPickaxe");
-        EmeraldHoe =     new BaseHoe(EmeraldGem, "EmeraldHoe");
-        
-        ObsidianSword =   new BaseSword(ObsidianToolShard, "ObsidianSword");
-        ObsidianAxe =     new BaseAxe(ObsidianToolShard, "ObsidianAxe");
-        ObsidianShovel =  new BaseSpade(ObsidianToolShard, "ObsidianShovel");
-        ObsidianPickaxe = new BasePickaxe(ObsidianToolShard, "ObsidianPickaxe");
-        ObsidianHoe =     new BaseHoe(ObsidianToolShard, "ObsidianHoe");
+        EmeraldHoe = new BaseHoe(EmeraldGem, "EmeraldHoe");
 
-        RubySword =   new BaseSword(RubyGem, "RubySword");
-        RubyAxe =     new BaseAxe(RubyGem, "RubyAxe");
-        RubyShovel =  new BaseSpade(RubyGem, "RubyShovel");
+        ObsidianSword = new BaseSword(ObsidianToolShard, "ObsidianSword");
+        ObsidianAxe = new BaseAxe(ObsidianToolShard, "ObsidianAxe");
+        ObsidianShovel = new BaseSpade(ObsidianToolShard, "ObsidianShovel");
+        ObsidianPickaxe = new BasePickaxe(ObsidianToolShard, "ObsidianPickaxe");
+        ObsidianHoe = new BaseHoe(ObsidianToolShard, "ObsidianHoe");
+
+        RubySword = new BaseSword(RubyGem, "RubySword");
+        RubyAxe = new BaseAxe(RubyGem, "RubyAxe");
+        RubyShovel = new BaseSpade(RubyGem, "RubyShovel");
         RubyPickaxe = new BasePickaxe(RubyGem, "RubyPickaxe");
-        RubyHoe =     new BaseHoe(RubyGem, "RubyHoe");
+        RubyHoe = new BaseHoe(RubyGem, "RubyHoe");
 
         ObsidianShard = new Item().setUnlocalizedName("ObsidianShard").setCreativeTab(CreativeTabs.tabMaterials).setTextureName(MODID + ":ObsidianShard");
-        Sulfur =        new Item().setUnlocalizedName("Sulfur").setCreativeTab(CreativeTabs.tabMaterials).setTextureName(MODID + ":Sulfur");
+        Sulfur = new Item().setUnlocalizedName("Sulfur").setCreativeTab(CreativeTabs.tabMaterials).setTextureName(MODID + ":Sulfur");
 
-        Ruby =        new Item().setUnlocalizedName("Ruby").setCreativeTab(CreativeTabs.tabMaterials).setTextureName(MODID + ":Ruby");
+        Ruby = new Item().setUnlocalizedName("Ruby").setCreativeTab(CreativeTabs.tabMaterials).setTextureName(MODID + ":Ruby");
         IronPlating = new Item().setUnlocalizedName("IronPlating").setCreativeTab(CreativeTabs.tabMaterials).setTextureName(MODID + ":IronPlating");
         GoldPlating = new Item().setUnlocalizedName("GoldPlating").setCreativeTab(CreativeTabs.tabMaterials).setTextureName(MODID + ":GoldPlating");
-        ChainLink =   new Item().setUnlocalizedName("ChainLink").setCreativeTab(CreativeTabs.tabMaterials).setTextureName(MODID + ":ChainLink");
+        ChainLink = new Item().setUnlocalizedName("ChainLink").setCreativeTab(CreativeTabs.tabMaterials).setTextureName(MODID + ":ChainLink");
 
         CharcoalDust = new Item().setUnlocalizedName("CharcoalDust").setCreativeTab(CreativeTabs.tabMaterials).setTextureName(MODID + ":CharcoalDust");
     }

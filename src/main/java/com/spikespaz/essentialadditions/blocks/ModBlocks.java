@@ -27,6 +27,7 @@ public class ModBlocks {
             public Item getItemDropped(int par1, Random random, int par2) {
                 return ModItems.Sulfur;
             }
+
             public int quantityDropped(Random par1Random) {
                 return 4;
             }
@@ -39,6 +40,7 @@ public class ModBlocks {
             public Item getItemDropped(int par1, Random random, int par2) {
                 return ModItems.Ruby;
             }
+
             public int quantityDropped(Random par1Random) {
                 return 2;
             }

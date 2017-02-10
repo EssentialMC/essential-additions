@@ -31,7 +31,7 @@ public class EssentialAdditions {
     }
 
     @Mod.EventHandler
-    public static void Load(FMLInitializationEvent event){
+    public static void Load(FMLInitializationEvent event) {
         GameRegistry.registerWorldGenerator(new WorldGeneration(), 10);
         //You should Init the world gen in INIT method to avoid errors.
     }

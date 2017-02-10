@@ -8,7 +8,7 @@
   "url": "http://spikespaz.com/essentialadditions",
   "updateUrl": "",
   "authorList": ["spikespaz"],
-  "credits": "Jacob \"Dasepos\" Dachenhaus (AKA Invisibru) for the logo, and Perry Berman for code contributions.",
+  "credits": "Jacob \"Dasepos\" Dachenhaus (AKA Invisibru) for the logo, and Perry Berman for rewriting tool classes.\nSpecial thanks to Thvardhan for all his contributions. The mod probably wouldn't work without him.",
   "logoFile": "banner.png",
   "screenshots": [],
   "dependencies": []
