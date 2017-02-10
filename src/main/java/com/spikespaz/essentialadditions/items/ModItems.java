@@ -47,9 +47,9 @@ public class ModItems {
     private static ArmorMaterial EmeraldArmor =          addArmorMaterial("EmeraldArmor", 92, new int[]{4, 8, 5, 4}, 6);
     private static ArmorMaterial ObsidianArmor =         addArmorMaterial("ObsidianArmor", 47, new int[]{6, 7, 6, 5}, 5);
     private static ArmorMaterial RubyArmor =             addArmorMaterial("RubyArmor", 85, new int[]{4, 8, 5, 4}, 6);
-    private static Item.ToolMaterial EmeraldGem =        addToolMaterial("Emerald", 3, 2740, 14.0F, 4.0F, 8);
-    private static Item.ToolMaterial ObsidianToolShard = addToolMaterial("Obsidian", 2, 1210, 17.0F, 6.5F, 5);
-    private static Item.ToolMaterial RubyGem =           addToolMaterial("Ruby", 2, 2290, 15.0F, 4.5F, 7);
+    private static Item.ToolMaterial EmeraldGem =        addToolMaterial("Emerald", 3, 2740, 16.5F, 4.0F, 8);
+    private static Item.ToolMaterial ObsidianToolShard = addToolMaterial("Obsidian", 2, 1210, 23.5F, 6.5F, 5);
+    private static Item.ToolMaterial RubyGem =           addToolMaterial("Ruby", 3, 2290, 16.0F, 4.5F, 7);
 
     public static Item ObsidianShard;
     public static Item Sulfur;

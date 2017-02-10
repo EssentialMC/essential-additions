@@ -14,7 +14,7 @@ import cpw.mods.fml.common.registry.GameRegistry;
 public class EssentialAdditions {
     public static final String MODID = "essentialadditions";
     static final String NAME = "Essential Additions";
-    static final String VERSION = "1.3.0";
+    static final String VERSION = "1.3.2";
     private static final String CLIENTSIDE = "com.spikespaz.essentialadditions.proxy.ClientProxy";
     private static final String SERVERSIDE = "com.spikespaz.essentialadditions.proxy.CommonProxy";
 

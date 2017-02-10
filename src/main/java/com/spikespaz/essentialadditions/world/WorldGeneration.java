@@ -10,19 +10,18 @@ import net.minecraft.world.gen.feature.WorldGenMinable;
 
 import java.util.Random;
 
-
 public class WorldGeneration implements IWorldGenerator {
     // All ore entries in these three.
     private void generateNether(World world, Random random, int x, int z, Block replaceBlock) {
-        generateOre(ModBlocks.SulfurBlock, world, random, x, z, 4, 8, 100, 0, 256, replaceBlock);
+        generateOre(ModBlocks.SulfurBlock, world, random, x, z, 6, 10, 100, 0, 256, replaceBlock);
     }
 
     private void generateOverworld(World world, Random random, int x, int z, Block replaceBlock) {
-        generateOre(ModBlocks.RubyOre, world, random, x, z, 1, 2, 150, 4, 32, replaceBlock);
+        generateOre(ModBlocks.RubyOre, world, random, x, z, 1, 2, 100, 4, 32, replaceBlock);
     }
 
     private void generateEnd(World world, Random random, int x, int z, Block replaceBlock) {
-        generateOre(ModBlocks.EyeOre, world, random, x, z, 1, 1, 100, 0, 256, replaceBlock);
+        generateOre(ModBlocks.EyeOre, world, random, x, z, 1, 4, 100, 0, 256, replaceBlock);
     }
 
     // The default blocks to replace based on the dimension can be changed.
@@ -42,7 +41,7 @@ public class WorldGeneration implements IWorldGenerator {
 
     // You probably don't need to touch this.
     private void generateOre(Block ore, World world, Random random, int chunkX, int chunkZ, int minVeinSize, int maxVeinSize, int chance, int minY, int maxY, Block replaceBlock) {
-        int veinSize = minVeinSize + random.nextInt(maxVeinSize - minVeinSize );
+        int veinSize = random.nextInt(maxVeinSize - minVeinSize + 1) + minVeinSize;
         int heightRange = maxY - minY;
         WorldGenMinable gen = new WorldGenMinable(ore, veinSize, replaceBlock);
 
