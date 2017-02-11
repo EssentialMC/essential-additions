@@ -2,13 +2,12 @@
 {
   "modid": "essentialadditions",
   "name": "Essential Additions",
-  "description": "A mod that adds what Mojang forgot.\nEssential Additions is a Minecraft mod that adds what many people think should have been in the Vanilla game.",
+  "description": "A mod that adds what Mojang forgot.\nEssential Additions is a Minecraft mod that adds\nwhat many people think should have been in the Vanilla game.\nCredits:\nJacob \"Dasepos\" Dachenhaus (AKA Invisibru) for the logo,\nPerry Berman for rewriting tool classes.\nSpecial thanks to Thvardhan for all his contributions.\nThe mod probably wouldn't work without him.",
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "http://spikespaz.com/essentialadditions",
   "updateUrl": "",
   "authorList": ["spikespaz"],
-  "credits": "Jacob \"Dasepos\" Dachenhaus (AKA Invisibru) for the logo, and Perry Berman for rewriting tool classes.\nSpecial thanks to Thvardhan for all his contributions. The mod probably wouldn't work without him.",
   "logoFile": "banner.png",
   "screenshots": [],
   "dependencies": []
