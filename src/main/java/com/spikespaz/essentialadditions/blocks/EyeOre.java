@@ -13,12 +13,11 @@ import net.minecraft.world.World;
 import java.util.ArrayList;
 
 public class EyeOre extends BaseBlock {
-
+    // Separate block class for EyeOre so we can make it drop two items easier.
     public EyeOre(Material material, String unlocalizedName, Float hardness,
                   Float resistance, String tool, Integer mineLevel, CreativeTabs creativeTab) {
         super(material, unlocalizedName, hardness, resistance, tool, mineLevel, creativeTab);
     }
-
 
     @Override
     public ArrayList<ItemStack> getDrops(World world, int x, int y, int z, int metadata, int fortune) {
@@ -31,18 +30,16 @@ public class EyeOre extends BaseBlock {
     @Override
     public void onBlockPreDestroy(World world, int x, int y, int z, int p_149725_5_) {
         if (!world.isRemote) {
-            dropStuff(world, x, y, z);
+            dropItems(world, x, y, z);
         }
     }
-
 
     public boolean canEntityDestroy(IBlockAccess world, int x, int y, int z, Entity entity) {
         return !(entity instanceof EntityDragon);
     }
 
-
-    // I have added some doubles to make the drops look natural.
-    private void dropStuff(World world, int x, int y, int z) {
+    // Added some doubles to make the drops look natural.
+    private void dropItems(World world, int x, int y, int z) {
 
         for (int i = 0; i < this.getDrops(world, x, y, z, 0, 0).size(); i++) {
             float f = 0.5F;
@@ -52,8 +49,5 @@ public class EyeOre extends BaseBlock {
             world.spawnEntityInWorld(new EntityItem(world, x + d0, y + d1, z + d2, this.getDrops(world, x, y, z, 0, 0).get(i)));
 
         }
-
     }
-
-
 }
