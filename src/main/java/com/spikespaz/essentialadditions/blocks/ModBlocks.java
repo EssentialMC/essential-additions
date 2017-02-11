@@ -35,7 +35,7 @@ public class ModBlocks {
         }
     }.setStepSound(Block.soundTypePiston);
     // Other
-    public static Block CharcoalBlock = new BaseBlock(Material.rock, "CharcoalBlock", 5.0F, 10.0F, "pickaxe", 2, CreativeTabs.tabBlock).setStepSound(Block.soundTypePiston);
+    public static Block CharcoalBlock = new CharcoalBlock(Material.rock, "CharcoalBlock", 5.0F, 10.0F, "pickaxe", 2, CreativeTabs.tabBlock).setStepSound(Block.soundTypePiston);
 
     // Register all blocks and their unlocalized names.
     public static void registerBlocks() {

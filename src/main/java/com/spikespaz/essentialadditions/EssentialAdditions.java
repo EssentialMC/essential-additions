@@ -67,6 +67,7 @@ public class EssentialAdditions {
 
     @Mod.EventHandler
     public static void Load(FMLInitializationEvent event) {
+        GameRegistry.registerFuelHandler(new FuelHandler());
         // modGenerationWeight being set to 10 is polite to other mods, and will take it's ore generation someplace last.
         GameRegistry.registerWorldGenerator(new WorldGeneration(), 10);
     }
