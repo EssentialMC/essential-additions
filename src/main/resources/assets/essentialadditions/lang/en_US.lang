@@ -33,14 +33,12 @@ item.RubyHoe.name=Ruby Hoe
 
 item.ObsidianShard.name=Obsidian Shard
 item.Sulfur.name=Sulfur
+item.CharcoalDust.name=Charcoal Dust
 
 item.Ruby.name=Ruby
 item.IronPlating.name=Iron Plating
 item.GoldPlating.name=Gold Plating
 item.ChainLink.name=Chain Link
-
-item.CharcoalDust.name=Charcoal Dust
-item.CharcoalBlock.name=Charcoal Block
 
 tile.SulfurBlock.name=Sulfur Block
 
@@ -48,3 +46,5 @@ tile.EyeOre.name=Ender Ore
 
 tile.RubyOre.name=Ruby Ore
 tile.RubyBlock.name=Ruby Block
+
+item.CharcoalBlock.name=Charcoal Block
