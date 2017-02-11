@@ -10,48 +10,38 @@ import net.minecraft.item.Item;
 import java.util.Random;
 
 public class ModBlocks {
-    public static Block SulfurBlock;
+    // Static declarations of all blocks and their properties.
+    // Custom Ores
+    public static Block SulfurBlock = new BaseBlock(Material.sand, "SulfurBlock", 0.5F, 0F, "pickaxe", 0, CreativeTabs.tabBlock) {
+        public Item getItemDropped(int par1, Random random, int par2) {
+            return ModItems.Sulfur;
+        }
 
-    public static Block EyeOre;
+        public int quantityDropped(Random par1Random) {
+            return 4;
+        }
+    }.setStepSound(Block.soundTypeSand);
 
-    public static Block RubyBlock;
-    public static Block RubyOre;
+    public static Block EyeOre = new EyeOre(Material.rock, "EyeOre", 3.0F, 5.0F, "pickaxe", 3, CreativeTabs.tabBlock);
+    // Ruby Blocks
+    private static Block RubyBlock = new BaseBlock(Material.rock, "RubyBlock", 5.0F, 10.0F, "pickaxe", 1, CreativeTabs.tabBlock).setStepSound(Block.soundTypeMetal);
+    public static Block RubyOre = new BaseBlock(Material.rock, "RubyOre", 3.0F, 5.0F, "pickaxe", 3, CreativeTabs.tabBlock) {
+        public Item getItemDropped(int par1, Random random, int par2) {
+            return ModItems.Ruby;
+        }
 
-    public static void mainRegistry() {
-        initializeBlock();
-        registerItem();
-    }
+        public int quantityDropped(Random par1Random) {
+            return 2;
+        }
+    };
 
-    private static void initializeBlock() {
-        SulfurBlock = new BaseBlock(Material.sand, "SulfurBlock", 0.5F, 0F, "pickaxe", 0, CreativeTabs.tabBlock) {
-            public Item getItemDropped(int par1, Random random, int par2) {
-                return ModItems.Sulfur;
-            }
-
-            public int quantityDropped(Random par1Random) {
-                return 4;
-            }
-        }.setStepSound(Block.soundTypeSand);
-
-        EyeOre = new EyeOre(Material.rock, "EyeOre", 3.0F, 5.0F, "pickaxe", 3, CreativeTabs.tabBlock);
-
-        RubyBlock = new BaseBlock(Material.rock, "RubyBlock", 5.0F, 10.0F, "pickaxe", 1, CreativeTabs.tabBlock).setStepSound(Block.soundTypeMetal);
-        RubyOre = new BaseBlock(Material.rock, "RubyOre", 3.0F, 5.0F, "pickaxe", 3, CreativeTabs.tabBlock) {
-            public Item getItemDropped(int par1, Random random, int par2) {
-                return ModItems.Ruby;
-            }
-
-            public int quantityDropped(Random par1Random) {
-                return 2;
-            }
-        };
-    }
-
-    private static void registerItem() {
+    // Register all blocks and their unlocalized names.
+    public static void registerBlocks() {
+        // Custom Ores
         GameRegistry.registerBlock(SulfurBlock, SulfurBlock.getUnlocalizedName());
 
         GameRegistry.registerBlock(EyeOre, EyeOre.getUnlocalizedName());
-
+        // Ruby Blocks
         GameRegistry.registerBlock(RubyOre, RubyOre.getUnlocalizedName());
         GameRegistry.registerBlock(RubyBlock, RubyBlock.getUnlocalizedName());
     }
