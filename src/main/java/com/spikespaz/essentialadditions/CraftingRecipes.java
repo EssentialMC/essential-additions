@@ -109,7 +109,7 @@ class CraftingRecipes {
 
         GameRegistry.addRecipe(new ItemStack(Blocks.obsidian, 1),
                 "OOO", "OOO", "OOO", 'O', ModItems.ObsidianShard);
-        GameRegistry.addRecipe(new ItemStack(ModBlocks.CompressedCharcoal, 1),
+        GameRegistry.addRecipe(new ItemStack(ModBlocks.CharcoalBlock, 1),
                 "CCC", "CCC", "CCC", 'C', new ItemStack(Items.coal, 1, 1));
 
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.Ruby, 9),

@@ -35,7 +35,7 @@ public class ModBlocks {
         }
     }.setStepSound(Block.soundTypePiston);
     // Other
-    public static Block CompressedCharcoal = new BaseBlock(Material.rock, "CompressedCharcoal", 5.0F, 10.0F, "pickaxe", 2, CreativeTabs.tabBlock).setStepSound(Block.soundTypePiston);
+    public static Block CharcoalBlock = new BaseBlock(Material.rock, "CharcoalBlock", 5.0F, 10.0F, "pickaxe", 2, CreativeTabs.tabBlock).setStepSound(Block.soundTypePiston);
 
     // Register all blocks and their unlocalized names.
     public static void registerBlocks() {
@@ -47,6 +47,6 @@ public class ModBlocks {
         GameRegistry.registerBlock(RubyOre, RubyOre.getUnlocalizedName());
         GameRegistry.registerBlock(RubyBlock, RubyBlock.getUnlocalizedName());
         // Other
-        GameRegistry.registerBlock(CompressedCharcoal, CompressedCharcoal.getUnlocalizedName());
+        GameRegistry.registerBlock(CharcoalBlock, CharcoalBlock.getUnlocalizedName());
     }
 }
