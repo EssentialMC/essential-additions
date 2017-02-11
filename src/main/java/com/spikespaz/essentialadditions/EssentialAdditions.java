@@ -9,6 +9,7 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraft.init.Items;
 
 
 @Mod(modid = EssentialAdditions.MODID, name = EssentialAdditions.NAME, version = EssentialAdditions.VERSION)
@@ -33,6 +34,7 @@ public class EssentialAdditions {
 
     @Mod.EventHandler
     public static void Load(FMLInitializationEvent event) {
+        GameRegistry.registerFuelHandler(new FuelHandler());
         GameRegistry.registerWorldGenerator(new WorldGeneration(), 10);
     }
 
