@@ -13,7 +13,7 @@ import net.minecraft.world.World;
 import java.util.ArrayList;
 
 public class EyeOre extends BaseBlock {
-    // Separate block class for EyeOre so we can make it drop two items easier.
+    // Separate block class for eye_ore so we can make it drop two items easier.
     public EyeOre(Material material, String unlocalizedName, Float hardness,
                   Float resistance, String tool, Integer mineLevel, CreativeTabs creativeTab) {
         super(material, unlocalizedName, hardness, resistance, tool, mineLevel, creativeTab);

@@ -11,9 +11,9 @@ public class ObsidianArmor extends ItemArmor {
     }
 
     public String getArmorTexture(ItemStack stack, Entity entity, int slot, String type) {
-        if ((stack.getItem() == ModItems.EmeraldHelmet) || (stack.getItem() == ModItems.EmeraldChestplate) || (stack.getItem() == ModItems.EmeraldBoots))
+        if ((stack.getItem() == ModItems.emerald_helmet) || (stack.getItem() == ModItems.emerald_chestplate) || (stack.getItem() == ModItems.emerald_boots))
             return EssentialAdditions.MODID + ":textures/armor/" + getClass().getSimpleName() + "_1.png";
-        if ((stack.getItem() == ModItems.EmeraldLeggings) || (stack.getItem() == ModItems.EmeraldBoots)) {
+        if ((stack.getItem() == ModItems.emerald_leggings) || (stack.getItem() == ModItems.emerald_boots)) {
             return EssentialAdditions.MODID + ":textures/armor/" + getClass().getSimpleName() + "_2.png";
         }
         return null;
