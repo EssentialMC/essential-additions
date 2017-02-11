@@ -12,35 +12,16 @@ import net.minecraft.world.gen.feature.WorldGenerator;
 import java.util.Random;
 
 public class WorldGeneration implements IWorldGenerator {
-
-
-
-    /*
-    A brief of what is happening->
-    I have created another class same as WorldGenMineable called WorldGenSingleMineable.
-    now, WorldGenMineable doesnt work for small veins while WorldGenSingleMineable doesnt work for
-    big veins.
-    (Actually it works for big veins but the generation is very un-natural)
-    so, now all I am doing is checking, if the vein size is less than 4 then the generator
-    will use WorldGenSingleMineable otherwise it will use WorldGenMineable.
-    if you want to change the spawn rate of any ore just change the CHANCE variable.
-    I have already adjusted chance variables for overworld,nether,end. Looks all good to me.
-
-     */
-
-
-
-    // All ore entries in these three.
-
+    // All OreGen for each block can be put into these three.
+    // Nether Ores
     private void generateNether(World world, Random random, int x, int z, Block replaceBlock) {
-        generateOre(ModBlocks.SulfurBlock, world, random, x, z, 6, 10, 50, 0, 256, replaceBlock);
+        generateOre(ModBlocks.SulfurBlock, world, random, x, z, 8, 10, 60, 0, 256, replaceBlock);
     }
-
-
+    // Overworld Ores
     private void generateOverworld(World world, Random random, int x, int z, Block replaceBlock) {
         generateOre(ModBlocks.RubyOre, world, random, x, z, 1, 2, 10, 4, 32, replaceBlock);
     }
-
+    // End Ores
     private void generateEnd(World world, Random random, int x, int z, Block replaceBlock) {
         generateOre(ModBlocks.EyeOre, world, random, x, z, 1, 1, 460, 0, 256, replaceBlock);
     }
@@ -55,7 +36,7 @@ public class WorldGeneration implements IWorldGenerator {
                 generateOverworld(world, random, chunkX, chunkZ, Blocks.stone);
                 break;
             case 1:
-               generateEnd(world,random,chunkX,chunkZ,Blocks.end_stone);
+                generateEnd(world, random, chunkX, chunkZ, Blocks.end_stone);
                 break;
             default:
                 break;
@@ -69,27 +50,19 @@ public class WorldGeneration implements IWorldGenerator {
         int veinSize = random.nextInt(maxVeinSize - minVeinSize + 1) + minVeinSize;
         int heightRange = maxY - minY;
         WorldGenerator gen;
-        if(veinSize<4){
-         gen = new WorldGenSingleMinable(ore, veinSize, replaceBlock);}
-        else{
-        gen=new WorldGenMinable(ore,0,veinSize,replaceBlock);
+        if (veinSize < 4) {
+            gen = new GenerateSmallVein(ore, veinSize, replaceBlock);
+        } else {
+            gen = new WorldGenMinable(ore, 0, veinSize, replaceBlock);
 
         }
 
-        for(int i = 0; i < chance; i++) {
+        for (int i = 0; i < chance; i++) {
             int randomX = chunkX * 16 + random.nextInt(16);
             int randomY = random.nextInt(heightRange) + minY;
             int randomZ = chunkZ * 16 + random.nextInt(16);
-/* Use this code to get some random locations of block places
-            if(random.nextBoolean()&&random.nextBoolean()&&random.nextBoolean()&&random.nextBoolean()&&random.nextBoolean()&&random.nextBoolean()){
-                System.out.println(randomX+" "+randomY+" "+randomZ);
-            }
-*/
+
             gen.generate(world, random, randomX, randomY, randomZ);
         }
-
-
     }
-
-
 }
