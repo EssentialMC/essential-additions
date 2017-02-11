@@ -11,7 +11,6 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.init.Items;
 
-
 @Mod(modid = EssentialAdditions.MODID, name = EssentialAdditions.NAME, version = EssentialAdditions.VERSION)
 public class EssentialAdditions {
     public static final String MODID = "essentialadditions";
@@ -70,5 +69,4 @@ public class EssentialAdditions {
         // modGenerationWeight being set to 10 is polite to other mods, and will take it's ore generation someplace last.
         GameRegistry.registerWorldGenerator(new WorldGeneration(), 10);
     }
-
 }

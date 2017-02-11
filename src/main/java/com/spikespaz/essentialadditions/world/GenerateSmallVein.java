@@ -1,6 +1,5 @@
 package com.spikespaz.essentialadditions.world;
 
-
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
 import net.minecraft.world.World;
@@ -36,6 +35,4 @@ public class GenerateSmallVein extends WorldGenerator {
         }
         return true;
     }
-
-
 }
