@@ -127,9 +127,9 @@ class CraftingRecipes {
     }
 
     private static void addSmeltingRecipes() {
-        GameRegistry.addSmelting(ModBlocks.ruby_ore, new ItemStack(ModItems.ruby, 1), 2.0F);
+        GameRegistry.addSmelting(ModBlocks.ruby_ore, new ItemStack(ModItems.ruby, 1), 4.0F);
 
-        GameRegistry.addSmelting(Blocks.obsidian, new ItemStack(ModItems.obsidian_shard, 9), 3.0F);
+        GameRegistry.addSmelting(Blocks.obsidian, new ItemStack(ModItems.obsidian_shard, 9), 6.0F);
         GameRegistry.addSmelting(Items.leather, new ItemStack(Items.rotten_flesh), 2.0F);
     }
 }
