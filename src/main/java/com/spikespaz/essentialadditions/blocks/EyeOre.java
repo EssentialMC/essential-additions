@@ -46,8 +46,8 @@ public class EyeOre extends BaseBlock {
             double d0 = (double) (world.rand.nextFloat() * f) + (double) (1.0F - f) * 0.5D;
             double d1 = (double) (world.rand.nextFloat() * f) + (double) (1.0F - f) * 0.5D;
             double d2 = (double) (world.rand.nextFloat() * f) + (double) (1.0F - f) * 0.5D;
-            world.spawnEntityInWorld(new EntityItem(world, x + d0, y + d1, z + d2, this.getDrops(world, x, y, z, 0, 0).get(i)));
 
+            world.spawnEntityInWorld(new EntityItem(world, x + d0, y + d1, z + d2, this.getDrops(world, x, y, z, 0, 0).get(i)));
         }
     }
 }
