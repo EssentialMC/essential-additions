@@ -28,6 +28,7 @@ public class EssentialAdditions {
         ModItems.registerItems();
         CraftingRecipes.mainRegistry();
         proxy.registerRenderInfo();
+        Items.ender_pearl.setMaxStackSize(64);
     }
 
     @Mod.EventHandler
