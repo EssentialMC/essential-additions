@@ -40,7 +40,7 @@ item.GoldPlating.name=Gold Plating
 item.ChainLink.name=Chain Link
 
 item.CharcoalDust.name=Charcoal Dust
-item.CompressedCharcoal.name=Compressed Charcoal
+item.CharcoalBlock.name=Charcoal Block
 
 tile.SulfurBlock.name=Sulfur Block
 
