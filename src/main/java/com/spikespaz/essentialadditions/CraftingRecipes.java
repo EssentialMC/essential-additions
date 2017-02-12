@@ -7,15 +7,15 @@ import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
-class CraftingRecipes {
-    static void mainRegistry() {
+public class CraftingRecipes {
+    public static void mainRegistry() {
         addCraftingRecipes();
         addSmeltingRecipes();
     }
 
     private static void addCraftingRecipes() {
         // Emerald Armor
-        GameRegistry.addRecipe(new ItemStack(ModItems.emerald_helmet, 1),
+     /*   GameRegistry.addRecipe(new ItemStack(ModItems.emerald_helmet, 1),
                 "EEE", "E E", "   ", 'E', Items.emerald);
         GameRegistry.addRecipe(new ItemStack(ModItems.emerald_chestplate, 1),
                 "E E", "EEE", "EEE", 'E', Items.emerald);
@@ -40,7 +40,7 @@ class CraftingRecipes {
         GameRegistry.addRecipe(new ItemStack(ModItems.ruby_leggings, 1),
                 "RRR", "R R", "R R", 'R', ModItems.ruby);
         GameRegistry.addRecipe(new ItemStack(ModItems.ruby_boots, 1),
-                "   ", "R R", "R R", 'R', ModItems.ruby);
+                "   ", "R R", "R R", 'R', ModItems.ruby);*/
         // Chainmail Armor
         GameRegistry.addRecipe(new ItemStack(Items.chainmail_helmet, 1),
                 "CCC", "C C", "   ", 'C', ModItems.chain_link);

@@ -44,7 +44,7 @@ public class ModBlocks {
 
         GameRegistry.registerBlock(eye_ore, eye_ore.getUnlocalizedName());
         // ruby Blocks
-        GameRegistry.registerBlock(ruby_ore, ruby_ore.getUnlocalizedName());
+       GameRegistry.registerBlock(ruby_ore, ruby_ore.getUnlocalizedName());
         GameRegistry.registerBlock(ruby_block, ruby_block.getUnlocalizedName());
         // Other
         GameRegistry.registerBlock(charcoal_block, charcoal_block.getUnlocalizedName());

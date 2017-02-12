@@ -11,5 +11,6 @@ class BaseBlock extends Block {
         this.setResistance(resistance);
         this.setHarvestLevel(tool, mineLevel);
         this.setCreativeTab(creativeTab);
+        this.setUnlocalizedName(unlocalizedName);
     }
 }
