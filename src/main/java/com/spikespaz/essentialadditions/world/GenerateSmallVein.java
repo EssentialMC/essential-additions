@@ -2,6 +2,7 @@ package com.spikespaz.essentialadditions.world;
 
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
+import net.minecraft.util.BlockPos;
 import net.minecraft.world.World;
 import net.minecraft.world.gen.feature.WorldGenerator;
 
@@ -29,10 +30,12 @@ public class GenerateSmallVein extends WorldGenerator {
 
     // This is to check if the block at X, Y, Z is replaceable or not and place the block.
     @Override
-    public boolean generate(World world, Random rand, int x, int y, int z) {
-        if (world.getBlock(x, y, z).isReplaceableOreGen(world, x, y, z, this.target)) {
-            world.setBlock(x, y, z, this.block);
+    public boolean generate(World worldIn, Random rand, BlockPos position) {//AGAIN NO IDEA WHAT A PREDICATE IS.
+        if (worldIn.getBlockState(position).getBlock().isReplaceableOreGen(worldIn, position, this.target)) {
+            worldIn.setBlockState(position,this.block.getDefaultState());
         }
+
+
         return true;
     }
 }
