@@ -57,9 +57,15 @@ public class EssentialAdditions {
         Items.egg.setMaxStackSize(64);
         Items.snowball.setMaxStackSize(64);
         Items.potionitem.setMaxStackSize(16);
-        // Decoration
-        Items.wooden_door.setMaxStackSize(16);
+        // Doors
+        Items.oak_door.setMaxStackSize(16);
+        Items.spruce_door.setMaxStackSize(16);
+        Items.birch_door.setMaxStackSize(16);
+        Items.jungle_door.setMaxStackSize(16);
+        Items.acacia_door.setMaxStackSize(16);
+        Items.dark_oak_door.setMaxStackSize(16);
         Items.iron_door.setMaxStackSize(16);
+        // Decoration
         Items.sign.setMaxStackSize(64);
         Items.bed.setMaxStackSize(16);
     }
