@@ -26,7 +26,7 @@ public class ModBlocks {
     }.setStepSound(Block.soundTypeSand);
 
     public static Block eye_ore = new EyeOre(Material.rock, "eye_ore", 3.0F, 5.0F, "pickaxe", 3, CreativeTabs.tabBlock);
-    // ruby Blocks
+    // Ruby Blocks
     public static Block ruby_block = new BaseBlock(Material.rock, "ruby_block", 5.0F, 10.0F, "pickaxe", 1, CreativeTabs.tabBlock).setStepSound(Block.soundTypeMetal);
     public static Block ruby_ore = new BaseBlock(Material.rock, "ruby_ore", 3.0F, 5.0F, "pickaxe", 3, CreativeTabs.tabBlock) {
         public Item getItemDropped(int par1, Random random, int par2) {
@@ -55,7 +55,7 @@ public class ModBlocks {
     }
 
     private static void RegisterModBlock(Block block) {
-//        Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(block, 0, new ModelResourceLocation(EssentialAdditions.MODID + ":" + block.getUnlocalizedName().substring(5), "inventory"));
+        Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(Item.getItemFromBlock(block), 0, new ModelResourceLocation(EssentialAdditions.MODID + ":" + block.getUnlocalizedName().substring(5), "inventory"));
         GameRegistry.registerBlock(block, block.getUnlocalizedName());
     }
 }
