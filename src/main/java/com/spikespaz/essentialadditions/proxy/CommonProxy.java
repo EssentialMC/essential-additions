@@ -1,11 +1,13 @@
 package com.spikespaz.essentialadditions.proxy;
 
-import com.spikespaz.essentialadditions.main.CraftingRecipes;
-import com.spikespaz.essentialadditions.main.FuelHandler;
 import com.spikespaz.essentialadditions.blocks.ModBlocks;
 import com.spikespaz.essentialadditions.items.ModItems;
+import com.spikespaz.essentialadditions.main.CraftingRecipes;
+import com.spikespaz.essentialadditions.main.FuelHandler;
 import com.spikespaz.essentialadditions.world.WorldGeneration;
+import net.minecraft.block.Block;
 import net.minecraft.init.Items;
+import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
@@ -28,6 +30,17 @@ public class CommonProxy {
     }
 
     public void postInit(FMLPostInitializationEvent e) {}
+
+    // Register items and blocks to the game. Easier than having two separate functions.
+    public void RegisterModObject(Object object) {
+        if (object instanceof Item) {
+            Item item = (Item) object;
+            GameRegistry.registerItem(item, item.getUnlocalizedName());
+        } else if (object instanceof Block) {
+            Block block = (Block) object;
+            GameRegistry.registerBlock(block, block.getUnlocalizedName());
+        }
+    }
 
     private static void changeVanillaStack(){
         // Miscellaneous

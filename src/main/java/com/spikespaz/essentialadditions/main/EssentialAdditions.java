@@ -16,7 +16,7 @@ public class EssentialAdditions {
     private static final String SERVERSIDE = "com.spikespaz.essentialadditions.proxy.ServerProxy";
 
     @SidedProxy(clientSide=CLIENTSIDE, serverSide=SERVERSIDE)
-    private static CommonProxy proxy;
+    public static CommonProxy proxy;
 
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
@@ -29,8 +29,8 @@ public class EssentialAdditions {
      }
 
 
-     @Mod.EventHandler
-     public void postInit(FMLPostInitializationEvent event){
+    @Mod.EventHandler
+    public void postInit(FMLPostInitializationEvent event){
         proxy.postInit(event);
      }
 

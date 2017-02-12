@@ -1,16 +1,14 @@
 package com.spikespaz.essentialadditions.blocks;
 
-import com.spikespaz.essentialadditions.main.EssentialAdditions;
 import com.spikespaz.essentialadditions.items.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
-import net.minecraftforge.fml.common.registry.GameRegistry;
 
 import java.util.Random;
+
+import static com.spikespaz.essentialadditions.main.EssentialAdditions.proxy;
 
 public class ModBlocks {
     // Static declarations of all blocks and their properties.
@@ -43,19 +41,14 @@ public class ModBlocks {
     // Register all blocks and their unlocalized names.
     public static void registerBlocks() {
         // Custom Ores
-        RegisterModBlock(sulfur_block);
+        proxy.RegisterModObject(sulfur_block);
 
-        RegisterModBlock(eye_ore);
+        proxy.RegisterModObject(eye_ore);
         // Ruby Blocks
-        RegisterModBlock(ruby_ore);
-        RegisterModBlock(ruby_block);
+        proxy.RegisterModObject(ruby_ore);
+        proxy.RegisterModObject(ruby_block);
 
         // Other
-        RegisterModBlock(charcoal_block);
-    }
-
-    private static void RegisterModBlock(Block block) {
-        Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(Item.getItemFromBlock(block), 0, new ModelResourceLocation(EssentialAdditions.MODID + ":" + block.getUnlocalizedName().substring(5), "inventory"));
-        GameRegistry.registerBlock(block, block.getUnlocalizedName());
+        proxy.RegisterModObject(charcoal_block);
     }
 }

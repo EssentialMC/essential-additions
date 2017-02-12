@@ -1,12 +1,9 @@
 package com.spikespaz.essentialadditions.items;
 
-import com.spikespaz.essentialadditions.main.EssentialAdditions;
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
-import net.minecraftforge.fml.common.registry.GameRegistry;
 
+import static com.spikespaz.essentialadditions.main.EssentialAdditions.proxy;
 import static net.minecraft.item.ItemArmor.ArmorMaterial;
 import static net.minecraftforge.common.util.EnumHelper.addArmorMaterial;
 import static net.minecraftforge.common.util.EnumHelper.addToolMaterial;
@@ -66,51 +63,46 @@ public class ModItems {
     // Register all items and their unlocalized names.
     public static void registerItems() {
 //        // Emerald Armor
-//        RegisterModItem(emerald_helmet);
-//        RegisterModItem(emerald_chestplate);
-//        RegisterModItem(emerald_leggings);
-//        RegisterModItem(emerald_boots);
+//        proxy.RegisterModObject(emerald_helmet);
+//        proxy.RegisterModObject(emerald_chestplate);
+//        proxy.RegisterModObject(emerald_leggings);
+//        proxy.RegisterModObject(emerald_boots);
 //        // Obsidian Armor
-//        RegisterModItem(obsidian_helmet);
-//        RegisterModItem(obsidian_chestplate);
-//        RegisterModItem(obsidian_leggings);
-//        RegisterModItem(obsidian_boots);
+//        proxy.RegisterModObject(obsidian_helmet);
+//        proxy.RegisterModObject(obsidian_chestplate);
+//        proxy.RegisterModObject(obsidian_leggings);
+//        proxy.RegisterModObject(obsidian_boots);
 //        // Ruby Armor
-//        RegisterModItem(ruby_helmet);
-//        RegisterModItem(ruby_chestplate);
-//        RegisterModItem(ruby_leggings);
-//        RegisterModItem(ruby_boots);
+//        proxy.RegisterModObject(ruby_helmet);
+//        proxy.RegisterModObject(ruby_chestplate);
+//        proxy.RegisterModObject(ruby_leggings);
+//        proxy.RegisterModObject(ruby_boots);
         // Emerald Tools
-        RegisterModItem(emerald_sword);
-        RegisterModItem(emerald_axe);
-        RegisterModItem(emerald_shovel);
-        RegisterModItem(emerald_pickaxe);
-        RegisterModItem(emerald_hoe);
+        proxy.RegisterModObject(emerald_sword);
+        proxy.RegisterModObject(emerald_axe);
+        proxy.RegisterModObject(emerald_shovel);
+        proxy.RegisterModObject(emerald_pickaxe);
+        proxy.RegisterModObject(emerald_hoe);
         // Obsidian Tools
-        RegisterModItem(obsidian_sword);
-        RegisterModItem(obsidian_axe);
-        RegisterModItem(obsidian_shovel);
-        RegisterModItem(obsidian_pickaxe);
-        RegisterModItem(obsidian_hoe);
+        proxy.RegisterModObject(obsidian_sword);
+        proxy.RegisterModObject(obsidian_axe);
+        proxy.RegisterModObject(obsidian_shovel);
+        proxy.RegisterModObject(obsidian_pickaxe);
+        proxy.RegisterModObject(obsidian_hoe);
         // Ruby Tools
-        RegisterModItem(ruby_sword);
-        RegisterModItem(ruby_axe);
-        RegisterModItem(ruby_shovel);
-        RegisterModItem(ruby_pickaxe);
-        RegisterModItem(ruby_hoe);
+        proxy.RegisterModObject(ruby_sword);
+        proxy.RegisterModObject(ruby_axe);
+        proxy.RegisterModObject(ruby_shovel);
+        proxy.RegisterModObject(ruby_pickaxe);
+        proxy.RegisterModObject(ruby_hoe);
         // Crafting Items
-        RegisterModItem(obsidian_shard);
-        RegisterModItem(sulfur);
-        RegisterModItem(charcoal_dust);
+        proxy.RegisterModObject(obsidian_shard);
+        proxy.RegisterModObject(sulfur);
+        proxy.RegisterModObject(charcoal_dust);
 
-        RegisterModItem(ruby);
-        RegisterModItem(iron_plating);
-        RegisterModItem(gold_plating);
-        RegisterModItem(chain_link);
-    }
-
-    private static void RegisterModItem(Item item) {
-        Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(EssentialAdditions.MODID + ":" + item.getUnlocalizedName().substring(5), "inventory"));
-        GameRegistry.registerItem(item, item.getUnlocalizedName());
+        proxy.RegisterModObject(ruby);
+        proxy.RegisterModObject(iron_plating);
+        proxy.RegisterModObject(gold_plating);
+        proxy.RegisterModObject(chain_link);
     }
 }
