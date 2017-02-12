@@ -34,17 +34,12 @@ public class EyeOre extends BaseBlock {
         }
     }
 
-
-
-
-
     public boolean canEntityDestroy(IBlockAccess world, int x, int y, int z, Entity entity) {
         return !(entity instanceof EntityDragon);
     }
 
     // Added some doubles to make the drops look natural.
     private void dropItems(World world, int x, int y, int z) {
-
         for (int i = 0; i < this.getDrops(world, x, y, z, 0, 0).size(); i++) {
             float f = 0.5F;
             double d0 = (double) (world.rand.nextFloat() * f) + (double) (1.0F - f) * 0.5D;
