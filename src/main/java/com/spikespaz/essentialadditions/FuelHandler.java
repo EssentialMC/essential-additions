@@ -1,9 +1,9 @@
 package com.spikespaz.essentialadditions;
 
 import com.spikespaz.essentialadditions.blocks.ModBlocks;
-import cpw.mods.fml.common.IFuelHandler;
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemStack;
+import net.minecraftforge.fml.common.IFuelHandler;
 
 public class FuelHandler implements IFuelHandler {
     @Override

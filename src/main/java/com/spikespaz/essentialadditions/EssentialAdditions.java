@@ -4,18 +4,18 @@ import com.spikespaz.essentialadditions.blocks.ModBlocks;
 import com.spikespaz.essentialadditions.items.ModItems;
 import com.spikespaz.essentialadditions.proxy.CommonProxy;
 import com.spikespaz.essentialadditions.world.WorldGeneration;
-import cpw.mods.fml.common.Mod;
-import cpw.mods.fml.common.SidedProxy;
-import cpw.mods.fml.common.event.FMLInitializationEvent;
-import cpw.mods.fml.common.event.FMLPreInitializationEvent;
-import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.init.Items;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.SidedProxy;
+import net.minecraftforge.fml.common.event.FMLInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 
 @Mod(modid = EssentialAdditions.MODID, name = EssentialAdditions.NAME, version = EssentialAdditions.VERSION)
 public class EssentialAdditions {
     public static final String MODID = "essentialadditions";
     static final String NAME = "Essential Additions";
-    static final String VERSION = "1.3.2";
+    static final String VERSION = "1.4.0";
     private static final String CLIENTSIDE = "com.spikespaz.essentialadditions.proxy.ClientProxy";
     private static final String SERVERSIDE = "com.spikespaz.essentialadditions.proxy.CommonProxy";
 

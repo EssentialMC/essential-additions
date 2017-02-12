@@ -1,11 +1,11 @@
 package com.spikespaz.essentialadditions.blocks;
 
 import com.spikespaz.essentialadditions.items.ModItems;
-import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 
 import java.util.Random;
 

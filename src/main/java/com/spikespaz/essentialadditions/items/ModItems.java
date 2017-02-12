@@ -1,8 +1,8 @@
 package com.spikespaz.essentialadditions.items;
 
-import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 
 import static com.spikespaz.essentialadditions.EssentialAdditions.MODID;
 import static com.spikespaz.essentialadditions.EssentialAdditions.proxy;
