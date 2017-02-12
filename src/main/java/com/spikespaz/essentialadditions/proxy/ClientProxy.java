@@ -1,7 +1,6 @@
 package com.spikespaz.essentialadditions.proxy;
 
 
-import com.spikespaz.essentialadditions.render.ItemRender;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
@@ -16,7 +15,6 @@ public class ClientProxy extends CommonProxy {
     @Override
     public void init(FMLInitializationEvent e) {
         super.init(e);
-        ItemRender.registerItemRender();
     }
 
     @Override

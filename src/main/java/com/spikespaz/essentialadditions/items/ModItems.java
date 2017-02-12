@@ -7,7 +7,6 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
-import static com.spikespaz.essentialadditions.EssentialAdditions.proxy;
 import static net.minecraft.item.ItemArmor.ArmorMaterial;
 import static net.minecraftforge.common.util.EnumHelper.addArmorMaterial;
 import static net.minecraftforge.common.util.EnumHelper.addToolMaterial;
@@ -109,8 +108,8 @@ public class ModItems {
         RegisterModItem(gold_plating);
         RegisterModItem(chain_link);
     }
-    
-        private static void RegisterModItem(Item item) {
+
+    private static void RegisterModItem(Item item) {
         Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(EssentialAdditions.MODID + ":" + item.getUnlocalizedName().substring(5), "inventory"));
         GameRegistry.registerItem(item, item.getUnlocalizedName());
     }
