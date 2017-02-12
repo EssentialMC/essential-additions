@@ -17,9 +17,6 @@ public class CommonProxy {
         ModBlocks.registerBlocks();
         ModItems.registerItems();
         CraftingRecipes.mainRegistry();
-          //  proxy.registerRenderInfo();
-
-
     }
 
     public void init(FMLInitializationEvent e) {
@@ -28,14 +25,9 @@ public class CommonProxy {
         GameRegistry.registerFuelHandler(new FuelHandler());
         // modGenerationWeight being set to 10 is polite to other mods, and will take it's ore generation someplace last.
         GameRegistry.registerWorldGenerator(new WorldGeneration(), 10);
-
-
     }
 
-    public void postInit(FMLPostInitializationEvent e) {
-
-    }
-
+    public void postInit(FMLPostInitializationEvent e) {}
 
     private static void changeVanillaStack(){
         // Miscellaneous
@@ -76,6 +68,4 @@ public class CommonProxy {
         Items.sign.setMaxStackSize(64);
         Items.bed.setMaxStackSize(16);
     }
-
-
 }
