@@ -4,13 +4,7 @@ import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.boss.EntityDragon;
-import net.minecraft.entity.item.EntityItem;
-import net.minecraft.init.Items;
-import net.minecraft.item.ItemStack;
 import net.minecraft.world.IBlockAccess;
-import net.minecraft.world.World;
-
-import java.util.ArrayList;
 
 public class EyeOre extends BaseBlock {
     // Separate block class for eye_ore so we can make it drop two items easier.
@@ -18,7 +12,7 @@ public class EyeOre extends BaseBlock {
                   Float resistance, String tool, Integer mineLevel, CreativeTabs creativeTab) {
         super(material, unlocalizedName, hardness, resistance, tool, mineLevel, creativeTab);
     }
-
+/*
     @Override
     public ArrayList<ItemStack> getDrops(World world, int x, int y, int z, int metadata, int fortune) {
         ArrayList<ItemStack> arrayList = new ArrayList<ItemStack>();
@@ -34,6 +28,8 @@ public class EyeOre extends BaseBlock {
         }
     }
 
+*/
+
 
 
 
@@ -43,6 +39,7 @@ public class EyeOre extends BaseBlock {
     }
 
     // Added some doubles to make the drops look natural.
+    /*
     private void dropItems(World world, int x, int y, int z) {
 
         for (int i = 0; i < this.getDrops(world, x, y, z, 0, 0).size(); i++) {
@@ -53,5 +50,5 @@ public class EyeOre extends BaseBlock {
 
             world.spawnEntityInWorld(new EntityItem(world, x + d0, y + d1, z + d2, this.getDrops(world, x, y, z, 0, 0).get(i)));
         }
-    }
+    }*/
 }
