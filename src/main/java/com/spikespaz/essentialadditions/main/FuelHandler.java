@@ -1,4 +1,4 @@
-package com.spikespaz.essentialadditions;
+package com.spikespaz.essentialadditions.main;
 
 import com.spikespaz.essentialadditions.blocks.ModBlocks;
 import net.minecraft.block.Block;

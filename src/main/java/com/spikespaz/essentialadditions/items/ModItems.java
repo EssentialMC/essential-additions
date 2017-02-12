@@ -1,6 +1,6 @@
 package com.spikespaz.essentialadditions.items;
 
-import com.spikespaz.essentialadditions.EssentialAdditions;
+import com.spikespaz.essentialadditions.main.EssentialAdditions;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraft.creativetab.CreativeTabs;

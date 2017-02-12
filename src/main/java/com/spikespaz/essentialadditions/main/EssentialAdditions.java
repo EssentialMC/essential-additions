@@ -1,4 +1,4 @@
-package com.spikespaz.essentialadditions;
+package com.spikespaz.essentialadditions.main;
 
 import com.spikespaz.essentialadditions.proxy.CommonProxy;
 import net.minecraftforge.fml.common.Mod;

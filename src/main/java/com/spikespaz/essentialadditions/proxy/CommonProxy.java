@@ -1,7 +1,7 @@
 package com.spikespaz.essentialadditions.proxy;
 
-import com.spikespaz.essentialadditions.CraftingRecipes;
-import com.spikespaz.essentialadditions.FuelHandler;
+import com.spikespaz.essentialadditions.main.CraftingRecipes;
+import com.spikespaz.essentialadditions.main.FuelHandler;
 import com.spikespaz.essentialadditions.blocks.ModBlocks;
 import com.spikespaz.essentialadditions.items.ModItems;
 import com.spikespaz.essentialadditions.world.WorldGeneration;
