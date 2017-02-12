@@ -1,13 +1,14 @@
 package com.spikespaz.essentialadditions.world;
 
 import com.spikespaz.essentialadditions.blocks.ModBlocks;
-import cpw.mods.fml.common.IWorldGenerator;
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
+import net.minecraft.util.BlockPos;
 import net.minecraft.world.World;
 import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.feature.WorldGenMinable;
 import net.minecraft.world.gen.feature.WorldGenerator;
+import net.minecraftforge.fml.common.IWorldGenerator;
 
 import java.util.Random;
 
@@ -52,8 +53,8 @@ public class WorldGeneration implements IWorldGenerator {
         WorldGenerator gen;
         if (veinSize < 4) {
             gen = new GenerateSmallVein(ore, veinSize, replaceBlock);
-        } else {
-            gen = new WorldGenMinable(ore, 0, veinSize, replaceBlock);
+        } else {//I NEED A PREDICATE FOR 3RD ARGUMENT. WAT IS A PREDICATE?! NEVER HEARD OF IT.
+            gen = new WorldGenMinable(ore.getDefaultState(), veinSize, replaceBlock.getDefaultState());
 
         }
 
@@ -62,7 +63,7 @@ public class WorldGeneration implements IWorldGenerator {
             int randomY = random.nextInt(heightRange) + minY;
             int randomZ = chunkZ * 16 + random.nextInt(16);
 
-            gen.generate(world, random, randomX, randomY, randomZ);
+            gen.generate(world, random, new BlockPos(randomX,randomY,randomZ));
         }
     }
 }

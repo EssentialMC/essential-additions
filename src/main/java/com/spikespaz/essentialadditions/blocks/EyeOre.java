@@ -34,6 +34,10 @@ public class EyeOre extends BaseBlock {
         }
     }
 
+
+
+
+
     public boolean canEntityDestroy(IBlockAccess world, int x, int y, int z, Entity entity) {
         return !(entity instanceof EntityDragon);
     }
