@@ -13,7 +13,6 @@ import static net.minecraftforge.common.util.EnumHelper.addArmorMaterial;
 import static net.minecraftforge.common.util.EnumHelper.addToolMaterial;
 
 public class ModItems {
-    // Static declarations of all Tool and Armor materials and their properties.
     private static ArmorMaterial emerald_armor = addArmorMaterial("emerald_armor", "emerald_armor_1", 92, new int[]{4, 8, 5, 4}, 6);
     private static ArmorMaterial obsidian_armor = addArmorMaterial("obsidian_armor", "obsidian_armor_1", 47, new int[]{6, 7, 6, 5}, 5);
     private static ArmorMaterial ruby_armor = addArmorMaterial("ruby_armor", "ruby_armor_1", 85, new int[]{4, 8, 5, 4}, 6);
@@ -23,20 +22,20 @@ public class ModItems {
     private static Item.ToolMaterial ruby_gem = addToolMaterial("ruby", 3, 2290, 16.0F, 4.5F, 7);
     // Static declarations of all items and their properties.
     // Emerald Armor
-    public static Item emerald_helmet = new EmeraldArmor(emerald_armor, proxy.addArmor("emerald_armor"), 0).setUnlocalizedName("emerald_helmet").setCreativeTab(CreativeTabs.tabCombat);
-    public static Item emerald_chestplate = new EmeraldArmor(emerald_armor, proxy.addArmor("emerald_armor"), 1).setUnlocalizedName("emerald_chestplate").setCreativeTab(CreativeTabs.tabCombat);
-    public static Item emerald_leggings = new EmeraldArmor(emerald_armor, proxy.addArmor("emerald_armor"), 2).setUnlocalizedName("emerald_leggings").setCreativeTab(CreativeTabs.tabCombat);
-    public static Item emerald_boots = new EmeraldArmor(emerald_armor, proxy.addArmor("emerald_armor"), 3).setUnlocalizedName("emerald_boots").setCreativeTab(CreativeTabs.tabCombat);
-    // Obsidian Armor
-    public static Item obsidian_helmet = new ObsidianArmor(obsidian_armor, proxy.addArmor("obsidian_armor"), 0).setUnlocalizedName("obsidian_helmet").setCreativeTab(CreativeTabs.tabCombat);
-    public static Item obsidian_chestplate = new ObsidianArmor(obsidian_armor, proxy.addArmor("obsidian_armor"), 1).setUnlocalizedName("obsidian_chestplate").setCreativeTab(CreativeTabs.tabCombat);
-    public static Item obsidian_leggings = new ObsidianArmor(obsidian_armor, proxy.addArmor("obsidian_armor"), 2).setUnlocalizedName("obsidian_leggings").setCreativeTab(CreativeTabs.tabCombat);
-    public static Item obsidian_boots = new ObsidianArmor(obsidian_armor, proxy.addArmor("obsidian_armor"), 3).setUnlocalizedName("obsidian_boots").setCreativeTab(CreativeTabs.tabCombat);
-    // Ruby Armor
-    public static Item ruby_helmet = new RubyArmor(ruby_armor, proxy.addArmor("ruby_armor"), 0).setUnlocalizedName("ruby_helmet").setCreativeTab(CreativeTabs.tabCombat);
-    public static Item ruby_chestplate = new RubyArmor(ruby_armor, proxy.addArmor("ruby_armor"), 1).setUnlocalizedName("ruby_chestplate").setCreativeTab(CreativeTabs.tabCombat);
-    public static Item ruby_leggings = new RubyArmor(ruby_armor, proxy.addArmor("ruby_armor"), 2).setUnlocalizedName("ruby_leggings").setCreativeTab(CreativeTabs.tabCombat);
-    public static Item ruby_boots = new RubyArmor(ruby_armor, proxy.addArmor("ruby_armor"), 3).setUnlocalizedName("ruby_boots").setCreativeTab(CreativeTabs.tabCombat);
+//    public static Item emerald_helmet = new EmeraldArmor(emerald_armor, proxy.addArmor("emerald_armor"), 0).setUnlocalizedName("emerald_helmet").setCreativeTab(CreativeTabs.tabCombat);
+//    public static Item emerald_chestplate = new EmeraldArmor(emerald_armor, proxy.addArmor("emerald_armor"), 1).setUnlocalizedName("emerald_chestplate").setCreativeTab(CreativeTabs.tabCombat);
+//    public static Item emerald_leggings = new EmeraldArmor(emerald_armor, proxy.addArmor("emerald_armor"), 2).setUnlocalizedName("emerald_leggings").setCreativeTab(CreativeTabs.tabCombat);
+//    public static Item emerald_boots = new EmeraldArmor(emerald_armor, proxy.addArmor("emerald_armor"), 3).setUnlocalizedName("emerald_boots").setCreativeTab(CreativeTabs.tabCombat);
+//    // Obsidian Armor
+//    public static Item obsidian_helmet = new ObsidianArmor(obsidian_armor, proxy.addArmor("obsidian_armor"), 0).setUnlocalizedName("obsidian_helmet").setCreativeTab(CreativeTabs.tabCombat);
+//    public static Item obsidian_chestplate = new ObsidianArmor(obsidian_armor, proxy.addArmor("obsidian_armor"), 1).setUnlocalizedName("obsidian_chestplate").setCreativeTab(CreativeTabs.tabCombat);
+//    public static Item obsidian_leggings = new ObsidianArmor(obsidian_armor, proxy.addArmor("obsidian_armor"), 2).setUnlocalizedName("obsidian_leggings").setCreativeTab(CreativeTabs.tabCombat);
+//    public static Item obsidian_boots = new ObsidianArmor(obsidian_armor, proxy.addArmor("obsidian_armor"), 3).setUnlocalizedName("obsidian_boots").setCreativeTab(CreativeTabs.tabCombat);
+//    // Ruby Armor
+//    public static Item ruby_helmet = new RubyArmor(ruby_armor, proxy.addArmor("ruby_armor"), 0).setUnlocalizedName("ruby_helmet").setCreativeTab(CreativeTabs.tabCombat);
+//    public static Item ruby_chestplate = new RubyArmor(ruby_armor, proxy.addArmor("ruby_armor"), 1).setUnlocalizedName("ruby_chestplate").setCreativeTab(CreativeTabs.tabCombat);
+//    public static Item ruby_leggings = new RubyArmor(ruby_armor, proxy.addArmor("ruby_armor"), 2).setUnlocalizedName("ruby_leggings").setCreativeTab(CreativeTabs.tabCombat);
+//    public static Item ruby_boots = new RubyArmor(ruby_armor, proxy.addArmor("ruby_armor"), 3).setUnlocalizedName("ruby_boots").setCreativeTab(CreativeTabs.tabCombat);
     // Emerald Tools
     public static Item emerald_sword = new BaseSword(emerald_gem, "emerald_sword");
     public static Item emerald_axe = new BaseAxe(emerald_gem, "emerald_axe");
@@ -67,21 +66,21 @@ public class ModItems {
 
     // Register all items and their unlocalized names.
     public static void registerItems() {
-        // Emerald Armor
-        RegisterModItem(emerald_helmet);
-        RegisterModItem(emerald_chestplate);
-        RegisterModItem(emerald_leggings);
-        RegisterModItem(emerald_boots);
-        // Obsidian Armor
-        RegisterModItem(obsidian_helmet);
-        RegisterModItem(obsidian_chestplate);
-        RegisterModItem(obsidian_leggings);
-        RegisterModItem(obsidian_boots);
-        // Ruby Armor
-        RegisterModItem(ruby_helmet);
-        RegisterModItem(ruby_chestplate);
-        RegisterModItem(ruby_leggings);
-        RegisterModItem(ruby_boots);
+//        // Emerald Armor
+//        RegisterModItem(emerald_helmet);
+//        RegisterModItem(emerald_chestplate);
+//        RegisterModItem(emerald_leggings);
+//        RegisterModItem(emerald_boots);
+//        // Obsidian Armor
+//        RegisterModItem(obsidian_helmet);
+//        RegisterModItem(obsidian_chestplate);
+//        RegisterModItem(obsidian_leggings);
+//        RegisterModItem(obsidian_boots);
+//        // Ruby Armor
+//        RegisterModItem(ruby_helmet);
+//        RegisterModItem(ruby_chestplate);
+//        RegisterModItem(ruby_leggings);
+//        RegisterModItem(ruby_boots);
         // Emerald Tools
         RegisterModItem(emerald_sword);
         RegisterModItem(emerald_axe);

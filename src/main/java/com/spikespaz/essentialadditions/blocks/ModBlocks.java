@@ -46,14 +46,16 @@ public class ModBlocks {
         RegisterModBlock(sulfur_block);
 
         RegisterModBlock(eye_ore);
-        // ruby Blocks
+        // Ruby Blocks
         RegisterModBlock(ruby_ore);
         RegisterModBlock(ruby_block);
+
         // Other
         RegisterModBlock(charcoal_block);
     }
-        private static void RegisterModBlock(Block block) {
-        Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(block, 0, new ModelResourceLocation(EssentialAdditions.MODID + ":" + block.getUnlocalizedName().substring(5), "inventory"));
+
+    private static void RegisterModBlock(Block block) {
+//        Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(block, 0, new ModelResourceLocation(EssentialAdditions.MODID + ":" + block.getUnlocalizedName().substring(5), "inventory"));
         GameRegistry.registerBlock(block, block.getUnlocalizedName());
     }
 }
