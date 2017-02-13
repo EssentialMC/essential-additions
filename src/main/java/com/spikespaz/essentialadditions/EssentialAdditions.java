@@ -15,7 +15,7 @@ import net.minecraft.init.Items;
 public class EssentialAdditions {
     public static final String MODID = "essentialadditions";
     static final String NAME = "Essential Additions";
-    static final String VERSION = "1.3.2";
+    static final String VERSION = "1.3.3";
     private static final String CLIENTSIDE = "com.spikespaz.essentialadditions.proxy.ClientProxy";
     private static final String SERVERSIDE = "com.spikespaz.essentialadditions.proxy.CommonProxy";
 
