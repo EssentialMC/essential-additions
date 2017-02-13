@@ -3,13 +3,13 @@
 from os import walk, path, rename
 from re import findall
 
-for root, _, files in walk(".\\"):
+textures_dir = "src\\main\\resources\\assets\\essentialadditions\\textures\\items"
+
+for root, _, files in walk(textures_dir):
     for file in files:
         if file.endswith(".png"):
-            nameSections = findall("[A-Z][^A-Z]*", file)
-            newName = ""
-            for section in nameSections:
-                newName += section.lower() + "_"
-            finalName = newName[:-1]
-            print(path.join(root, file) + " ==> " + path.join(root, finalName))
-            rename(path.join(root, file), path.join(root, finalName))
+            name_sections = findall("[A-Z][^A-Z]*", file)
+            new_name = "_".join(name_sections)
+            final_name = new_name[:-1].lower()
+            print(path.join(root, file) + " => renamed => " + path.join(root, final_name))
+            rename(path.join(root, file), path.join(root, final_name))
