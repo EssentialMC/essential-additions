@@ -13,9 +13,9 @@ public class EssentialAdditions {
     static final String NAME = "Essential Additions";
     static final String VERSION = "1.4.0";
     private static final String CLIENTSIDE = "com.spikespaz.essentialadditions.proxy.ClientProxy";
-    private static final String SERVERSIDE = "com.spikespaz.essentialadditions.proxy.ServerProxy";
+  //  private static final String SERVERSIDE = "com.spikespaz.essentialadditions.proxy.ServerProxy";
 
-    @SidedProxy(clientSide=CLIENTSIDE, serverSide=SERVERSIDE)
+    @SidedProxy(clientSide=CLIENTSIDE)
     public static CommonProxy proxy;
 
     @Mod.EventHandler

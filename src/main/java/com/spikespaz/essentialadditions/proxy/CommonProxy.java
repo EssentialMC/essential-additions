@@ -35,10 +35,10 @@ public class CommonProxy {
     public void RegisterModObject(Object object) {
         if (object instanceof Item) {
             Item item = (Item) object;
-            GameRegistry.registerItem(item, item.getUnlocalizedName());
+            GameRegistry.registerItem(item, item.getUnlocalizedName().substring(5));
         } else if (object instanceof Block) {
             Block block = (Block) object;
-            GameRegistry.registerBlock(block, block.getUnlocalizedName());
+            GameRegistry.registerBlock(block, block.getUnlocalizedName().substring(5));
         }
     }
 
