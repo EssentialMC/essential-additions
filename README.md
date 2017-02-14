@@ -12,4 +12,9 @@ Suggestions can be sent in the issues section of the Curse page, or GitHub *(Pre
 
 [Click here](https://github.com/spikespaz/EssentialAdditions) to go to the GitHub repository. (https://github.com/spikespaz/EssentialAdditions)
  
-It is open source, but I ask that you be respectful to my work and follow the guidelines of the license agreement. By doing anything with the mod, you are agreeing to abide by the terms of the license agreement *(GNU GPL v3)*.
+It is open source, but I ask that you be respectful to my work and follow the guidelines of the license agreement. By doing anything with the mod, you are agreeing to abide by the terms of the license agreement *([GNU GPL v3](https://www.gnu.org/licenses/gpl-3.0.en.html))*.
+
+
+To contribute, you must first sign the [CLA Agreement](https://cla-assistant.io/spikespaz/EssentialAdditions).
+
+[![CLA assistant](https://cla-assistant.io/readme/badge/spikespaz/EssentialAdditions)](https://cla-assistant.io/spikespaz/EssentialAdditions)
