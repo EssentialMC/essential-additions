@@ -34,7 +34,7 @@ public class ClientProxy extends CommonProxy {
     
     
     private void RegisterModObjectsisterItemsAndBlocks(){
- /*       RegisterModObjects(ModItems.emerald_helmet);
+       RegisterModObjects(ModItems.emerald_helmet);
         RegisterModObjects(ModItems.emerald_chestplate);
         RegisterModObjects(ModItems.emerald_leggings);
         RegisterModObjects(ModItems.emerald_boots);
@@ -46,7 +46,7 @@ public class ClientProxy extends CommonProxy {
         RegisterModObjects(ModItems.ruby_chestplate);
         RegisterModObjects(ModItems.ruby_leggings);
         RegisterModObjects(ModItems.ruby_boots);
-*/
+
         RegisterModObjects(ModItems.emerald_sword);
         RegisterModObjects(ModItems.emerald_pickaxe);
         RegisterModObjects(ModItems.emerald_hoe);
@@ -82,11 +82,11 @@ public class ClientProxy extends CommonProxy {
         if (object instanceof Item) {
             Item item = (Item) object;
             Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(MODID + ":" + item.getUnlocalizedName().substring(5), "inventory"));
-            System.out.println("========================================================================> Registered Item renders in game.");
+        //    System.out.println("========================================================================> Registered Item renders in game.");
         } else if (object instanceof Block) {
             Block block = (Block) object;
             Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(Item.getItemFromBlock(block), 0, new ModelResourceLocation(MODID + ":" + block.getUnlocalizedName().substring(5), "inventory"));
-            System.out.println("========================================================================> Registered Block renders in game.");
+        //    System.out.println("========================================================================> Registered Block renders in game.");
         }
     }
 }
