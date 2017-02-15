@@ -84,7 +84,7 @@ public class ClientProxy extends CommonProxy {
             Item item = (Item) object;
             Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(MODID + ":" + item.getUnlocalizedName().substring(5), "inventory"));
         } else if (object instanceof Block) {
-            Block block=(Block) object;
+            Block block = (Block) object;
             Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(Item.getItemFromBlock(block), 0, new ModelResourceLocation(MODID + ":" + block.getUnlocalizedName().substring(5), "inventory"));
         }
     }

@@ -1,6 +1,6 @@
 {
     "parent": "block/cube_all",
     "textures": {
-        "all": "blocks/ruby_block"
+        "all": "essentialadditions:blocks/ruby_block"
     }
 }

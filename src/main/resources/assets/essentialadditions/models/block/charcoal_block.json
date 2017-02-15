@@ -1,6 +1,6 @@
 {
     "parent": "block/cube_all",
     "textures": {
-        "all": "blocks/charcoal_block"
+        "all": "essentialadditions:blocks/charcoal_block"
     }
 }

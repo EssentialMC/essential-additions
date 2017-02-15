@@ -37,6 +37,6 @@
     },
     "parent": "builtin/generated",
     "textures": {
-        "layer0": "essentialadditions:items/Sulfur"
+        "layer0": "essentialadditions:items/sulfur"
     }
 }
