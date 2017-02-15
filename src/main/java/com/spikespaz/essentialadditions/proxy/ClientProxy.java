@@ -79,13 +79,14 @@ public class ClientProxy extends CommonProxy {
     
     
     public void RegisterModObjects(Object object) {
-
         if (object instanceof Item) {
             Item item = (Item) object;
             Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(MODID + ":" + item.getUnlocalizedName().substring(5), "inventory"));
+            System.out.println("========================================================================> Registered Item renders in game.");
         } else if (object instanceof Block) {
             Block block = (Block) object;
             Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(Item.getItemFromBlock(block), 0, new ModelResourceLocation(MODID + ":" + block.getUnlocalizedName().substring(5), "inventory"));
+            System.out.println("========================================================================> Registered Block renders in game.");
         }
     }
 }

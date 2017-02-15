@@ -36,9 +36,11 @@ public class CommonProxy {
         if (object instanceof Item) {
             Item item = (Item) object;
             GameRegistry.registerItem(item, item.getUnlocalizedName().substring(5));
+            System.out.println("========================================================================> Registered Items in game.");
         } else if (object instanceof Block) {
             Block block = (Block) object;
             GameRegistry.registerBlock(block, block.getUnlocalizedName().substring(5));
+            System.out.println("========================================================================> Registered Blocks in game.");
         }
     }
 
