@@ -6,7 +6,7 @@ from json import dump
 textures_dir = "src\\main\\resources\\assets\\essentialadditions\\textures\\items"
 models_path = "src\\main\\resources\\assets\\essentialadditions\\models\\item"
 
-item_model = {"parent": "builtin/generated", "textures": {"layer0": ""}, "display": {"thirdperson": {"rotation": [-90, 0, 0], "translation": [0, 1, -3], "scale": [0.55, 0.55, 0.55]}, "firstperson": {"rotation": [0, -135, 25], "translation": [0, 4, 2], "scale": [1.7, 1.7, 1.7]}}}
+item_model = {"parent": "builtin/generated", "textures": {"layer0": ""}, "display": {"firstperson": {"rotation": [0, -135, 25], "scale": [1.7, 1.7, 1.7], "translation": [0, 4, 2]}, "thirdperson": {"rotation": [-90, 0, 0], "scale": [0.55, 0.55, 0.55], "translation": [0, 1, -3]}}}
 
 for root, _, files in walk(textures_dir):
     for file in files:

@@ -13,6 +13,8 @@ import net.minecraft.world.World;
 
 import java.util.ArrayList;
 
+import static com.spikespaz.essentialadditions.main.EssentialAdditions.generateFuzzyPos;
+
 public class EyeOre extends BaseBlock {
     // Separate block class for eye_ore so we can make it drop two items easier.
     EyeOre(Material material, String unlocalizedName, Float hardness,
@@ -45,13 +47,7 @@ public class EyeOre extends BaseBlock {
     // Added some doubles to make the drops look natural.
     private void dropItems(World world, BlockPos pos, IBlockState state) {
         for (int i = 0; i < this.getDrops(world, pos, state, 0).size(); i++) {
-            float f = 0.5F;
-            double d0 = (double)(world.rand.nextFloat() * f) + (double)(1.0F - f) * 0.5D;
-            double d1 = (double)(world.rand.nextFloat() * f) + (double)(1.0F - f) * 0.5D;
-            double d2 = (double)(world.rand.nextFloat() * f) + (double)(1.0F - f) * 0.5D;
-
-            BlockPos fuzzy_pos = pos.add(d0, d1, d2);
-            spawnAsEntity(world, fuzzy_pos, this.getDrops(world, pos, state, 0).get(i));
+            spawnAsEntity(world, generateFuzzyPos(pos, world), this.getDrops(world, pos, state, 0).get(i));
         }
     }
 }

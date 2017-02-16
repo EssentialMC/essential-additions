@@ -3,11 +3,13 @@ package com.spikespaz.essentialadditions.proxy;
 import com.spikespaz.essentialadditions.blocks.ModBlocks;
 import com.spikespaz.essentialadditions.items.ModItems;
 import com.spikespaz.essentialadditions.main.CraftingRecipes;
+import com.spikespaz.essentialadditions.main.EventHandler;
 import com.spikespaz.essentialadditions.main.FuelHandler;
 import com.spikespaz.essentialadditions.world.WorldGeneration;
 import net.minecraft.block.Block;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
@@ -23,10 +25,11 @@ public class CommonProxy {
 
     public void init(FMLInitializationEvent e) {
         // Adjust maximum stack sizes.
-        changeVanillaStack();
+        modifyStacks();
         GameRegistry.registerFuelHandler(new FuelHandler());
         // modGenerationWeight being set to 10 is polite to other mods, and will take it's ore generation someplace last.
         GameRegistry.registerWorldGenerator(new WorldGeneration(), 10);
+        MinecraftForge.EVENT_BUS.register(new EventHandler());
     }
 
     public void postInit(FMLPostInitializationEvent e) {}
@@ -36,15 +39,16 @@ public class CommonProxy {
         if (object instanceof Item) {
             Item item = (Item) object;
             GameRegistry.registerItem(item, item.getUnlocalizedName().substring(5));
-            System.out.println("========================================================================> Registered Items in game.");
+        //    System.out.println("========================================================================> Registered Items in game.");
         } else if (object instanceof Block) {
             Block block = (Block) object;
             GameRegistry.registerBlock(block, block.getUnlocalizedName().substring(5));
-            System.out.println("========================================================================> Registered Blocks in game.");
+        //    System.out.println("========================================================================> Registered Blocks in game.");
         }
     }
 
-    private static void changeVanillaStack(){
+    private static void modifyStacks() {
+        // Change vanilla stack sizes.
         // Miscellaneous
         Items.minecart.setMaxStackSize(16);
         Items.bucket.setMaxStackSize(64);
