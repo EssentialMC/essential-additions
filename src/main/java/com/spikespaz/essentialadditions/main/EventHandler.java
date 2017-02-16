@@ -12,8 +12,10 @@ import static net.minecraft.block.Block.spawnAsEntity;
 public class EventHandler {
     @SubscribeEvent
     public void BreakEvent(BlockEvent.BreakEvent event) {
+        // Get tool used to break the block.
+        Item toolUsed = event.getPlayer().getCurrentEquippedItem().getItem();
         // Drop itself when a mob spawner is broken.
-        if (event.state.getBlock() instanceof BlockMobSpawner && !event.world.isRemote) {
+        if (event.state.getBlock() instanceof BlockMobSpawner && !event.world.isRemote && toolUsed.getHarvestLevel(new ItemStack(toolUsed), "pickaxe") >= 2) {
             spawnAsEntity(event.world, generateFuzzyPos(event.pos, event.world), new ItemStack(Item.getItemFromBlock(event.state.getBlock())));
         }
     }
