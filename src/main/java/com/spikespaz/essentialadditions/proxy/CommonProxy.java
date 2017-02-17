@@ -17,8 +17,8 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 public class CommonProxy {
     public void preInit(FMLPreInitializationEvent e) {
         // Load the main mod classes.
-        ModRegistry.registerItems();
         ModRegistry.registerBlocks();
+        ModRegistry.registerItems();
         CraftingRecipes.mainRegistry();
     }
 

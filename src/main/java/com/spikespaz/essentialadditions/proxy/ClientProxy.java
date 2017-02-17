@@ -12,17 +12,16 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import static com.spikespaz.essentialadditions.main.EssentialAdditions.MODID;
 
 public class ClientProxy extends CommonProxy {
-
     @Override
     public void preInit(FMLPreInitializationEvent e) {
         super.preInit(e);
-        ModRegistry.renderItems();
-        ModRegistry.renderBlocks();
     }
 
     @Override
     public void init(FMLInitializationEvent e) {
         super.init(e);
+        ModRegistry.renderItems();
+        ModRegistry.renderBlocks();
     }
 
     @Override
