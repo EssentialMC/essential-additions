@@ -2,7 +2,7 @@ package com.spikespaz.essentialadditions.main;
 
 import com.spikespaz.essentialadditions.blocks.ModBlocks;
 import com.spikespaz.essentialadditions.items.ModItems;
-import net.minecraftforge.fml.common.registry.GameRegistry;
+import com.spikespaz.essentialadditions.proxy.ClientProxy;
 
 import static com.spikespaz.essentialadditions.main.EssentialAdditions.proxy;
 
@@ -65,5 +65,65 @@ public class ModRegistry {
 
         // Other
         proxy.registerModObject(ModBlocks.charcoal_block);
+    }
+
+    // Entries to render all items.
+    public static void renderItems() {
+        // Emerald Armor
+        ClientProxy.renderModObject(ModItems.emerald_chestplate);
+        ClientProxy.renderModObject(ModItems.emerald_helmet);
+        ClientProxy.renderModObject(ModItems.emerald_boots);
+        ClientProxy.renderModObject(ModItems.emerald_leggings);
+        // Obsidian Armor
+        ClientProxy.renderModObject(ModItems.obsidian_helmet);
+        ClientProxy.renderModObject(ModItems.obsidian_chestplate);
+        ClientProxy.renderModObject(ModItems.obsidian_leggings);
+        ClientProxy.renderModObject(ModItems.obsidian_boots);
+        // Ruby Armor
+        ClientProxy.renderModObject(ModItems.ruby_helmet);
+        ClientProxy.renderModObject(ModItems.ruby_chestplate);
+        ClientProxy.renderModObject(ModItems.ruby_leggings);
+        ClientProxy.renderModObject(ModItems.ruby_boots);
+        // Emerald Tools
+        ClientProxy.renderModObject(ModItems.emerald_sword);
+        ClientProxy.renderModObject(ModItems.emerald_axe);
+        ClientProxy.renderModObject(ModItems.emerald_shovel);
+        ClientProxy.renderModObject(ModItems.emerald_pickaxe);
+        ClientProxy.renderModObject(ModItems.emerald_hoe);
+        // Obsidian Tools
+        ClientProxy.renderModObject(ModItems.obsidian_sword);
+        ClientProxy.renderModObject(ModItems.obsidian_axe);
+        ClientProxy.renderModObject(ModItems.obsidian_shovel);
+        ClientProxy.renderModObject(ModItems.obsidian_pickaxe);
+        ClientProxy.renderModObject(ModItems.obsidian_hoe);
+        // Ruby Tools
+        ClientProxy.renderModObject(ModItems.ruby_sword);
+        ClientProxy.renderModObject(ModItems.ruby_axe);
+        ClientProxy.renderModObject(ModItems.ruby_shovel);
+        ClientProxy.renderModObject(ModItems.ruby_pickaxe);
+        ClientProxy.renderModObject(ModItems.ruby_hoe);
+        // Crafting Items
+        ClientProxy.renderModObject(ModItems.obsidian_shard);
+        ClientProxy.renderModObject(ModItems.sulfur);
+        ClientProxy.renderModObject(ModItems.charcoal_dust);
+
+        ClientProxy.renderModObject(ModItems.ruby);
+        ClientProxy.renderModObject(ModItems.iron_plating);
+        ClientProxy.renderModObject(ModItems.gold_plating);
+        ClientProxy.renderModObject(ModItems.chain_link);
+    }
+
+    // Render all blocks.
+    public static void renderBlocks() {
+        // Custom Ores
+        ClientProxy.renderModObject(ModBlocks.sulfur_block);
+
+        ClientProxy.renderModObject(ModBlocks.eye_ore);
+        // Ruby Blocks
+        ClientProxy.renderModObject(ModBlocks.ruby_ore);
+        ClientProxy.renderModObject(ModBlocks.ruby_block);
+
+        // Other
+        ClientProxy.renderModObject(ModBlocks.charcoal_block);
     }
 }
