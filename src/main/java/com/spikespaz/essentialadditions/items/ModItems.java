@@ -5,7 +5,6 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.util.EnumHelper;
 
-import static com.spikespaz.essentialadditions.main.EssentialAdditions.proxy;
 import static net.minecraft.item.ItemArmor.ArmorMaterial;
 import static net.minecraftforge.common.util.EnumHelper.addToolMaterial;
 
@@ -60,50 +59,4 @@ public class ModItems {
     public static Item iron_plating = new Item().setUnlocalizedName("iron_plating").setCreativeTab(CreativeTabs.tabMaterials);
     public static Item gold_plating = new Item().setUnlocalizedName("gold_plating").setCreativeTab(CreativeTabs.tabMaterials);
     public static Item chain_link = new Item().setUnlocalizedName("chain_link").setCreativeTab(CreativeTabs.tabMaterials);
-
-    // Register all items and their unlocalized names.
-    public static void registerItems() {
-        // Emerald Armor
-        proxy.RegisterModObject(emerald_helmet);
-        proxy.RegisterModObject(emerald_chestplate);
-        proxy.RegisterModObject(emerald_leggings);
-        proxy.RegisterModObject(emerald_boots);
-        // Obsidian Armor
-        proxy.RegisterModObject(obsidian_helmet);
-        proxy.RegisterModObject(obsidian_chestplate);
-        proxy.RegisterModObject(obsidian_leggings);
-        proxy.RegisterModObject(obsidian_boots);
-        // Ruby Armor
-        proxy.RegisterModObject(ruby_helmet);
-        proxy.RegisterModObject(ruby_chestplate);
-        proxy.RegisterModObject(ruby_leggings);
-        proxy.RegisterModObject(ruby_boots);
-        // Emerald Tools
-        proxy.RegisterModObject(emerald_sword);
-        proxy.RegisterModObject(emerald_axe);
-        proxy.RegisterModObject(emerald_shovel);
-        proxy.RegisterModObject(emerald_pickaxe);
-        proxy.RegisterModObject(emerald_hoe);
-        // Obsidian Tools
-        proxy.RegisterModObject(obsidian_sword);
-        proxy.RegisterModObject(obsidian_axe);
-        proxy.RegisterModObject(obsidian_shovel);
-        proxy.RegisterModObject(obsidian_pickaxe);
-        proxy.RegisterModObject(obsidian_hoe);
-        // Ruby Tools
-        proxy.RegisterModObject(ruby_sword);
-        proxy.RegisterModObject(ruby_axe);
-        proxy.RegisterModObject(ruby_shovel);
-        proxy.RegisterModObject(ruby_pickaxe);
-        proxy.RegisterModObject(ruby_hoe);
-        // Crafting Items
-        proxy.RegisterModObject(obsidian_shard);
-        proxy.RegisterModObject(sulfur);
-        proxy.RegisterModObject(charcoal_dust);
-
-        proxy.RegisterModObject(ruby);
-        proxy.RegisterModObject(iron_plating);
-        proxy.RegisterModObject(gold_plating);
-        proxy.RegisterModObject(chain_link);
-    }
 }

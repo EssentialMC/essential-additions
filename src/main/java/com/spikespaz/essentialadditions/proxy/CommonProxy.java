@@ -1,10 +1,9 @@
 package com.spikespaz.essentialadditions.proxy;
 
-import com.spikespaz.essentialadditions.blocks.ModBlocks;
-import com.spikespaz.essentialadditions.items.ModItems;
 import com.spikespaz.essentialadditions.main.CraftingRecipes;
 import com.spikespaz.essentialadditions.main.EventHandler;
 import com.spikespaz.essentialadditions.main.FuelHandler;
+import com.spikespaz.essentialadditions.main.ModRegistry;
 import com.spikespaz.essentialadditions.world.WorldGeneration;
 import net.minecraft.block.Block;
 import net.minecraft.init.Items;
@@ -18,8 +17,8 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 public class CommonProxy {
     public void preInit(FMLPreInitializationEvent e) {
         // Load the main mod classes.
-        ModBlocks.registerBlocks();
-        ModItems.registerItems();
+        ModRegistry.registerItems();
+        ModRegistry.registerBlocks();
         CraftingRecipes.mainRegistry();
     }
 
@@ -35,15 +34,13 @@ public class CommonProxy {
     public void postInit(FMLPostInitializationEvent e) {}
 
     // Register items and blocks to the game. Easier than having two separate functions.
-    public void RegisterModObject(Object object) {
+    public void registerModObject(Object object) {
         if (object instanceof Item) {
             Item item = (Item) object;
             GameRegistry.registerItem(item, item.getUnlocalizedName().substring(5));
-        //    System.out.println("========================================================================> Registered Items in game.");
         } else if (object instanceof Block) {
             Block block = (Block) object;
             GameRegistry.registerBlock(block, block.getUnlocalizedName().substring(5));
-        //    System.out.println("========================================================================> Registered Blocks in game.");
         }
     }
 

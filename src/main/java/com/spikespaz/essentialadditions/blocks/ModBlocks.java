@@ -8,8 +8,6 @@ import net.minecraft.item.Item;
 
 import java.util.Random;
 
-import static com.spikespaz.essentialadditions.main.EssentialAdditions.proxy;
-
 public class ModBlocks {
     // Static declarations of all blocks and their properties.
     // Custom Ores
@@ -37,18 +35,4 @@ public class ModBlocks {
     }.setStepSound(Block.soundTypePiston);
     // Other
     public static Block charcoal_block = new BaseBlock(Material.rock, "charcoal_block", 5.0F, 10.0F, "pickaxe", 2, CreativeTabs.tabBlock).setStepSound(Block.soundTypePiston);
-
-    // Register all blocks and their unlocalized names.
-    public static void registerBlocks() {
-        // Custom Ores
-        proxy.RegisterModObject(sulfur_block);
-
-        proxy.RegisterModObject(eye_ore);
-        // Ruby Blocks
-        proxy.RegisterModObject(ruby_ore);
-        proxy.RegisterModObject(ruby_block);
-
-        // Other
-        proxy.RegisterModObject(charcoal_block);
-    }
 }
