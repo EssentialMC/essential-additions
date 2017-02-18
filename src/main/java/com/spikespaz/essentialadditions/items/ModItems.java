@@ -2,9 +2,11 @@ package com.spikespaz.essentialadditions.items;
 
 import com.spikespaz.essentialadditions.main.EssentialAdditions;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.util.EnumHelper;
 
+import static net.minecraft.inventory.EntityEquipmentSlot.*;
 import static net.minecraft.item.ItemArmor.ArmorMaterial;
 import static net.minecraftforge.common.util.EnumHelper.addToolMaterial;
 
@@ -18,20 +20,20 @@ public class ModItems {
     private static Item.ToolMaterial ruby_gem = addToolMaterial("ruby", 3, 2290, 16.0F, 4.5F, 7);
     // Static declarations of all items and their properties.
     // Emerald Armor
-    public static Item emerald_helmet = new BaseArmor("emerald_helmet",emerald_armor,1,0);
-    public static Item emerald_chestplate = new BaseArmor("emerald_chestplate",emerald_armor,1,1);
-    public static Item emerald_leggings = new BaseArmor("emerald_leggings",emerald_armor,2,2);
-    public static Item emerald_boots = new BaseArmor("emerald_boots",emerald_armor,1,3);
+    public static Item emerald_helmet = new BaseArmor("emerald_helmet", emerald_armor, 1, HEAD);
+    public static Item emerald_chestplate = new BaseArmor("emerald_chestplate", emerald_armor, 1, CHEST);
+    public static Item emerald_leggings = new BaseArmor("emerald_leggings", emerald_armor, 2, LEGS);
+    public static Item emerald_boots = new BaseArmor("emerald_boots", emerald_armor, 1, FEET);
 //    // Obsidian Armor
-    public static Item obsidian_helmet = new BaseArmor("obsidian_helmet",obsidian_armor,1,0);
-    public static Item obsidian_chestplate = new BaseArmor("obsidian_chestplate",obsidian_armor,1,1);
-    public static Item obsidian_leggings = new BaseArmor("obsidian_leggings",obsidian_armor,2,2);
-    public static Item obsidian_boots = new BaseArmor("obsidian_boots",obsidian_armor,1,3);
+    public static Item obsidian_helmet = new BaseArmor("obsidian_helmet", obsidian_armor, 1, HEAD);
+    public static Item obsidian_chestplate = new BaseArmor("obsidian_chestplate", obsidian_armor, 1, CHEST);
+    public static Item obsidian_leggings = new BaseArmor("obsidian_leggings", obsidian_armor, 2, LEGS);
+    public static Item obsidian_boots = new BaseArmor("obsidian_boots", obsidian_armor, 1, FEET);
 //    // Ruby Armor
-    public static Item ruby_helmet = new BaseArmor("ruby_helmet",ruby_armor,1,0);
-    public static Item ruby_chestplate = new BaseArmor("ruby_chestplate",ruby_armor,1,1);
-    public static Item ruby_leggings = new BaseArmor("ruby_leggings",ruby_armor,2,2);
-    public static Item ruby_boots = new BaseArmor("ruby_boots",ruby_armor,1,3);
+    public static Item ruby_helmet = new BaseArmor("ruby_helmet", ruby_armor, 1, HEAD);
+    public static Item ruby_chestplate = new BaseArmor("ruby_chestplate", ruby_armor, 1, CHEST);
+    public static Item ruby_leggings = new BaseArmor("ruby_leggings", ruby_armor, 2, LEGS);
+    public static Item ruby_boots = new BaseArmor("ruby_boots", ruby_armor, 1, FEET);
     // Emerald Tools
     public static Item emerald_sword = new BaseSword(emerald_gem, "emerald_sword");
     public static Item emerald_axe = new BaseAxe(emerald_gem, "emerald_axe");
