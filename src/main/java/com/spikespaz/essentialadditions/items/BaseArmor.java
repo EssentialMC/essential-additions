@@ -9,6 +9,6 @@ public class BaseArmor extends ItemArmor {
     public BaseArmor(String unlocalizedName, ArmorMaterial material, int renderIndex, int armorType) {
         super(material, renderIndex, armorType);
         this.setUnlocalizedName(unlocalizedName);
-        this.setCreativeTab(CreativeTabs.tabCombat);
+        this.setCreativeTab(CreativeTabs.COMBAT);
     }
 }

@@ -51,12 +51,12 @@ public class ModItems {
     public static Item ruby_pickaxe = new BasePickaxe(ruby_gem, "ruby_pickaxe");
     public static Item ruby_hoe = new BaseHoe(ruby_gem, "ruby_hoe");
     // Crafting Items
-    public static Item obsidian_shard = new Item().setUnlocalizedName("obsidian_shard").setCreativeTab(CreativeTabs.tabMaterials);
-    public static Item sulfur = new Item().setUnlocalizedName("sulfur").setCreativeTab(CreativeTabs.tabMaterials);
-    public static Item charcoal_dust = new Item().setUnlocalizedName("charcoal_dust").setCreativeTab(CreativeTabs.tabMaterials);
+    public static Item obsidian_shard = new Item().setUnlocalizedName("obsidian_shard").setCreativeTab(CreativeTabs.MATERIALS);
+    public static Item sulfur = new Item().setUnlocalizedName("sulfur").setCreativeTab(CreativeTabs.MATERIALS);
+    public static Item charcoal_dust = new Item().setUnlocalizedName("charcoal_dust").setCreativeTab(CreativeTabs.MATERIALS);
 
-    public static Item ruby = new Item().setUnlocalizedName("ruby").setCreativeTab(CreativeTabs.tabMaterials);
-    public static Item iron_plating = new Item().setUnlocalizedName("iron_plating").setCreativeTab(CreativeTabs.tabMaterials);
-    public static Item gold_plating = new Item().setUnlocalizedName("gold_plating").setCreativeTab(CreativeTabs.tabMaterials);
-    public static Item chain_link = new Item().setUnlocalizedName("chain_link").setCreativeTab(CreativeTabs.tabMaterials);
+    public static Item ruby = new Item().setUnlocalizedName("ruby").setCreativeTab(CreativeTabs.MATERIALS);
+    public static Item iron_plating = new Item().setUnlocalizedName("iron_plating").setCreativeTab(CreativeTabs.MATERIALS);
+    public static Item gold_plating = new Item().setUnlocalizedName("gold_plating").setCreativeTab(CreativeTabs.MATERIALS);
+    public static Item chain_link = new Item().setUnlocalizedName("chain_link").setCreativeTab(CreativeTabs.MATERIALS);
 }
