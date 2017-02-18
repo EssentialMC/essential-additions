@@ -3,75 +3,74 @@ package com.spikespaz.essentialadditions.main;
 import com.spikespaz.essentialadditions.blocks.ModBlocks;
 import com.spikespaz.essentialadditions.items.ModItems;
 import com.spikespaz.essentialadditions.proxy.ClientProxy;
-
-import static com.spikespaz.essentialadditions.main.EssentialAdditions.proxy;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class ModRegistry {
     // Register all items and their unlocalized names.
     public static void registerItems() {
         // Emerald Armor
-        proxy.registerModObject(ModItems.emerald_chestplate);
-        proxy.registerModObject(ModItems.emerald_helmet);
-        proxy.registerModObject(ModItems.emerald_boots);
-        proxy.registerModObject(ModItems.emerald_leggings);
+        GameRegistry.registerItem(ModItems.emerald_helmet);
+        GameRegistry.registerItem(ModItems.emerald_chestplate);
+        GameRegistry.registerItem(ModItems.emerald_boots);
+        GameRegistry.registerItem(ModItems.emerald_leggings);
         // Obsidian Armor
-        proxy.registerModObject(ModItems.obsidian_helmet);
-        proxy.registerModObject(ModItems.obsidian_chestplate);
-        proxy.registerModObject(ModItems.obsidian_leggings);
-        proxy.registerModObject(ModItems.obsidian_boots);
+        GameRegistry.registerItem(ModItems.obsidian_helmet);
+        GameRegistry.registerItem(ModItems.obsidian_chestplate);
+        GameRegistry.registerItem(ModItems.obsidian_leggings);
+        GameRegistry.registerItem(ModItems.obsidian_boots);
         // Ruby Armor
-        proxy.registerModObject(ModItems.ruby_helmet);
-        proxy.registerModObject(ModItems.ruby_chestplate);
-        proxy.registerModObject(ModItems.ruby_leggings);
-        proxy.registerModObject(ModItems.ruby_boots);
+        GameRegistry.registerItem(ModItems.ruby_helmet);
+        GameRegistry.registerItem(ModItems.ruby_chestplate);
+        GameRegistry.registerItem(ModItems.ruby_leggings);
+        GameRegistry.registerItem(ModItems.ruby_boots);
         // Emerald Tools
-        proxy.registerModObject(ModItems.emerald_sword);
-        proxy.registerModObject(ModItems.emerald_axe);
-        proxy.registerModObject(ModItems.emerald_shovel);
-        proxy.registerModObject(ModItems.emerald_pickaxe);
-        proxy.registerModObject(ModItems.emerald_hoe);
+        GameRegistry.registerItem(ModItems.emerald_sword);
+        GameRegistry.registerItem(ModItems.emerald_axe);
+        GameRegistry.registerItem(ModItems.emerald_shovel);
+        GameRegistry.registerItem(ModItems.emerald_pickaxe);
+        GameRegistry.registerItem(ModItems.emerald_hoe);
         // Obsidian Tools
-        proxy.registerModObject(ModItems.obsidian_sword);
-        proxy.registerModObject(ModItems.obsidian_axe);
-        proxy.registerModObject(ModItems.obsidian_shovel);
-        proxy.registerModObject(ModItems.obsidian_pickaxe);
-        proxy.registerModObject(ModItems.obsidian_hoe);
+        GameRegistry.registerItem(ModItems.obsidian_sword);
+        GameRegistry.registerItem(ModItems.obsidian_axe);
+        GameRegistry.registerItem(ModItems.obsidian_shovel);
+        GameRegistry.registerItem(ModItems.obsidian_pickaxe);
+        GameRegistry.registerItem(ModItems.obsidian_hoe);
         // Ruby Tools
-        proxy.registerModObject(ModItems.ruby_sword);
-        proxy.registerModObject(ModItems.ruby_axe);
-        proxy.registerModObject(ModItems.ruby_shovel);
-        proxy.registerModObject(ModItems.ruby_pickaxe);
-        proxy.registerModObject(ModItems.ruby_hoe);
+        GameRegistry.registerItem(ModItems.ruby_sword);
+        GameRegistry.registerItem(ModItems.ruby_axe);
+        GameRegistry.registerItem(ModItems.ruby_shovel);
+        GameRegistry.registerItem(ModItems.ruby_pickaxe);
+        GameRegistry.registerItem(ModItems.ruby_hoe);
         // Crafting Items
-        proxy.registerModObject(ModItems.obsidian_shard);
-        proxy.registerModObject(ModItems.sulfur);
-        proxy.registerModObject(ModItems.charcoal_dust);
+        GameRegistry.registerItem(ModItems.obsidian_shard);
+        GameRegistry.registerItem(ModItems.sulfur);
+        GameRegistry.registerItem(ModItems.charcoal_dust);
 
-        proxy.registerModObject(ModItems.ruby);
-        proxy.registerModObject(ModItems.iron_plating);
-        proxy.registerModObject(ModItems.gold_plating);
-        proxy.registerModObject(ModItems.chain_link);
+        GameRegistry.registerItem(ModItems.ruby);
+        GameRegistry.registerItem(ModItems.iron_plating);
+        GameRegistry.registerItem(ModItems.gold_plating);
+        GameRegistry.registerItem(ModItems.chain_link);
     }
 
     // Register all blocks and their unlocalized names.
     public static void registerBlocks() {
         // Custom Ores
-        proxy.registerModObject(ModBlocks.sulfur_block);
+        GameRegistry.registerBlock(ModBlocks.sulfur_block);
 
-        proxy.registerModObject(ModBlocks.eye_ore);
+        GameRegistry.registerBlock(ModBlocks.eye_ore);
         // Ruby Blocks
-        proxy.registerModObject(ModBlocks.ruby_ore);
-        proxy.registerModObject(ModBlocks.ruby_block);
+        GameRegistry.registerBlock(ModBlocks.ruby_ore);
+        GameRegistry.registerBlock(ModBlocks.ruby_block);
 
         // Other
-        proxy.registerModObject(ModBlocks.charcoal_block);
+        GameRegistry.registerBlock(ModBlocks.charcoal_block);
     }
 
     // Entries to render all items.
     public static void renderItems() {
         // Emerald Armor
-        ClientProxy.renderModObject(ModItems.emerald_chestplate);
         ClientProxy.renderModObject(ModItems.emerald_helmet);
+        ClientProxy.renderModObject(ModItems.emerald_chestplate);
         ClientProxy.renderModObject(ModItems.emerald_boots);
         ClientProxy.renderModObject(ModItems.emerald_leggings);
         // Obsidian Armor
