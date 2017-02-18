@@ -4,10 +4,11 @@ import com.google.common.base.Predicate;
 import com.spikespaz.essentialadditions.blocks.ModBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.block.state.IBlockState;
-import net.minecraft.block.state.pattern.BlockHelper;
+import net.minecraft.block.state.pattern.BlockMatcher;
 import net.minecraft.init.Blocks;
-import net.minecraft.util.BlockPos;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+import net.minecraft.world.chunk.IChunkGenerator;
 import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.feature.WorldGenMinable;
 import net.minecraft.world.gen.feature.WorldGenerator;
@@ -31,16 +32,17 @@ public class WorldGeneration implements IWorldGenerator {
     }
 
     // The default blocks to replace based on the dimension can be changed.
-    public void generate(Random random, int chunkX, int chunkZ, World world, IChunkProvider chunkGenerator, IChunkProvider chunkProvider) {
-        switch (world.provider.getDimensionId()) {
+    @Override
+    public void generate(Random random, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider) {
+        switch (world.provider.getDimension()) {
             case -1:
-                generateNether(world, random, chunkX, chunkZ, BlockHelper.forBlock(Blocks.nether_brick));
+                generateNether(world, random, chunkX, chunkZ, BlockMatcher.forBlock(Blocks.NETHER_BRICK));
                 break;
             case 0:
-                generateOverworld(world, random, chunkX, chunkZ, BlockHelper.forBlock(Blocks.stone));
+                generateOverworld(world, random, chunkX, chunkZ, BlockMatcher.forBlock(Blocks.STONE));
                 break;
             case 1:
-                generateEnd(world, random, chunkX, chunkZ, BlockHelper.forBlock(Blocks.end_stone));
+                generateEnd(world, random, chunkX, chunkZ, BlockMatcher.forBlock(Blocks.END_STONE));
                 break;
             default:
                 break;
@@ -66,7 +68,7 @@ public class WorldGeneration implements IWorldGenerator {
             int randomY = random.nextInt(heightRange) + minY;
             int randomZ = chunkZ * 16 + random.nextInt(16);
 
-            gen.generate(world, random, new BlockPos(randomX,randomY,randomZ));
+            gen.generate(world, random, new BlockPos(randomX, randomY, randomZ));
         }
     }
 }
