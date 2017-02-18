@@ -6,5 +6,5 @@ class BaseAxe extends ItemAxe {
     BaseAxe(ToolMaterial material, String unlocalizedName) {
         super(material);
         this.setUnlocalizedName(unlocalizedName);
-   }
+    }
 }

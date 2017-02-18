@@ -12,11 +12,11 @@ import static net.minecraftforge.common.util.EnumHelper.addToolMaterial;
 
 public class ModItems {
     private static ArmorMaterial emerald_armor = EnumHelper.addArmorMaterial("emerald_armor",
-            MODID+":emerald_armor", 80, new int[]{4, 8, 5, 4}, 6, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.5F);
+            MODID +":emerald_armor", 80, new int[]{4, 8, 5, 4}, 6, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.5F);
     private static ArmorMaterial obsidian_armor = EnumHelper.addArmorMaterial("obsidian_armor",
-            MODID+":obsidian_armor", 47, new int[]{6, 7, 6, 5}, 5, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 1.5F);
+            MODID +":obsidian_armor", 47, new int[]{6, 7, 6, 5}, 5, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 1.5F);
     private static ArmorMaterial ruby_armor = EnumHelper.addArmorMaterial("ruby_armor",
-            MODID+":ruby_armor", 85, new int[]{4, 8, 5, 4}, 6, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.5F);
+            MODID +":ruby_armor", 85, new int[]{4, 8, 5, 4}, 6, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.5F);
 
     private static Item.ToolMaterial emerald_gem = addToolMaterial("Emerald", 3, 2740, 16.5F, 4.0F, 8);
     private static Item.ToolMaterial obsidian_gem = addToolMaterial("Obsidian", 2, 1210, 23.5F, 6.5F, 5);

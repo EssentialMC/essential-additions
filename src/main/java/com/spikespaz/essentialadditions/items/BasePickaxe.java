@@ -6,5 +6,5 @@ class BasePickaxe extends ItemPickaxe {
     BasePickaxe(ToolMaterial material, String unlocalizedName) {
         super(material);
         this.setUnlocalizedName(unlocalizedName);
-  }
+    }
 }
