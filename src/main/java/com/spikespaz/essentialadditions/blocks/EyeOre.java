@@ -9,11 +9,8 @@ import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.BlockPos;
 import net.minecraft.world.IBlockAccess;
-import net.minecraft.world.World;
 
 import java.util.ArrayList;
-
-import static com.spikespaz.essentialadditions.main.EssentialAdditions.generateFuzzyPos;
 
 public class EyeOre extends BaseBlock {
     // Separate block class for eye_ore so we can make it drop two items easier.
@@ -34,20 +31,5 @@ public class EyeOre extends BaseBlock {
         arrayList.add(new ItemStack(Items.ender_pearl));
         arrayList.add(new ItemStack(Items.blaze_powder));
         return arrayList;
-    }
-
-    // On block destroy, drop the items.
-    @Override
-    public void onBlockDestroyedByPlayer(World world, BlockPos pos, IBlockState state) {
-        if (!world.isRemote) {
-            dropItems(world, pos, state);
-        }
-    }
-
-    // Added some doubles to make the drops look natural.
-    private void dropItems(World world, BlockPos pos, IBlockState state) {
-        for (int i = 0; i < this.getDrops(world, pos, state, 0).size(); i++) {
-            spawnAsEntity(world, generateFuzzyPos(pos, world), this.getDrops(world, pos, state, 0).get(i));
-        }
     }
 }
