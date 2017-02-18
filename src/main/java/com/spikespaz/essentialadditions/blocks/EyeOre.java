@@ -1,5 +1,6 @@
 package com.spikespaz.essentialadditions.blocks;
 
+import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
@@ -14,9 +15,8 @@ import java.util.ArrayList;
 
 public class EyeOre extends BaseBlock {
     // Separate block class for eye_ore so we can make it drop two items easier.
-    EyeOre(Material material, String unlocalizedName, Float hardness,
-           Float resistance, String tool, Integer mineLevel, CreativeTabs creativeTab) {
-        super(material, unlocalizedName, hardness, resistance, tool, mineLevel, creativeTab);
+    EyeOre() {
+        super(Material.ROCK, "eye_ore", 3.0F, 5.0F, "pickaxe", 3, CreativeTabs.BUILDING_BLOCKS, SoundType.STONE);
     }
 
     // If entity that is an instance of EnderDragon, disable destroy. Else allow.
