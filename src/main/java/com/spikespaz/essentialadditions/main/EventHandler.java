@@ -6,7 +6,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraftforge.event.world.BlockEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
-import static com.spikespaz.essentialadditions.main.EssentialAdditions.generateFuzzyPos;
 import static net.minecraft.block.Block.spawnAsEntity;
 
 public class EventHandler {
@@ -16,7 +15,8 @@ public class EventHandler {
         Item toolUsed = event.getPlayer().getCurrentEquippedItem().getItem();
         // Drop itself when a mob spawner is broken.
         if (event.state.getBlock() instanceof BlockMobSpawner && !event.world.isRemote && toolUsed.getHarvestLevel(new ItemStack(toolUsed), "pickaxe") >= 2) {
-            spawnAsEntity(event.world, generateFuzzyPos(event.pos, event.world), new ItemStack(Item.getItemFromBlock(event.state.getBlock())));
+            ItemStack drop = new ItemStack(Item.getItemFromBlock(event.state.getBlock()));
+            spawnAsEntity(event.world, event.pos, drop);
         }
     }
 }
