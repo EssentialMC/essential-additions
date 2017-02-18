@@ -2,7 +2,7 @@ package com.spikespaz.essentialadditions.items;
 
 import com.spikespaz.essentialadditions.main.EssentialAdditions;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.inventory.EntityEquipmentSlot;
+import net.minecraft.init.SoundEvents;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.util.EnumHelper;
 
@@ -11,9 +11,12 @@ import static net.minecraft.item.ItemArmor.ArmorMaterial;
 import static net.minecraftforge.common.util.EnumHelper.addToolMaterial;
 
 public class ModItems {
-    private static ArmorMaterial emerald_armor = EnumHelper.addArmorMaterial("emerald_armor",EssentialAdditions.MODID+":emerald_armor", 80, new int[]{4, 8, 5, 4}, 6);
-    private static ArmorMaterial obsidian_armor = EnumHelper.addArmorMaterial("obsidian_armor", EssentialAdditions.MODID+":obsidian_armor", 47, new int[]{6, 7, 6, 5}, 5);
-    private static ArmorMaterial ruby_armor = EnumHelper.addArmorMaterial("ruby_armor", EssentialAdditions.MODID+":ruby_armor", 85, new int[]{4, 8, 5, 4}, 6);
+    private static ArmorMaterial emerald_armor = EnumHelper.addArmorMaterial("emerald_armor",
+            EssentialAdditions.MODID+":emerald_armor", 80, new int[]{4, 8, 5, 4}, 6, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0F);
+    private static ArmorMaterial obsidian_armor = EnumHelper.addArmorMaterial("obsidian_armor",
+            EssentialAdditions.MODID+":obsidian_armor", 47, new int[]{6, 7, 6, 5}, 5, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.5F);
+    private static ArmorMaterial ruby_armor = EnumHelper.addArmorMaterial("ruby_armor",
+            EssentialAdditions.MODID+":ruby_armor", 85, new int[]{4, 8, 5, 4}, 6, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0F);
 
     private static Item.ToolMaterial emerald_gem = addToolMaterial("Emerald", 3, 2740, 16.5F, 4.0F, 8);
     private static Item.ToolMaterial obsidian_gem = addToolMaterial("Obsidian", 2, 1210, 23.5F, 6.5F, 5);
