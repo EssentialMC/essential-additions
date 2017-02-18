@@ -45,41 +45,41 @@ public class CommonProxy {
     private static void modifyStacks() {
         // Change vanilla stack sizes.
         // Miscellaneous
-        Items.minecart.setMaxStackSize(16);
-        Items.bucket.setMaxStackSize(64);
-        Items.writable_book.setMaxStackSize(64);
+        Items.MINECART.setMaxStackSize(16);
+        Items.BUCKET.setMaxStackSize(64);
+        Items.WRITABLE_BOOK.setMaxStackSize(64);
         // Horse Armor
-        Items.diamond_horse_armor.setMaxStackSize(64);
-        Items.golden_horse_armor.setMaxStackSize(64);
-        Items.iron_horse_armor.setMaxStackSize(64);
+        Items.DIAMOND_HORSE_ARMOR.setMaxStackSize(64);
+        Items.GOLDEN_HORSE_ARMOR.setMaxStackSize(64);
+        Items.IRON_HORSE_ARMOR.setMaxStackSize(64);
         // Records / Music Discs
-        Items.record_13.setMaxStackSize(16);
-        Items.record_cat.setMaxStackSize(16);
-        Items.record_blocks.setMaxStackSize(16);
-        Items.record_chirp.setMaxStackSize(16);
-        Items.record_far.setMaxStackSize(16);
-        Items.record_mall.setMaxStackSize(16);
-        Items.record_mellohi.setMaxStackSize(16);
-        Items.record_stal.setMaxStackSize(16);
-        Items.record_strad.setMaxStackSize(16);
-        Items.record_ward.setMaxStackSize(16);
-        Items.record_11.setMaxStackSize(16);
-        Items.record_wait.setMaxStackSize(16);
+        Items.RECORD_13.setMaxStackSize(16);
+        Items.RECORD_CAT.setMaxStackSize(16);
+        Items.RECORD_BLOCKS.setMaxStackSize(16);
+        Items.RECORD_CHIRP.setMaxStackSize(16);
+        Items.RECORD_FAR.setMaxStackSize(16);
+        Items.RECORD_MALL.setMaxStackSize(16);
+        Items.RECORD_MELLOHI.setMaxStackSize(16);
+        Items.RECORD_STAL.setMaxStackSize(16);
+        Items.RECORD_STRAD.setMaxStackSize(16);
+        Items.RECORD_WARD.setMaxStackSize(16);
+        Items.RECORD_11.setMaxStackSize(16);
+        Items.RECORD_WAIT.setMaxStackSize(16);
         // Throwable Items
-        Items.ender_pearl.setMaxStackSize(64);
-        Items.egg.setMaxStackSize(64);
-        Items.snowball.setMaxStackSize(64);
-        Items.potionitem.setMaxStackSize(16);
+        Items.ENDER_PEARL.setMaxStackSize(64);
+        Items.EGG.setMaxStackSize(64);
+        Items.SNOWBALL.setMaxStackSize(64);
+        Items.POTIONITEM.setMaxStackSize(16);
         // Doors
-        Items.oak_door.setMaxStackSize(16);
-        Items.spruce_door.setMaxStackSize(16);
-        Items.birch_door.setMaxStackSize(16);
-        Items.jungle_door.setMaxStackSize(16);
-        Items.acacia_door.setMaxStackSize(16);
-        Items.dark_oak_door.setMaxStackSize(16);
-        Items.iron_door.setMaxStackSize(16);
+        Items.OAK_DOOR.setMaxStackSize(16);
+        Items.SPRUCE_DOOR.setMaxStackSize(16);
+        Items.BIRCH_DOOR.setMaxStackSize(16);
+        Items.JUNGLE_DOOR.setMaxStackSize(16);
+        Items.ACACIA_DOOR.setMaxStackSize(16);
+        Items.DARK_OAK_DOOR.setMaxStackSize(16);
+        Items.IRON_DOOR.setMaxStackSize(16);
         // Decoration
-        Items.sign.setMaxStackSize(64);
-        Items.bed.setMaxStackSize(16);
+        Items.SIGN.setMaxStackSize(64);
+        Items.BED.setMaxStackSize(16);
     }
 }
