@@ -39,19 +39,19 @@ public class ModItems {
     public static Item ruby_boots = new BaseArmor("ruby_boots", ruby_armor, 1, FEET);
     // Emerald Tools
     public static Item emerald_sword = new BaseSword(emerald_gem, "emerald_sword");
-    public static Item emerald_axe = new BaseAxe(emerald_gem, "emerald_axe");
+    public static Item emerald_axe = new BaseAxe(emerald_gem, -3.0F, "emerald_axe");
     public static Item emerald_shovel = new BaseSpade(emerald_gem, "emerald_shovel");
     public static Item emerald_pickaxe = new BasePickaxe(emerald_gem, "emerald_pickaxe");
     public static Item emerald_hoe = new BaseHoe(emerald_gem, "emerald_hoe");
     // Obsidian Tools
     public static Item obsidian_sword = new BaseSword(obsidian_gem, "obsidian_sword");
-    public static Item obsidian_axe = new BaseAxe(obsidian_gem, "obsidian_axe");
+    public static Item obsidian_axe = new BaseAxe(obsidian_gem, -3.0F, "obsidian_axe");
     public static Item obsidian_shovel = new BaseSpade(obsidian_gem, "obsidian_shovel");
     public static Item obsidian_pickaxe = new BasePickaxe(obsidian_gem, "obsidian_pickaxe");
     public static Item obsidian_hoe = new BaseHoe(obsidian_gem, "obsidian_hoe");
     // Ruby Tools
     public static Item ruby_sword = new BaseSword(ruby_gem, "ruby_sword");
-    public static Item ruby_axe = new BaseAxe(ruby_gem, "ruby_axe");
+    public static Item ruby_axe = new BaseAxe(ruby_gem, -3.0F, "ruby_axe");
     public static Item ruby_shovel = new BaseSpade(ruby_gem, "ruby_shovel");
     public static Item ruby_pickaxe = new BasePickaxe(ruby_gem, "ruby_pickaxe");
     public static Item ruby_hoe = new BaseHoe(ruby_gem, "ruby_hoe");

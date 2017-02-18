@@ -1,10 +1,11 @@
 package com.spikespaz.essentialadditions.items;
 
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemAxe;
 
 class BaseAxe extends ItemAxe {
-    BaseAxe(ToolMaterial material, String unlocalizedName) {
-        super(material);
+    BaseAxe(Item.ToolMaterial material, float attackSpeed, String unlocalizedName) {
+        super(material, material.getDamageVsEntity(), attackSpeed);
         this.setUnlocalizedName(unlocalizedName);
     }
 }
