@@ -69,7 +69,7 @@ public class WorldGeneration implements IWorldGenerator {
             int randomZ = chunkZ * 16 + random.nextInt(16);
 
             gen.generate(world, random, new BlockPos(randomX, randomY, randomZ));
-         //   System.out.println(randomX+" "+randomY+" "+randomZ);
+//            System.out.println(randomX+" "+randomY+" "+randomZ);
         }
     }
 }

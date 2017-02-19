@@ -29,7 +29,7 @@ public class GenerateSmallVein extends WorldGenerator {
     // This is to check if the block at X, Y, Z is replaceable or not and place the block.
     @Override
     public boolean generate(World world, Random rand, BlockPos pos) {
-     //   if (world.getBlockState(pos).getBlock().isReplaceableOreGen(world.getBlockState(pos), world, pos, this.target))
+//        if (world.getBlockState(pos).getBlock().isReplaceableOreGen(world.getBlockState(pos), world, pos, this.target))
         world.setBlockState(pos, this.block);
         System.out.println(pos);
         return true;
