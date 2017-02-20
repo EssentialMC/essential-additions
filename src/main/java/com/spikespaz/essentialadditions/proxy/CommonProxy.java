@@ -32,13 +32,20 @@ public class CommonProxy {
     public void postInit(FMLPostInitializationEvent e) {}
 
     // Register items and blocks to the game. Easier than having two separate functions.
+    @SuppressWarnings("deprecation")
     public void registerModObject(Object object) {
         if (object instanceof Item) {
             Item item = (Item) object;
-            GameRegistry.registerItem(item, item.getUnlocalizedName().substring(5));
+            item.setRegistryName(item.getUnlocalizedName().substring(5));
+            GameRegistry.register(item);
         } else if (object instanceof Block) {
             Block block = (Block) object;
-            GameRegistry.registerBlock(block, block.getUnlocalizedName().substring(5));
+            block.setRegistryName(block.getUnlocalizedName().substring(5));
+            // Yes, I know that this is deprecated. It works fine so leave me alone.
+            // Forge: "Modders SHOULD NOT use this, so it'll stay deprecated. Purely added to make lazy modders happy -.-"
+            // Well, call me a lazy modder, but it stays.
+            // I see no reason not to use it, because I would just need to do the same thing anyways. Deal with it.
+            GameRegistry.registerWithItem(block);
         }
     }
 
