@@ -13,14 +13,14 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class CommonProxy {
-    public void preInit(FMLPreInitializationEvent e) {
+    public void preInit(FMLPreInitializationEvent event) {
         // Load the main mod classes.
         ModRegistry.registerBlocks();
         ModRegistry.registerItems();
         CraftingRecipes.mainRegistry();
     }
 
-    public void init(FMLInitializationEvent e) {
+    public void init(FMLInitializationEvent event) {
         // Adjust maximum stack sizes.
         modifyStacks();
         GameRegistry.registerFuelHandler(new FuelHandler());
@@ -29,7 +29,7 @@ public class CommonProxy {
 //        MinecraftForge.EVENT_BUS.register(new EventHandler());
     }
 
-    public void postInit(FMLPostInitializationEvent e) {}
+    public void postInit(FMLPostInitializationEvent event) {}
 
     // Register items and blocks to the game. Easier than having two separate functions.
     @SuppressWarnings("deprecation")
