@@ -33,12 +33,14 @@ public class ClientProxy extends CommonProxy {
     public static void renderModObject(Object object) {
         if (object instanceof Item) {
             Item item = (Item) object;
-//            ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation(MODID + ":" + item.getUnlocalizedName().substring(5)));
-            Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(MODID + ":" + item.getUnlocalizedName().substring(5), "inventory"));
+//            ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation(MODID + ":" + item.getRegistryName()));
+            Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0,
+                    new ModelResourceLocation(MODID + ":" + item.getRegistryName(), "inventory"));
         } else if (object instanceof Block) {
             Block block = (Block) object;
-//            ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(block), 0, new ModelResourceLocation(MODID + ":" + block.getUnlocalizedName().substring(5)));
-            Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(Item.getItemFromBlock(block), 0, new ModelResourceLocation(MODID + ":" + block.getUnlocalizedName().substring(5), "inventory"));
+//            ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(block), 0, new ModelResourceLocation(MODID + ":" + block.getRegistryName()));
+            Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(Item.getItemFromBlock(block), 0,
+                    new ModelResourceLocation(MODID + ":" + block.getRegistryName(), "inventory"));
         }
     }
 }
