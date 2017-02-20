@@ -107,17 +107,17 @@ public class CraftingRecipes {
         // Mod Blocks
         GameRegistry.addRecipe(new ItemStack(Blocks.OBSIDIAN, 1),
                 "   ", " OO", " OO", 'O', ModItems.OBSIDIAN_SHARD);
-        GameRegistry.addRecipe(new ItemStack(ModBlocks.sulfur_block, 1),
+        GameRegistry.addRecipe(new ItemStack(ModBlocks.SULFUR_BLOCK, 1),
                 "   ", " SS", " SS", 'S', ModItems.SULFUR);
-        GameRegistry.addRecipe(new ItemStack(ModBlocks.charcoal_block, 1),
+        GameRegistry.addRecipe(new ItemStack(ModBlocks.CHARCOAL_BLOCK, 1),
                 "CCC", "CCC", "CCC", 'C', new ItemStack(Items.COAL, 1, 1));
-        GameRegistry.addRecipe(new ItemStack(ModBlocks.ruby_block, 1),
+        GameRegistry.addRecipe(new ItemStack(ModBlocks.RUBY_BLOCK, 1),
                 "RRR", "RRR", "RRR", 'R', ModItems.RUBY);
         // Mod Resources
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.SULFUR, 4),
-                ModBlocks.sulfur_block);
+                ModBlocks.SULFUR_BLOCK);
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.RUBY, 9),
-                ModBlocks.ruby_block);
+                ModBlocks.RUBY_BLOCK);
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.IRON_PLATING, 2),
                 Items.IRON_INGOT, Items.IRON_INGOT);
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.GOLD_PLATING, 2),
@@ -127,7 +127,7 @@ public class CraftingRecipes {
     }
 
     private static void addSmeltingRecipes() {
-        GameRegistry.addSmelting(ModBlocks.ruby_ore, new ItemStack(ModItems.RUBY, 1), 4.0F);
+        GameRegistry.addSmelting(ModBlocks.RUBY_ORE, new ItemStack(ModItems.RUBY, 1), 4.0F);
 
         GameRegistry.addSmelting(Blocks.OBSIDIAN, new ItemStack(ModItems.OBSIDIAN_SHARD, 9), 6.0F);
         GameRegistry.addSmelting(Items.LEATHER, new ItemStack(Items.ROTTEN_FLESH), 2.0F);

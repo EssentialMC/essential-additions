@@ -20,15 +20,15 @@ public class WorldGeneration implements IWorldGenerator {
     // All OreGen for each block can be put into these three.
     // Nether Ores
     private void generateNether(World world, Random random, int x, int z, Predicate<IBlockState> replaceBlock) {
-        generateOre(ModBlocks.sulfur_block, world, random, x, z, 8, 10, 60, 0, 256, replaceBlock);
+        generateOre(ModBlocks.SULFUR_BLOCK, world, random, x, z, 8, 10, 60, 0, 256, replaceBlock);
     }
     // Overworld Ores
     private void generateOverworld(World world, Random random, int x, int z, Predicate<IBlockState> replaceBlock) {
-        generateOre(ModBlocks.ruby_ore, world, random, x, z, 1, 2, 10, 4, 32, replaceBlock);
+        generateOre(ModBlocks.RUBY_ORE, world, random, x, z, 1, 2, 10, 4, 32, replaceBlock);
     }
     // End Ores
     private void generateEnd(World world, Random random, int x, int z, Predicate<IBlockState> replaceBlock) {
-        generateOre(ModBlocks.eye_ore, world, random, x, z, 1, 1, 460, 0, 256, replaceBlock);
+        generateOre(ModBlocks.EYE_ORE, world, random, x, z, 1, 1, 460, 0, 256, replaceBlock);
     }
 
     // The default blocks to replace based on the dimension can be changed.

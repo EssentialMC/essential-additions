@@ -56,15 +56,15 @@ public class ModRegistry {
     // Register all blocks and their unlocalized names.
     public static void registerBlocks() {
         // Custom Ores
-        proxy.registerModObject(ModBlocks.sulfur_block);
+        proxy.registerModObject(ModBlocks.SULFUR_BLOCK);
 
-        proxy.registerModObject(ModBlocks.eye_ore);
+        proxy.registerModObject(ModBlocks.EYE_ORE);
         // Ruby Blocks
-        proxy.registerModObject(ModBlocks.ruby_ore);
-        proxy.registerModObject(ModBlocks.ruby_block);
+        proxy.registerModObject(ModBlocks.RUBY_ORE);
+        proxy.registerModObject(ModBlocks.RUBY_BLOCK);
 
         // Other
-        proxy.registerModObject(ModBlocks.charcoal_block);
+        proxy.registerModObject(ModBlocks.CHARCOAL_BLOCK);
     }
 
     // Entries to render all items.
@@ -116,14 +116,14 @@ public class ModRegistry {
     // Render all blocks.
     public static void renderBlocks() {
         // Custom Ores
-        ClientProxy.renderModObject(ModBlocks.sulfur_block);
+        ClientProxy.renderModObject(ModBlocks.SULFUR_BLOCK);
 
-        ClientProxy.renderModObject(ModBlocks.eye_ore);
+        ClientProxy.renderModObject(ModBlocks.EYE_ORE);
         // Ruby Blocks
-        ClientProxy.renderModObject(ModBlocks.ruby_ore);
-        ClientProxy.renderModObject(ModBlocks.ruby_block);
+        ClientProxy.renderModObject(ModBlocks.RUBY_ORE);
+        ClientProxy.renderModObject(ModBlocks.RUBY_BLOCK);
 
         // Other
-        ClientProxy.renderModObject(ModBlocks.charcoal_block);
+        ClientProxy.renderModObject(ModBlocks.CHARCOAL_BLOCK);
     }
 }
