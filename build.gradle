@@ -9,7 +9,7 @@ buildscript {
 }
 apply plugin: 'net.minecraftforge.gradle.forge'
 // do not edit above
-version = "1.6.1"
+version = "1.6.1-1.10.2"
 group= "com.spikespaz.essentialadditions"
 archivesBaseName = "essentialadditions"
 
