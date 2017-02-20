@@ -28,7 +28,6 @@ public class EssentialAdditions {
         proxy.init(event);
      }
 
-
     @Mod.EventHandler
     public void postInit(FMLPostInitializationEvent event){
         proxy.postInit(event);
