@@ -4,7 +4,6 @@ import com.spikespaz.essentialadditions.main.CraftingRecipes;
 import com.spikespaz.essentialadditions.main.FuelHandler;
 import com.spikespaz.essentialadditions.main.ModRegistry;
 import com.spikespaz.essentialadditions.world.WorldGeneration;
-import net.minecraft.block.Block;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -15,7 +14,6 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 public class CommonProxy {
     public void preInit(FMLPreInitializationEvent event) {
         // Load the main mod classes.
-        ModRegistry.registerBlocks();
         ModRegistry.registerItems();
         CraftingRecipes.mainRegistry();
     }
@@ -32,21 +30,9 @@ public class CommonProxy {
     public void postInit(FMLPostInitializationEvent event) {}
 
     // Register items and blocks to the game. Easier than having two separate functions.
-    @SuppressWarnings("deprecation")
-    public void registerModObject(Object object) {
-        if (object instanceof Item) {
-            Item item = (Item) object;
-            item.setRegistryName(item.getUnlocalizedName().substring(5));
-            GameRegistry.register(item);
-        } else if (object instanceof Block) {
-            Block block = (Block) object;
-            block.setRegistryName(block.getUnlocalizedName().substring(5));
-            // Yes, I know that this is deprecated. It works fine so leave me alone.
-            // Forge: "Modders SHOULD NOT use this, so it'll stay deprecated. Purely added to make lazy modders happy -.-"
-            // Well, call me a lazy modder, but it stays.
-            // I see no reason not to use it, because I would just need to do the same thing anyways. Deal with it.
-            GameRegistry.registerWithItem(block);
-        }
+    public void registerModItem(Item item, String name) {
+        item.setRegistryName(name);
+        GameRegistry.register(item);
     }
 
     private static void modifyStacks() {

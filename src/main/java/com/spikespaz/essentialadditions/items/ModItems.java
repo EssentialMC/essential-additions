@@ -18,21 +18,21 @@ public class ModItems {
     private static ArmorMaterial RUBY_ARMOR = EnumHelper.addArmorMaterial(MODID + ".ruby_armor",
             MODID +":ruby_armor", 85, new int[]{4, 8, 5, 4}, 6, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.5F);
 
-    private static Item.ToolMaterial EMERALD_GEM = addToolMaterial(MODID + ".Emerald", 3, 2740, 16.5F, 4.0F, 8);
-    private static Item.ToolMaterial OBSIDIAN_GEM = addToolMaterial(MODID + ".Obsidian", 2, 1210, 23.5F, 6.5F, 5);
-    private static Item.ToolMaterial RUBY_GEM = addToolMaterial(MODID + ".RUBY", 3, 2290, 16.0F, 4.5F, 7);
+    private static Item.ToolMaterial EMERALD_GEM = addToolMaterial(MODID + ".emerald", 3, 2740, 16.5F, 4.0F, 8);
+    private static Item.ToolMaterial OBSIDIAN_GEM = addToolMaterial(MODID + ".obsidian", 2, 1210, 23.5F, 6.5F, 5);
+    private static Item.ToolMaterial RUBY_GEM = addToolMaterial(MODID + ".ruby", 3, 2290, 16.0F, 4.5F, 7);
     // Static declarations of all items and their properties.
     // Emerald Armor
     public static Item EMERALD_HELMET = new BaseArmor(MODID + ".emerald_helmet", EMERALD_ARMOR, 1, HEAD);
     public static Item EMERALD_CHESTPLATE = new BaseArmor(MODID + ".emerald_chestplate", EMERALD_ARMOR, 1, CHEST);
     public static Item EMERALD_LEGGINGS = new BaseArmor(MODID + ".emerald_leggings", EMERALD_ARMOR, 2, LEGS);
     public static Item EMERALD_BOOTS = new BaseArmor(MODID + ".emerald_boots", EMERALD_ARMOR, 1, FEET);
-//    // Obsidian Armor
+    // Obsidian Armor
     public static Item OBSIDIAN_HELMET = new BaseArmor(MODID + ".obsidian_helmet", OBSIDIAN_ARMOR, 1, HEAD);
     public static Item OBSIDIAN_CHESTPLATE = new BaseArmor(MODID + ".obsidian_chestplate", OBSIDIAN_ARMOR, 1, CHEST);
     public static Item OBSIDIAN_LEGGINGS = new BaseArmor(MODID + ".obsidian_leggings", OBSIDIAN_ARMOR, 2, LEGS);
     public static Item OBSIDIAN_BOOTS = new BaseArmor(MODID + ".obsidian_boots", OBSIDIAN_ARMOR, 1, FEET);
-//    // Ruby Armor
+    // Ruby Armor
     public static Item RUBY_HELMET = new BaseArmor(MODID + ".ruby_helmet", RUBY_ARMOR, 1, HEAD);
     public static Item RUBY_CHESTPLATE = new BaseArmor(MODID + ".ruby_chestplate", RUBY_ARMOR, 1, CHEST);
     public static Item RUBY_LEGGINGS = new BaseArmor(MODID + ".ruby_leggings", RUBY_ARMOR, 2, LEGS);
