@@ -11,57 +11,57 @@ import static net.minecraft.item.ItemArmor.ArmorMaterial;
 import static net.minecraftforge.common.util.EnumHelper.addToolMaterial;
 
 public class ModItems {
-    private static ArmorMaterial emerald_armor = EnumHelper.addArmorMaterial("emerald_armor",
+    private static ArmorMaterial EMERALD_ARMOR = EnumHelper.addArmorMaterial("emerald_armor",
             MODID +":emerald_armor", 80, new int[]{4, 8, 5, 4}, 6, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.5F);
-    private static ArmorMaterial obsidian_armor = EnumHelper.addArmorMaterial("obsidian_armor",
+    private static ArmorMaterial OBSIDIAN_ARMOR = EnumHelper.addArmorMaterial("obsidian_armor",
             MODID +":obsidian_armor", 47, new int[]{6, 7, 6, 5}, 5, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 1.5F);
-    private static ArmorMaterial ruby_armor = EnumHelper.addArmorMaterial("ruby_armor",
+    private static ArmorMaterial RUBY_ARMOR = EnumHelper.addArmorMaterial("ruby_armor",
             MODID +":ruby_armor", 85, new int[]{4, 8, 5, 4}, 6, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.5F);
 
-    private static Item.ToolMaterial emerald_gem = addToolMaterial("Emerald", 3, 2740, 16.5F, 4.0F, 8);
-    private static Item.ToolMaterial obsidian_gem = addToolMaterial("Obsidian", 2, 1210, 23.5F, 6.5F, 5);
-    private static Item.ToolMaterial ruby_gem = addToolMaterial("ruby", 3, 2290, 16.0F, 4.5F, 7);
+    private static Item.ToolMaterial EMERALD_GEM = addToolMaterial("Emerald", 3, 2740, 16.5F, 4.0F, 8);
+    private static Item.ToolMaterial OBSIDIAN_GEM = addToolMaterial("Obsidian", 2, 1210, 23.5F, 6.5F, 5);
+    private static Item.ToolMaterial RUBY_GEM = addToolMaterial("RUBY", 3, 2290, 16.0F, 4.5F, 7);
     // Static declarations of all items and their properties.
     // Emerald Armor
-    public static Item emerald_helmet = new BaseArmor("emerald_helmet", emerald_armor, 1, HEAD);
-    public static Item emerald_chestplate = new BaseArmor("emerald_chestplate", emerald_armor, 1, CHEST);
-    public static Item emerald_leggings = new BaseArmor("emerald_leggings", emerald_armor, 2, LEGS);
-    public static Item emerald_boots = new BaseArmor("emerald_boots", emerald_armor, 1, FEET);
+    public static Item EMERALD_HELMET = new BaseArmor("emerald_helmet", EMERALD_ARMOR, 1, HEAD);
+    public static Item EMERALD_CHESTPLATE = new BaseArmor("emerald_chestplate", EMERALD_ARMOR, 1, CHEST);
+    public static Item EMERALD_LEGGINGS = new BaseArmor("emerald_leggings", EMERALD_ARMOR, 2, LEGS);
+    public static Item EMERALD_BOOTS = new BaseArmor("emerald_boots", EMERALD_ARMOR, 1, FEET);
 //    // Obsidian Armor
-    public static Item obsidian_helmet = new BaseArmor("obsidian_helmet", obsidian_armor, 1, HEAD);
-    public static Item obsidian_chestplate = new BaseArmor("obsidian_chestplate", obsidian_armor, 1, CHEST);
-    public static Item obsidian_leggings = new BaseArmor("obsidian_leggings", obsidian_armor, 2, LEGS);
-    public static Item obsidian_boots = new BaseArmor("obsidian_boots", obsidian_armor, 1, FEET);
+    public static Item OBSIDIAN_HELMET = new BaseArmor("obsidian_helmet", OBSIDIAN_ARMOR, 1, HEAD);
+    public static Item OBSIDIAN_CHESTPLATE = new BaseArmor("obsidian_chestplate", OBSIDIAN_ARMOR, 1, CHEST);
+    public static Item OBSIDIAN_LEGGINGS = new BaseArmor("obsidian_leggings", OBSIDIAN_ARMOR, 2, LEGS);
+    public static Item OBSIDIAN_BOOTS = new BaseArmor("obsidian_boots", OBSIDIAN_ARMOR, 1, FEET);
 //    // Ruby Armor
-    public static Item ruby_helmet = new BaseArmor("ruby_helmet", ruby_armor, 1, HEAD);
-    public static Item ruby_chestplate = new BaseArmor("ruby_chestplate", ruby_armor, 1, CHEST);
-    public static Item ruby_leggings = new BaseArmor("ruby_leggings", ruby_armor, 2, LEGS);
-    public static Item ruby_boots = new BaseArmor("ruby_boots", ruby_armor, 1, FEET);
+    public static Item RUBY_HELMET = new BaseArmor("ruby_helmet", RUBY_ARMOR, 1, HEAD);
+    public static Item RUBY_CHESTPLATE = new BaseArmor("ruby_chestplate", RUBY_ARMOR, 1, CHEST);
+    public static Item RUBY_LEGGINGS = new BaseArmor("ruby_leggings", RUBY_ARMOR, 2, LEGS);
+    public static Item RUBY_BOOTS = new BaseArmor("ruby_boots", RUBY_ARMOR, 1, FEET);
     // Emerald Tools
-    public static Item emerald_sword = new BaseSword(emerald_gem, "emerald_sword");
-    public static Item emerald_axe = new BaseAxe(emerald_gem, -3.0F, "emerald_axe");
-    public static Item emerald_shovel = new BaseSpade(emerald_gem, "emerald_shovel");
-    public static Item emerald_pickaxe = new BasePickaxe(emerald_gem, "emerald_pickaxe");
-    public static Item emerald_hoe = new BaseHoe(emerald_gem, "emerald_hoe");
+    public static Item EMERALD_SWORD = new BaseSword(EMERALD_GEM, "emerald_sword");
+    public static Item EMERALD_AXE = new BaseAxe(EMERALD_GEM, -3.0F, "emerald_axe");
+    public static Item EMERALD_SHOVEL = new BaseSpade(EMERALD_GEM, "emerald_shovel");
+    public static Item EMERALD_PICKAXE = new BasePickaxe(EMERALD_GEM, "emerald_pickaxe");
+    public static Item EMERALD_HOE = new BaseHoe(EMERALD_GEM, "emerald_hoe");
     // Obsidian Tools
-    public static Item obsidian_sword = new BaseSword(obsidian_gem, "obsidian_sword");
-    public static Item obsidian_axe = new BaseAxe(obsidian_gem, -3.0F, "obsidian_axe");
-    public static Item obsidian_shovel = new BaseSpade(obsidian_gem, "obsidian_shovel");
-    public static Item obsidian_pickaxe = new BasePickaxe(obsidian_gem, "obsidian_pickaxe");
-    public static Item obsidian_hoe = new BaseHoe(obsidian_gem, "obsidian_hoe");
+    public static Item OBSIDIAN_SWORD = new BaseSword(OBSIDIAN_GEM, "obsidian_sword");
+    public static Item OBSIDIAN_AXE = new BaseAxe(OBSIDIAN_GEM, -3.0F, "obsidian_axe");
+    public static Item OBSIDIAN_SHOVEL = new BaseSpade(OBSIDIAN_GEM, "obsidian_shovel");
+    public static Item OBSIDIAN_PICKAXE = new BasePickaxe(OBSIDIAN_GEM, "obsidian_pickaxe");
+    public static Item OBSIDIAN_HOE = new BaseHoe(OBSIDIAN_GEM, "obsidian_hoe");
     // Ruby Tools
-    public static Item ruby_sword = new BaseSword(ruby_gem, "ruby_sword");
-    public static Item ruby_axe = new BaseAxe(ruby_gem, -3.0F, "ruby_axe");
-    public static Item ruby_shovel = new BaseSpade(ruby_gem, "ruby_shovel");
-    public static Item ruby_pickaxe = new BasePickaxe(ruby_gem, "ruby_pickaxe");
-    public static Item ruby_hoe = new BaseHoe(ruby_gem, "ruby_hoe");
+    public static Item RUBY_SWORD = new BaseSword(RUBY_GEM, "ruby_sword");
+    public static Item RUBY_AXE = new BaseAxe(RUBY_GEM, -3.0F, "ruby_axe");
+    public static Item RUBY_SHOVEL = new BaseSpade(RUBY_GEM, "ruby_shovel");
+    public static Item RUBY_PICKAXE = new BasePickaxe(RUBY_GEM, "ruby_pickaxe");
+    public static Item RUBY_HOE = new BaseHoe(RUBY_GEM, "ruby_hoe");
     // Crafting Items
-    public static Item obsidian_shard = new Item().setUnlocalizedName("obsidian_shard").setCreativeTab(CreativeTabs.MATERIALS);
-    public static Item sulfur = new Item().setUnlocalizedName("sulfur").setCreativeTab(CreativeTabs.MATERIALS);
-    public static Item charcoal_dust = new Item().setUnlocalizedName("charcoal_dust").setCreativeTab(CreativeTabs.MATERIALS);
+    public static Item OBSIDIAN_SHARD = new Item().setUnlocalizedName("obsidian_shard").setCreativeTab(CreativeTabs.MATERIALS);
+    public static Item SULFUR = new Item().setUnlocalizedName("sulfur").setCreativeTab(CreativeTabs.MATERIALS);
+    public static Item CHARCOAL_DUST = new Item().setUnlocalizedName("charcoal_dust").setCreativeTab(CreativeTabs.MATERIALS);
 
-    public static Item ruby = new Item().setUnlocalizedName("ruby").setCreativeTab(CreativeTabs.MATERIALS);
-    public static Item iron_plating = new Item().setUnlocalizedName("iron_plating").setCreativeTab(CreativeTabs.MATERIALS);
-    public static Item gold_plating = new Item().setUnlocalizedName("gold_plating").setCreativeTab(CreativeTabs.MATERIALS);
-    public static Item chain_link = new Item().setUnlocalizedName("chain_link").setCreativeTab(CreativeTabs.MATERIALS);
+    public static Item RUBY = new Item().setUnlocalizedName("ruby").setCreativeTab(CreativeTabs.MATERIALS);
+    public static Item IRON_PLATING = new Item().setUnlocalizedName("iron_plating").setCreativeTab(CreativeTabs.MATERIALS);
+    public static Item GOLD_PLATING = new Item().setUnlocalizedName("gold_plating").setCreativeTab(CreativeTabs.MATERIALS);
+    public static Item CHAIN_LINK = new Item().setUnlocalizedName("chain_link").setCreativeTab(CreativeTabs.MATERIALS);
 }

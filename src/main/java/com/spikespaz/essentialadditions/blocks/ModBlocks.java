@@ -15,7 +15,7 @@ public class ModBlocks {
     public static Block sulfur_block = new BaseBlock(Material.ROCK, "sulfur_block",
             0.5F, 0F, "pickaxe", 0, CreativeTabs.BUILDING_BLOCKS, SoundType.SAND) {
         public Item getItemDropped(int par1, Random random, int par2) {
-            return ModItems.sulfur;
+            return ModItems.SULFUR;
         }
 
         public int quantityDropped(Random par1Random) {
@@ -30,7 +30,7 @@ public class ModBlocks {
     public static Block ruby_ore = new BaseBlock(Material.ROCK, "ruby_ore",
             3.0F, 5.0F, "pickaxe", 3, CreativeTabs.BUILDING_BLOCKS, SoundType.STONE) {
         public Item getItemDropped(int par1, Random random, int par2) {
-            return ModItems.ruby;
+            return ModItems.RUBY;
         }
 
         public int quantityDropped(Random par1Random) {

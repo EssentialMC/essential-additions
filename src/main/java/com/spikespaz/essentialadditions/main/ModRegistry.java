@@ -10,47 +10,47 @@ public class ModRegistry {
     // Register all items and their unlocalized names.
     public static void registerItems() {
         // Emerald Armor
-        proxy.registerModObject(ModItems.emerald_chestplate);
-        proxy.registerModObject(ModItems.emerald_helmet);
-        proxy.registerModObject(ModItems.emerald_boots);
-        proxy.registerModObject(ModItems.emerald_leggings);
+        proxy.registerModObject(ModItems.EMERALD_CHESTPLATE);
+        proxy.registerModObject(ModItems.EMERALD_HELMET);
+        proxy.registerModObject(ModItems.EMERALD_BOOTS);
+        proxy.registerModObject(ModItems.EMERALD_LEGGINGS);
         // Obsidian Armor
-        proxy.registerModObject(ModItems.obsidian_helmet);
-        proxy.registerModObject(ModItems.obsidian_chestplate);
-        proxy.registerModObject(ModItems.obsidian_leggings);
-        proxy.registerModObject(ModItems.obsidian_boots);
+        proxy.registerModObject(ModItems.OBSIDIAN_HELMET);
+        proxy.registerModObject(ModItems.OBSIDIAN_CHESTPLATE);
+        proxy.registerModObject(ModItems.OBSIDIAN_LEGGINGS);
+        proxy.registerModObject(ModItems.OBSIDIAN_BOOTS);
         // Ruby Armor
-        proxy.registerModObject(ModItems.ruby_helmet);
-        proxy.registerModObject(ModItems.ruby_chestplate);
-        proxy.registerModObject(ModItems.ruby_leggings);
-        proxy.registerModObject(ModItems.ruby_boots);
+        proxy.registerModObject(ModItems.RUBY_HELMET);
+        proxy.registerModObject(ModItems.RUBY_CHESTPLATE);
+        proxy.registerModObject(ModItems.RUBY_LEGGINGS);
+        proxy.registerModObject(ModItems.RUBY_BOOTS);
         // Emerald Tools
-        proxy.registerModObject(ModItems.emerald_sword);
-        proxy.registerModObject(ModItems.emerald_axe);
-        proxy.registerModObject(ModItems.emerald_shovel);
-        proxy.registerModObject(ModItems.emerald_pickaxe);
-        proxy.registerModObject(ModItems.emerald_hoe);
+        proxy.registerModObject(ModItems.EMERALD_SWORD);
+        proxy.registerModObject(ModItems.EMERALD_AXE);
+        proxy.registerModObject(ModItems.EMERALD_SHOVEL);
+        proxy.registerModObject(ModItems.EMERALD_PICKAXE);
+        proxy.registerModObject(ModItems.EMERALD_HOE);
         // Obsidian Tools
-        proxy.registerModObject(ModItems.obsidian_sword);
-        proxy.registerModObject(ModItems.obsidian_axe);
-        proxy.registerModObject(ModItems.obsidian_shovel);
-        proxy.registerModObject(ModItems.obsidian_pickaxe);
-        proxy.registerModObject(ModItems.obsidian_hoe);
+        proxy.registerModObject(ModItems.OBSIDIAN_SWORD);
+        proxy.registerModObject(ModItems.OBSIDIAN_AXE);
+        proxy.registerModObject(ModItems.OBSIDIAN_SHOVEL);
+        proxy.registerModObject(ModItems.OBSIDIAN_PICKAXE);
+        proxy.registerModObject(ModItems.OBSIDIAN_HOE);
         // Ruby Tools
-        proxy.registerModObject(ModItems.ruby_sword);
-        proxy.registerModObject(ModItems.ruby_axe);
-        proxy.registerModObject(ModItems.ruby_shovel);
-        proxy.registerModObject(ModItems.ruby_pickaxe);
-        proxy.registerModObject(ModItems.ruby_hoe);
+        proxy.registerModObject(ModItems.RUBY_SWORD);
+        proxy.registerModObject(ModItems.RUBY_AXE);
+        proxy.registerModObject(ModItems.RUBY_SHOVEL);
+        proxy.registerModObject(ModItems.RUBY_PICKAXE);
+        proxy.registerModObject(ModItems.RUBY_HOE);
         // Crafting Items
-        proxy.registerModObject(ModItems.obsidian_shard);
-        proxy.registerModObject(ModItems.sulfur);
-        proxy.registerModObject(ModItems.charcoal_dust);
+        proxy.registerModObject(ModItems.OBSIDIAN_SHARD);
+        proxy.registerModObject(ModItems.SULFUR);
+        proxy.registerModObject(ModItems.CHARCOAL_DUST);
 
-        proxy.registerModObject(ModItems.ruby);
-        proxy.registerModObject(ModItems.iron_plating);
-        proxy.registerModObject(ModItems.gold_plating);
-        proxy.registerModObject(ModItems.chain_link);
+        proxy.registerModObject(ModItems.RUBY);
+        proxy.registerModObject(ModItems.IRON_PLATING);
+        proxy.registerModObject(ModItems.GOLD_PLATING);
+        proxy.registerModObject(ModItems.CHAIN_LINK);
     }
 
     // Register all blocks and their unlocalized names.
@@ -70,47 +70,47 @@ public class ModRegistry {
     // Entries to render all items.
     public static void renderItems() {
         // Emerald Armor
-        ClientProxy.renderModObject(ModItems.emerald_chestplate);
-        ClientProxy.renderModObject(ModItems.emerald_helmet);
-        ClientProxy.renderModObject(ModItems.emerald_boots);
-        ClientProxy.renderModObject(ModItems.emerald_leggings);
+        ClientProxy.renderModObject(ModItems.EMERALD_CHESTPLATE);
+        ClientProxy.renderModObject(ModItems.EMERALD_HELMET);
+        ClientProxy.renderModObject(ModItems.EMERALD_BOOTS);
+        ClientProxy.renderModObject(ModItems.EMERALD_LEGGINGS);
         // Obsidian Armor
-        ClientProxy.renderModObject(ModItems.obsidian_helmet);
-        ClientProxy.renderModObject(ModItems.obsidian_chestplate);
-        ClientProxy.renderModObject(ModItems.obsidian_leggings);
-        ClientProxy.renderModObject(ModItems.obsidian_boots);
+        ClientProxy.renderModObject(ModItems.OBSIDIAN_HELMET);
+        ClientProxy.renderModObject(ModItems.OBSIDIAN_CHESTPLATE);
+        ClientProxy.renderModObject(ModItems.OBSIDIAN_LEGGINGS);
+        ClientProxy.renderModObject(ModItems.OBSIDIAN_BOOTS);
         // Ruby Armor
-        ClientProxy.renderModObject(ModItems.ruby_helmet);
-        ClientProxy.renderModObject(ModItems.ruby_chestplate);
-        ClientProxy.renderModObject(ModItems.ruby_leggings);
-        ClientProxy.renderModObject(ModItems.ruby_boots);
+        ClientProxy.renderModObject(ModItems.RUBY_HELMET);
+        ClientProxy.renderModObject(ModItems.RUBY_CHESTPLATE);
+        ClientProxy.renderModObject(ModItems.RUBY_LEGGINGS);
+        ClientProxy.renderModObject(ModItems.RUBY_BOOTS);
         // Emerald Tools
-        ClientProxy.renderModObject(ModItems.emerald_sword);
-        ClientProxy.renderModObject(ModItems.emerald_axe);
-        ClientProxy.renderModObject(ModItems.emerald_shovel);
-        ClientProxy.renderModObject(ModItems.emerald_pickaxe);
-        ClientProxy.renderModObject(ModItems.emerald_hoe);
+        ClientProxy.renderModObject(ModItems.EMERALD_SWORD);
+        ClientProxy.renderModObject(ModItems.EMERALD_AXE);
+        ClientProxy.renderModObject(ModItems.EMERALD_SHOVEL);
+        ClientProxy.renderModObject(ModItems.EMERALD_PICKAXE);
+        ClientProxy.renderModObject(ModItems.EMERALD_HOE);
         // Obsidian Tools
-        ClientProxy.renderModObject(ModItems.obsidian_sword);
-        ClientProxy.renderModObject(ModItems.obsidian_axe);
-        ClientProxy.renderModObject(ModItems.obsidian_shovel);
-        ClientProxy.renderModObject(ModItems.obsidian_pickaxe);
-        ClientProxy.renderModObject(ModItems.obsidian_hoe);
+        ClientProxy.renderModObject(ModItems.OBSIDIAN_SWORD);
+        ClientProxy.renderModObject(ModItems.OBSIDIAN_AXE);
+        ClientProxy.renderModObject(ModItems.OBSIDIAN_SHOVEL);
+        ClientProxy.renderModObject(ModItems.OBSIDIAN_PICKAXE);
+        ClientProxy.renderModObject(ModItems.OBSIDIAN_HOE);
         // Ruby Tools
-        ClientProxy.renderModObject(ModItems.ruby_sword);
-        ClientProxy.renderModObject(ModItems.ruby_axe);
-        ClientProxy.renderModObject(ModItems.ruby_shovel);
-        ClientProxy.renderModObject(ModItems.ruby_pickaxe);
-        ClientProxy.renderModObject(ModItems.ruby_hoe);
+        ClientProxy.renderModObject(ModItems.RUBY_SWORD);
+        ClientProxy.renderModObject(ModItems.RUBY_AXE);
+        ClientProxy.renderModObject(ModItems.RUBY_SHOVEL);
+        ClientProxy.renderModObject(ModItems.RUBY_PICKAXE);
+        ClientProxy.renderModObject(ModItems.RUBY_HOE);
         // Crafting Items
-        ClientProxy.renderModObject(ModItems.obsidian_shard);
-        ClientProxy.renderModObject(ModItems.sulfur);
-        ClientProxy.renderModObject(ModItems.charcoal_dust);
+        ClientProxy.renderModObject(ModItems.OBSIDIAN_SHARD);
+        ClientProxy.renderModObject(ModItems.SULFUR);
+        ClientProxy.renderModObject(ModItems.CHARCOAL_DUST);
 
-        ClientProxy.renderModObject(ModItems.ruby);
-        ClientProxy.renderModObject(ModItems.iron_plating);
-        ClientProxy.renderModObject(ModItems.gold_plating);
-        ClientProxy.renderModObject(ModItems.chain_link);
+        ClientProxy.renderModObject(ModItems.RUBY);
+        ClientProxy.renderModObject(ModItems.IRON_PLATING);
+        ClientProxy.renderModObject(ModItems.GOLD_PLATING);
+        ClientProxy.renderModObject(ModItems.CHAIN_LINK);
     }
 
     // Render all blocks.
