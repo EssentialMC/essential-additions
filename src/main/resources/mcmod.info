@@ -7,7 +7,7 @@
   "mcversion": "${mcversion}",
   "url": "http://spikespaz.com/essentialadditions",
   "updateUrl": "",
-  "authorList": ["spikespaz"],
+  "authorList": ["spikespaz", "thvardhan"],
   "logoFile": "banner.png",
   "screenshots": [],
   "dependencies": []

@@ -14,7 +14,7 @@ public class GenerateSmallVein extends WorldGenerator {
     private IBlockState block;
     private Predicate<IBlockState> target;
 
-    //init of worldGen by constructor chaining.
+    // Initialization of WorldGen by constructor chaining.
     GenerateSmallVein(IBlockState block, Predicate<IBlockState> replacement) {
         this.block = block;
         this.target = replacement;
@@ -25,13 +25,14 @@ public class GenerateSmallVein extends WorldGenerator {
         this(block, BlockMatcher.forBlock(Blocks.STONE));
     }
 
-
     // This is to check if the block at X, Y, Z is replaceable or not and place the block.
     @Override
     public boolean generate(World world, Random rand, BlockPos pos) {
-//        if (world.getBlockState(pos).getBlock().isReplaceableOreGen(world.getBlockState(pos), world, pos, this.target))
-        world.setBlockState(pos, this.block);
-        System.out.println(pos);
-        return true;
+        if (world.getBlockState(pos).getBlock().isReplaceableOreGen(world.getBlockState(pos), world, pos, this.target)) {
+            world.setBlockState(pos, this.block);
+            return true;
+        } else {
+            return false;
+        }
     }
 }

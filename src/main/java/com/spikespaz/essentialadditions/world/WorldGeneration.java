@@ -34,14 +34,14 @@ public class WorldGeneration implements IWorldGenerator {
     // The default blocks to replace based on the dimension can be changed.
     @Override
     public void generate(Random random, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider) {
-        switch (world.provider.getDimension()) {
-            case -1:
-                generateNether(world, random, chunkX, chunkZ, BlockMatcher.forBlock(Blocks.NETHER_BRICK));
+        switch (world.provider.getDimensionType()) {
+            case NETHER:
+                generateNether(world, random, chunkX, chunkZ, BlockMatcher.forBlock(Blocks.NETHERRACK));
                 break;
-            case 0:
+            case OVERWORLD:
                 generateOverworld(world, random, chunkX, chunkZ, BlockMatcher.forBlock(Blocks.STONE));
                 break;
-            case 1:
+            case THE_END:
                 generateEnd(world, random, chunkX, chunkZ, BlockMatcher.forBlock(Blocks.END_STONE));
                 break;
             default:
@@ -59,7 +59,7 @@ public class WorldGeneration implements IWorldGenerator {
         if (veinSize < 4) {
             gen = new GenerateSmallVein(ore.getDefaultState(), replaceBlock);
         } else {
-            gen = new WorldGenMinable(ore.getDefaultState(), veinSize);
+            gen = new WorldGenMinable(ore.getDefaultState(), veinSize, replaceBlock);
 
         }
 
@@ -69,7 +69,6 @@ public class WorldGeneration implements IWorldGenerator {
             int randomZ = chunkZ * 16 + random.nextInt(16);
 
             gen.generate(world, random, new BlockPos(randomX, randomY, randomZ));
-//            System.out.println(randomX+" "+randomY+" "+randomZ);
         }
     }
 }
