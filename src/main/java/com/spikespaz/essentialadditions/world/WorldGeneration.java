@@ -34,7 +34,7 @@ public class WorldGeneration implements IWorldGenerator {
     public void generate(Random random, int chunkX, int chunkZ, World world, IChunkProvider chunkGenerator, IChunkProvider chunkProvider) {
         switch (world.provider.getDimensionId()) {
             case -1:
-                generateNether(world, random, chunkX, chunkZ, BlockHelper.forBlock(Blocks.nether_brick));
+                generateNether(world, random, chunkX, chunkZ, BlockHelper.forBlock(Blocks.netherrack));
                 break;
             case 0:
                 generateOverworld(world, random, chunkX, chunkZ, BlockHelper.forBlock(Blocks.stone));
