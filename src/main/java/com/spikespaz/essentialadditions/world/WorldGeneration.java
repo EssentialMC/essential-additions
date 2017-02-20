@@ -57,7 +57,7 @@ public class WorldGeneration implements IWorldGenerator {
         if (veinSize < 4) {
             gen = new GenerateSmallVein(ore.getDefaultState(), replaceBlock);
         } else {
-            gen = new WorldGenMinable(ore.getDefaultState(), veinSize);
+            gen = new WorldGenMinable(ore.getDefaultState(), veinSize, replaceBlock);
 
         }
 
