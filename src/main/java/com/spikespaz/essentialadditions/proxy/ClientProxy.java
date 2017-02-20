@@ -2,14 +2,12 @@ package com.spikespaz.essentialadditions.proxy;
 
 import com.spikespaz.essentialadditions.main.ModRegistry;
 import net.minecraft.block.Block;
-import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
+import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-
-import static com.spikespaz.essentialadditions.main.EssentialAdditions.MODID;
 
 public class ClientProxy extends CommonProxy {
     @Override
@@ -29,18 +27,14 @@ public class ClientProxy extends CommonProxy {
         super.postInit(event);
     }
 
-    // Render all mod objects.
+    // Generic function to render every object in the mod, easier than separate.
     public static void renderModObject(Object object) {
         if (object instanceof Item) {
             Item item = (Item) object;
-//            ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation(MODID + ":" + item.getRegistryName()));
-            Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0,
-                    new ModelResourceLocation(MODID + ":" + item.getRegistryName(), "inventory"));
+            ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation(item.getRegistryName(),"inventory"));
         } else if (object instanceof Block) {
             Block block = (Block) object;
-//            ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(block), 0, new ModelResourceLocation(MODID + ":" + block.getRegistryName()));
-            Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(Item.getItemFromBlock(block), 0,
-                    new ModelResourceLocation(MODID + ":" + block.getRegistryName(), "inventory"));
+            ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(block), 0, new ModelResourceLocation(block.getRegistryName(),"inventory"));
         }
     }
 }
