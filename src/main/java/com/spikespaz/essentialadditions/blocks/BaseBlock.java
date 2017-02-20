@@ -5,6 +5,8 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 
+import static com.spikespaz.essentialadditions.main.EssentialAdditions.MODID;
+
 class BaseBlock extends Block {
     BaseBlock(Material material, String unlocalizedName, Float hardness, Float resistance, String tool, Integer mineLevel, CreativeTabs creativeTab, SoundType sound) {
         super(material);
@@ -12,7 +14,7 @@ class BaseBlock extends Block {
         this.setResistance(resistance);
         this.setHarvestLevel(tool, mineLevel);
         this.setCreativeTab(creativeTab);
-        this.setUnlocalizedName(unlocalizedName);
+        this.setUnlocalizedName(MODID + "." + unlocalizedName);
         this.setSoundType(sound);
     }
 }
