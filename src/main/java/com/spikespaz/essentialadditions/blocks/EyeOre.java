@@ -13,12 +13,10 @@ import net.minecraft.world.IBlockAccess;
 
 import java.util.ArrayList;
 
-import static com.spikespaz.essentialadditions.main.EssentialAdditions.MODID;
-
 public class EyeOre extends BaseBlock {
     // Separate block class for eye_ore so we can make it drop two items easier.
     EyeOre() {
-        super(Material.ROCK, MODID + ".eye_ore", 3.0F, 5.0F,
+        super(Material.ROCK,3.0F, 5.0F,
                 "pickaxe", 3, CreativeTabs.BUILDING_BLOCKS, SoundType.STONE, "eye_ore");
     }
 

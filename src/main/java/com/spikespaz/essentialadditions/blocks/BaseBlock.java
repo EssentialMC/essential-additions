@@ -10,14 +10,14 @@ import static com.spikespaz.essentialadditions.main.EssentialAdditions.MODID;
 
 class BaseBlock extends Block {
     @SuppressWarnings("deprecation")
-    BaseBlock(Material material, String unlocalizedName, Float hardness, Float resistance, String tool, Integer mineLevel, CreativeTabs creativeTab, SoundType sound, String name) {
+    BaseBlock(Material material, Float hardness, Float resistance, String tool, Integer mineLevel, CreativeTabs creativeTab, SoundType sound, String name) {
         super(material);
         this.setHardness(hardness);
         this.setResistance(resistance);
         this.setHarvestLevel(tool, mineLevel);
         this.setCreativeTab(creativeTab);
         this.setSoundType(sound);
-        this.setUnlocalizedName(MODID + "." + unlocalizedName);
+        this.setUnlocalizedName(MODID + "." + name);
         this.setRegistryName(name);
         // Yes, I know that this is deprecated. It works fine so leave me alone.
         // Forge: "Modders SHOULD NOT use this, so it'll stay deprecated. Purely added to make lazy modders happy -.-"
