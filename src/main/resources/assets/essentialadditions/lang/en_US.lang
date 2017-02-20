@@ -1,50 +1,50 @@
-item.emerald_helmet.name=Emerald Helmet
-item.emerald_chestplate.name=Emerald Chestplate
-item.emerald_leggings.name=Emerald Leggings
-item.emerald_boots.name=Emerald Boots
+item.essentialadditions.emerald_helmet.name=Emerald Helmet
+item.essentialadditions.emerald_chestplate.name=Emerald Chestplate
+item.essentialadditions.emerald_leggings.name=Emerald Leggings
+item.essentialadditions.emerald_boots.name=Emerald Boots
 
-item.obsidian_helmet.name=Obsidian Helmet
-item.obsidian_chestplate.name=Obsidian Chestplate
-item.obsidian_leggings.name=Obsidian Leggings
-item.obsidian_boots.name=Obsidian Boots
+item.essentialadditions.obsidian_helmet.name=Obsidian Helmet
+item.essentialadditions.obsidian_chestplate.name=Obsidian Chestplate
+item.essentialadditions.obsidian_leggings.name=Obsidian Leggings
+item.essentialadditions.obsidian_boots.name=Obsidian Boots
 
-item.ruby_helmet.name=Ruby Helmet
-item.ruby_chestplate.name=Ruby Chestplate
-item.ruby_leggings.name=Ruby Leggings
-item.ruby_boots.name=Ruby Boots
+item.essentialadditions.ruby_helmet.name=Ruby Helmet
+item.essentialadditions.ruby_chestplate.name=Ruby Chestplate
+item.essentialadditions.ruby_leggings.name=Ruby Leggings
+item.essentialadditions.ruby_boots.name=Ruby Boots
 
-item.emerald_sword.name=Emerald Sword
-item.emerald_axe.name=Emerald Axe
-item.emerald_shovel.name=Emerald Shovel
-item.emerald_pickaxe.name=Emerald Pickaxe
-item.emerald_hoe.name=Emerald Hoe
+item.essentialadditions.emerald_sword.name=Emerald Sword
+item.essentialadditions.emerald_axe.name=Emerald Axe
+item.essentialadditions.emerald_shovel.name=Emerald Shovel
+item.essentialadditions.emerald_pickaxe.name=Emerald Pickaxe
+item.essentialadditions.emerald_hoe.name=Emerald Hoe
 
-item.obsidian_sword.name=Obsidian Sword
-item.obsidian_axe.name=Obsidian Axe
-item.obsidian_shovel.name=Obsidian Shovel
-item.obsidian_pickaxe.name=Obsidian Pickaxe
-item.obsidian_hoe.name=Obsidian Hoe
+item.essentialadditions.obsidian_sword.name=Obsidian Sword
+item.essentialadditions.obsidian_axe.name=Obsidian Axe
+item.essentialadditions.obsidian_shovel.name=Obsidian Shovel
+item.essentialadditions.obsidian_pickaxe.name=Obsidian Pickaxe
+item.essentialadditions.obsidian_hoe.name=Obsidian Hoe
 
-item.ruby_sword.name=Ruby Sword
-item.ruby_axe.name=Ruby Axe
-item.ruby_shovel.name=Ruby Shovel
-item.ruby_pickaxe.name=Ruby Pickaxe
-item.ruby_hoe.name=Ruby Hoe
+item.essentialadditions.ruby_sword.name=Ruby Sword
+item.essentialadditions.ruby_axe.name=Ruby Axe
+item.essentialadditions.ruby_shovel.name=Ruby Shovel
+item.essentialadditions.ruby_pickaxe.name=Ruby Pickaxe
+item.essentialadditions.ruby_hoe.name=Ruby Hoe
 
-item.obsidian_shard.name=Obsidian Shard
-item.sulfur.name=Sulfur
-item.charcoal_dust.name=Charcoal Dust
+item.essentialadditions.obsidian_shard.name=Obsidian Shard
+item.essentialadditions.sulfur.name=Sulfur
+item.essentialadditions.charcoal_dust.name=Charcoal Dust
 
-item.ruby.name=Ruby
-item.iron_plating.name=Iron Plating
-item.gold_plating.name=Gold Plating
-item.chain_link.name=Chain Link
+item.essentialadditions.ruby.name=Ruby
+item.essentialadditions.iron_plating.name=Iron Plating
+item.essentialadditions.gold_plating.name=Gold Plating
+item.essentialadditions.chain_link.name=Chain Link
 
-tile.sulfur_block.name=Block of Sulfur
+tile.essentialadditions.sulfur_block.name=Block of Sulfur
 
-tile.eye_ore.name=Ender Ore
+tile.essentialadditions.eye_ore.name=Ender Ore
 
-tile.ruby_ore.name=Ruby Ore
-tile.ruby_block.name=Block of Ruby
+tile.essentialadditions.ruby_ore.name=Ruby Ore
+tile.essentialadditions.ruby_block.name=Block of Ruby
 
-tile.charcoal_block.name=Block of Charcoal
+tile.essentialadditions.charcoal_block.name=Block of Charcoal
