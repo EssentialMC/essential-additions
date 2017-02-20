@@ -40,6 +40,7 @@ public class EyeOre extends BaseBlock {
         return arrayList;
     }
 
+    // Particle effects.
     @SideOnly(Side.CLIENT)
     public void randomDisplayTick(IBlockState stateIn, World worldIn, BlockPos pos, Random rand) {
         for (int i = 0; i < 31; ++i) {
