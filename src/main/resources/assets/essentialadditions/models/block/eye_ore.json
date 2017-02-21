@@ -1,6 +1,34 @@
-{
-    "parent": "block/cube_all",
+{   "parent": "block/block",
+    "ambientocclusion": false,
     "textures": {
-        "all": "essentialadditions:blocks/eye_ore"
-    }
+        "particle": "blocks/end_stone",
+        "exterior": "essentialadditions:blocks/eye_ore",
+        "center": "blocks/endframe_eye"
+    },
+    "elements": [
+        {   "__comment": "Glass shell",
+            "from": [ 0, 0, 0 ],
+            "to": [ 16, 16, 16 ],
+            "faces": {
+                "down":  { "uv": [ 0, 0, 16, 16 ], "texture": "#exterior" },
+                "up":    { "uv": [ 0, 0, 16, 16 ], "texture": "#exterior" },
+                "north": { "uv": [ 0, 0, 16, 16 ], "texture": "#exterior" },
+                "south": { "uv": [ 0, 0, 16, 16 ], "texture": "#exterior" },
+                "west":  { "uv": [ 0, 0, 16, 16 ], "texture": "#exterior" },
+                "east":  { "uv": [ 0, 0, 16, 16 ], "texture": "#exterior" }
+            }
+        },
+        {   "__comment": "Inner eyeball texture",
+            "from": [ 3, 3, 3 ],
+            "to": [ 13, 13, 13 ],
+            "faces": {
+                "down":  { "uv": [ 4, 4, 12, 12 ], "texture": "#center" },
+                "up":    { "uv": [ 4, 4, 12, 12 ], "texture": "#center" },
+                "north": { "uv": [ 4, 4, 12, 12 ], "texture": "#center" },
+                "south": { "uv": [ 4, 4, 12, 12 ], "texture": "#center" },
+                "west":  { "uv": [ 4, 4, 12, 12 ], "texture": "#center" },
+                "east":  { "uv": [ 4, 4, 12, 12 ], "texture": "#center" }
+            }
+        }
+    ]
 }

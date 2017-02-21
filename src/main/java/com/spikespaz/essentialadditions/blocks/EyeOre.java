@@ -8,6 +8,8 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.boss.EntityDragon;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.BlockRenderLayer;
+import net.minecraft.util.EnumBlockRenderType;
 import net.minecraft.util.EnumParticleTypes;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
@@ -51,5 +53,28 @@ public class EyeOre extends BaseBlock {
                         (worldIn.rand.nextDouble() - 0.5D) * 2.0D, - worldIn.rand.nextDouble(),
                         (worldIn.rand.nextDouble() - 0.5D) * 2.0D);
         }
+    }
+
+    // Used to determine ambient occlusion and culling when rebuilding chunks for render.
+    public boolean isOpaqueCube(IBlockState state)
+    {
+        return false;
+    }
+
+    public boolean isFullCube(IBlockState state)
+    {
+        return false;
+    }
+
+    // The type of render function called. MODEL for mixed tesr and static model, MODELBLOCK_ANIMATED for TESR-only,
+    public EnumBlockRenderType getRenderType(IBlockState state)
+    {
+        return EnumBlockRenderType.MODEL;
+    }
+
+    @SideOnly(Side.CLIENT)
+    public BlockRenderLayer getBlockLayer()
+    {
+        return BlockRenderLayer.TRANSLUCENT;
     }
 }
