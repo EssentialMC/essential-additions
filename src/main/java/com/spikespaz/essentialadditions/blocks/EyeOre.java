@@ -1,5 +1,6 @@
 package com.spikespaz.essentialadditions.blocks;
 
+import net.minecraft.block.BlockContainer;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
@@ -7,25 +8,43 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.boss.EntityDragon;
 import net.minecraft.init.Items;
+import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
+import net.minecraft.tileentity.TileEntity;
+import net.minecraft.tileentity.TileEntityEnchantmentTable;
 import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.util.EnumBlockRenderType;
 import net.minecraft.util.EnumParticleTypes;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
 import java.util.ArrayList;
 import java.util.Random;
 
-public class EyeOre extends BaseBlock {
-    // Separate block class for eye_ore so we can make it drop two items easier.
+import static com.spikespaz.essentialadditions.main.EssentialAdditions.MODID;
+
+public class EyeOre extends BlockContainer {
     EyeOre() {
-        super(Material.ROCK,3.0F, 5.0F,
-                "pickaxe", 3, CreativeTabs.BUILDING_BLOCKS, SoundType.STONE, "eye_ore");
+        super(Material.ROCK);
+        this.setHardness(3.0F);
+        this.setResistance(5.0F);
+        this.setHarvestLevel("pickaxe", 3);
+        this.setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
+        this.setSoundType(SoundType.STONE);
+        this.setUnlocalizedName(MODID + ".eye_ore");
+        this.setRegistryName("eye_ore");
         this.setLightLevel(1.5F);
+        GameRegistry.register(this);
+        GameRegistry.register(new ItemBlock(this).setRegistryName(this.getRegistryName()));
+    }
+
+    @Override
+    public TileEntity createNewTileEntity(World worldIn, int meta) {
+        return new TileEntityEnchantmentTable();
     }
 
     // If entity that is an instance of EnderDragon, disable destroy. Else allow.
