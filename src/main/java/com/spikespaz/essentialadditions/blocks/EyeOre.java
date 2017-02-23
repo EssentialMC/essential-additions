@@ -28,21 +28,20 @@ import java.util.Random;
 import static com.spikespaz.essentialadditions.main.EssentialAdditions.MODID;
 
 public class EyeOre extends BlockContainer {
-    EyeOre() {
+    EyeOre(String name) {
         super(Material.ROCK);
         this.setHardness(3.0F);
         this.setResistance(5.0F);
         this.setHarvestLevel("pickaxe", 3);
         this.setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
         this.setSoundType(SoundType.STONE);
-        this.setUnlocalizedName(MODID + ".eye_ore");
-        this.setRegistryName("eye_ore");
+        this.setUnlocalizedName(MODID + "." + name);
+        this.setRegistryName(name);
         this.setLightLevel(1.5F);
         GameRegistry.register(this);
         GameRegistry.register(new ItemBlock(this).setRegistryName(this.getRegistryName()));
     }
 
-    @Override
     public TileEntity createNewTileEntity(World worldIn, int meta) {
         return new TileEntityEnchantmentTable();
     }
@@ -53,7 +52,6 @@ public class EyeOre extends BlockContainer {
     }
 
     // Return a list of items that the ore will drop.
-    @Override
     public ArrayList<ItemStack> getDrops(IBlockAccess world, BlockPos pos, IBlockState state, int fortune) {
         ArrayList<ItemStack> arrayList = new ArrayList<ItemStack>();
         arrayList.add(new ItemStack(Items.ENDER_PEARL));
@@ -64,7 +62,7 @@ public class EyeOre extends BlockContainer {
     // Particle effects.
     @SideOnly(Side.CLIENT)
     public void randomDisplayTick(IBlockState stateIn, World worldIn, BlockPos pos, Random rand) {
-        for (int i = 0; i < 31; ++i) {
+        for (int i = 0; i < 20; ++i) {
                 worldIn.spawnParticle(EnumParticleTypes.PORTAL,
                         pos.getX() + (worldIn.rand.nextDouble()),
                         pos.getY() + worldIn.rand.nextDouble(),
@@ -75,25 +73,24 @@ public class EyeOre extends BlockContainer {
     }
 
     // Used to determine ambient occlusion and culling when rebuilding chunks for render.
-    public boolean isOpaqueCube(IBlockState state)
-    {
+    @SideOnly(Side.CLIENT)
+    public boolean isOpaqueCube(IBlockState state) {
         return false;
     }
 
-    public boolean isFullCube(IBlockState state)
-    {
+    @SideOnly(Side.CLIENT)
+    public boolean isFullCube(IBlockState state) {
         return false;
     }
 
     // The type of render function called. MODEL for mixed tesr and static model, MODELBLOCK_ANIMATED for TESR-only,
-    public EnumBlockRenderType getRenderType(IBlockState state)
-    {
+    @SideOnly(Side.CLIENT)
+    public EnumBlockRenderType getRenderType(IBlockState state) {
         return EnumBlockRenderType.MODEL;
     }
 
     @SideOnly(Side.CLIENT)
-    public BlockRenderLayer getBlockLayer()
-    {
+    public BlockRenderLayer getBlockLayer() {
         return BlockRenderLayer.TRANSLUCENT;
     }
 }

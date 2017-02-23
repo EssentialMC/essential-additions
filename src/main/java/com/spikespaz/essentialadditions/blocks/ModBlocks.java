@@ -26,7 +26,7 @@ public class ModBlocks {
         }
     };
 
-    public static Block EYE_ORE = new EyeOre();
+    public static Block EYE_ORE = new EyeOre("eye_ore");
     // Ruby Blocks
     public static Block RUBY_BLOCK = new BaseBlock(Material.ROCK, 5.0F, 10.0F,
             "pickaxe", 1, CreativeTabs.BUILDING_BLOCKS, SoundType.METAL, "ruby_block");
