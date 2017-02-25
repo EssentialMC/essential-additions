@@ -11,9 +11,9 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 public class EssentialAdditions {
     public static final String MODID = "essentialadditions";
     static final String NAME = "Essential Additions";
-    static final String VERSION = "1.4.2";
+    static final String VERSION = "1.4.3";
     private static final String CLIENTSIDE = "com.spikespaz.essentialadditions.proxy.ClientProxy";
-    private static final String SERVERSIDE = "com.spikespaz.essentialadditions.proxy.ServerProxy";
+    private static final String SERVERSIDE = "com.spikespaz.essentialadditions.proxy.CommonProxy";
 
     @SidedProxy(clientSide=CLIENTSIDE, serverSide = SERVERSIDE)
     public static CommonProxy proxy;
