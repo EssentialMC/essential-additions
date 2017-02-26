@@ -29,7 +29,7 @@ public class CommonProxy {
 
     public void postInit(FMLPostInitializationEvent event) {}
 
-    // Register items and blocks to the game. Easier than having two separate functions.
+    // Register item and block to the game. Easier than having two separate functions.
     public void registerModItem(Item item, String name) {
         item.setRegistryName(name);
         GameRegistry.register(item);

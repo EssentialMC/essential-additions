@@ -1,6 +1,6 @@
 package com.spikespaz.essentialadditions.main;
 
-import com.spikespaz.essentialadditions.blocks.ModBlocks;
+import com.spikespaz.essentialadditions.block.ModBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.IFuelHandler;

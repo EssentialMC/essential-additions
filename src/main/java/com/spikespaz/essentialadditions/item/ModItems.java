@@ -1,4 +1,4 @@
-package com.spikespaz.essentialadditions.items;
+package com.spikespaz.essentialadditions.item;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.SoundEvents;
@@ -21,7 +21,7 @@ public class ModItems {
     private static Item.ToolMaterial EMERALD_GEM = addToolMaterial(MODID + ".emerald", 3, 2740, 16.5F, 4.0F, 8);
     private static Item.ToolMaterial OBSIDIAN_GEM = addToolMaterial(MODID + ".obsidian", 2, 1210, 23.5F, 6.5F, 5);
     private static Item.ToolMaterial RUBY_GEM = addToolMaterial(MODID + ".ruby", 3, 2290, 16.0F, 4.5F, 7);
-    // Static declarations of all items and their properties.
+    // Static declarations of all item and their properties.
     // Emerald Armor
     public static Item EMERALD_HELMET = new BaseArmor(MODID + ".emerald_helmet", EMERALD_ARMOR, 1, HEAD);
     public static Item EMERALD_CHESTPLATE = new BaseArmor(MODID + ".emerald_chestplate", EMERALD_ARMOR, 1, CHEST);

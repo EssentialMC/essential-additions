@@ -1,4 +1,4 @@
-package com.spikespaz.essentialadditions.blocks;
+package com.spikespaz.essentialadditions.block;
 
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.SoundType;
@@ -51,7 +51,7 @@ public class EyeOre extends BlockContainer {
         return !(entity instanceof EntityDragon);
     }
 
-    // Return a list of items that the ore will drop.
+    // Return a list of item that the ore will drop.
     public ArrayList<ItemStack> getDrops(IBlockAccess world, BlockPos pos, IBlockState state, int fortune) {
         ArrayList<ItemStack> arrayList = new ArrayList<ItemStack>();
         arrayList.add(new ItemStack(Items.ENDER_PEARL));

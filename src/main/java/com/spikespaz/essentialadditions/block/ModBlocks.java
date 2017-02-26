@@ -1,6 +1,6 @@
-package com.spikespaz.essentialadditions.blocks;
+package com.spikespaz.essentialadditions.block;
 
-import com.spikespaz.essentialadditions.items.ModItems;
+import com.spikespaz.essentialadditions.item.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
@@ -10,8 +10,8 @@ import net.minecraft.item.Item;
 import java.util.Random;
 
 public class ModBlocks {
-    // Static declarations of all blocks and their properties.
-    // Here I use anonymous classes to customize the drops of some blocks.
+    // Static declarations of all block and their properties.
+    // Here I use anonymous classes to customize the drops of some block.
     // While I'm told there's nothing wrong with this, it's generally frowned on because of code readability and organization.
     // It's perfectly readable if you se IntelliJ's collapse feature, and its even fine without that IMO.
     // Custom Ores

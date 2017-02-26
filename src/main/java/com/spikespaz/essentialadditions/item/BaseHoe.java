@@ -1,4 +1,4 @@
-package com.spikespaz.essentialadditions.items;
+package com.spikespaz.essentialadditions.item;
 
 import net.minecraft.item.ItemHoe;
 

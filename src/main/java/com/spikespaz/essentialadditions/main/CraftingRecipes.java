@@ -1,7 +1,7 @@
 package com.spikespaz.essentialadditions.main;
 
-import com.spikespaz.essentialadditions.blocks.ModBlocks;
-import com.spikespaz.essentialadditions.items.ModItems;
+import com.spikespaz.essentialadditions.block.ModBlocks;
+import com.spikespaz.essentialadditions.item.ModItems;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;

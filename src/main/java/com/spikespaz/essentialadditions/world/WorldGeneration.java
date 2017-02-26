@@ -1,7 +1,7 @@
 package com.spikespaz.essentialadditions.world;
 
 import com.google.common.base.Predicate;
-import com.spikespaz.essentialadditions.blocks.ModBlocks;
+import com.spikespaz.essentialadditions.block.ModBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.block.state.pattern.BlockMatcher;
@@ -31,7 +31,7 @@ public class WorldGeneration implements IWorldGenerator {
         generateOre(ModBlocks.EYE_ORE, world, random, x, z, 1, 1, 460, 0, 256, replaceBlock);
     }
 
-    // The default blocks to replace based on the dimension can be changed.
+    // The default block to replace based on the dimension can be changed.
     @Override
     public void generate(Random random, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider) {
         switch (world.provider.getDimensionType()) {

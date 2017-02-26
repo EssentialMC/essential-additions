@@ -1,13 +1,13 @@
 package com.spikespaz.essentialadditions.main;
 
-import com.spikespaz.essentialadditions.blocks.ModBlocks;
-import com.spikespaz.essentialadditions.items.ModItems;
+import com.spikespaz.essentialadditions.block.ModBlocks;
+import com.spikespaz.essentialadditions.item.ModItems;
 import com.spikespaz.essentialadditions.proxy.ClientProxy;
 
 import static com.spikespaz.essentialadditions.main.EssentialAdditions.proxy;
 
 public class ModRegistry {
-    // Register all items and their registry names.
+    // Register all item and their registry names.
     public static void registerItems() {
         // Emerald Armor
         proxy.registerModItem(ModItems.EMERALD_HELMET, "emerald_helmet");
@@ -53,7 +53,7 @@ public class ModRegistry {
         proxy.registerModItem(ModItems.CHAIN_LINK, "chain_link");
     }
 
-    // Entries to render all items.
+    // Entries to render all item.
     public static void renderItems() {
         // Emerald Armor
         ClientProxy.renderModObject(ModItems.EMERALD_CHESTPLATE);
@@ -99,7 +99,7 @@ public class ModRegistry {
         ClientProxy.renderModObject(ModItems.CHAIN_LINK);
     }
 
-    // Render all blocks.
+    // Render all block.
     public static void renderBlocks() {
         // Custom Ores
         ClientProxy.renderModObject(ModBlocks.SULFUR_BLOCK);

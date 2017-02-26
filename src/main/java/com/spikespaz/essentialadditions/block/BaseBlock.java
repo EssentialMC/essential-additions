@@ -1,4 +1,4 @@
-package com.spikespaz.essentialadditions.blocks;
+package com.spikespaz.essentialadditions.block;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
