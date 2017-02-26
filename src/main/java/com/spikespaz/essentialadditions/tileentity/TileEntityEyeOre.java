@@ -1,4 +1,6 @@
 package com.spikespaz.essentialadditions.tileentity;
 
-public class TileEntityEyeOre {
+import net.minecraft.tileentity.TileEntity;
+
+public class TileEntityEyeOre extends TileEntity {
 }

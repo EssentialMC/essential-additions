@@ -1,5 +1,6 @@
 package com.spikespaz.essentialadditions.block;
 
+import com.spikespaz.essentialadditions.tileentity.TileEntityEyeOre;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
@@ -11,7 +12,6 @@ import net.minecraft.init.Items;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
-import net.minecraft.tileentity.TileEntityEnchantmentTable;
 import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.util.EnumBlockRenderType;
 import net.minecraft.util.EnumParticleTypes;
@@ -39,12 +39,13 @@ public class BlockEyeOre extends BlockContainer {
         this.setUnlocalizedName(MODID + "." + name);
         this.setRegistryName(name);
         this.setLightLevel(1.5F);
+        this.isBlockContainer = true;
         GameRegistry.register(this);
         GameRegistry.register(new ItemBlock(this).setRegistryName(this.getRegistryName()));
     }
 
     public TileEntity createNewTileEntity(World worldIn, int meta) {
-        return new TileEntityEnchantmentTable();
+        return new TileEntityEyeOre();
     }
 
     // If entity that is an instance of EnderDragon, disable destroy. Else allow.
