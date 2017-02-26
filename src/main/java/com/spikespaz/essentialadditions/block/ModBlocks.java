@@ -15,7 +15,7 @@ public class ModBlocks {
     // While I'm told there's nothing wrong with this, it's generally frowned on because of code readability and organization.
     // It's perfectly readable if you se IntelliJ's collapse feature, and its even fine without that IMO.
     // Custom Ores
-    public static Block SULFUR_BLOCK = new BaseBlock(Material.ROCK, 0.5F, 0F,
+    public static Block SULFUR_BLOCK = new BlockBase(Material.ROCK, 0.5F, 0F,
             "pickaxe", 0, CreativeTabs.BUILDING_BLOCKS, SoundType.SAND, "sulfur_block") {
         public Item getItemDropped(int par1, Random random, int par2) {
             return ModItems.SULFUR;
@@ -26,11 +26,11 @@ public class ModBlocks {
         }
     };
 
-    public static Block EYE_ORE = new EyeOre("eye_ore");
+    public static Block EYE_ORE = new BlockEyeOre("eye_ore");
     // Ruby Blocks
-    public static Block RUBY_BLOCK = new BaseBlock(Material.ROCK, 5.0F, 10.0F,
+    public static Block RUBY_BLOCK = new BlockBase(Material.ROCK, 5.0F, 10.0F,
             "pickaxe", 1, CreativeTabs.BUILDING_BLOCKS, SoundType.METAL, "ruby_block");
-    public static Block RUBY_ORE = new BaseBlock(Material.ROCK, 3.0F, 5.0F,
+    public static Block RUBY_ORE = new BlockBase(Material.ROCK, 3.0F, 5.0F,
             "pickaxe", 3, CreativeTabs.BUILDING_BLOCKS, SoundType.STONE, "ruby_ore") {
         public Item getItemDropped(int par1, Random random, int par2) {
             return ModItems.RUBY;
@@ -41,6 +41,6 @@ public class ModBlocks {
         }
     };
     // Other
-    public static Block CHARCOAL_BLOCK = new BaseBlock(Material.ROCK, 5.0F, 10.0F,
+    public static Block CHARCOAL_BLOCK = new BlockBase(Material.ROCK, 5.0F, 10.0F,
             "pickaxe", 2, CreativeTabs.BUILDING_BLOCKS, SoundType.STONE, "charcoal_block");
 }
