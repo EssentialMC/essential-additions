@@ -26,7 +26,8 @@ import java.util.ArrayList;
 import java.util.Random;
 
 import static com.spikespaz.essentialadditions.main.EssentialAdditions.MODID;
-
+// This is for suppressing warnings about deprecation for some rendering code. I don't know how else to do it. (._.)
+@SuppressWarnings("deprecation")
 public class EyeOre extends BlockContainer {
     EyeOre(String name) {
         super(Material.ROCK);
