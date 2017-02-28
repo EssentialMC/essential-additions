@@ -6,10 +6,12 @@ import net.minecraft.util.ITickable;
 
 public class TileEntityEyeOre extends TileEntity implements ITickable {
     static float[] rotateTo;
+    public int delayedTickCount;
+    public EntityPlayer nearestPlayer;
 
     @Override
     public void update() {
-        EntityPlayer nearestPlayer = this.getWorld().getClosestPlayer(
+        nearestPlayer = this.getWorld().getClosestPlayer(
                 this.pos.getX() + 0.5F, this.pos.getY() + 0.5F, this.pos.getZ() + 0.5F, 5.0F, false);
         if (nearestPlayer != null) {
             double offsetX = nearestPlayer.posX - this.pos.getX() + 0.5F;
@@ -18,7 +20,14 @@ public class TileEntityEyeOre extends TileEntity implements ITickable {
 
             rotateTo = new float[] {(float) offsetX, (float) offsetY, (float) offsetZ};
         } else {
-            rotateTo = null;
+            rotateTo = new float[] {0, 0, 0};
+        }
+
+        // Counts for 5 seconds for smoother and slower animations.
+        if (delayedTickCount == 100) {
+            delayedTickCount = 0;
+        } else {
+            ++delayedTickCount;
         }
     }
 }
