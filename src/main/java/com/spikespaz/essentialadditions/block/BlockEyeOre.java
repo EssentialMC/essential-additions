@@ -56,7 +56,7 @@ public class BlockEyeOre extends BlockContainer {
 
     // Return a list of item that the ore will drop.
     public ArrayList<ItemStack> getDrops(IBlockAccess world, BlockPos pos, IBlockState state, int fortune) {
-        ArrayList<ItemStack> arrayList = new ArrayList<ItemStack>();
+        ArrayList<ItemStack> arrayList = new ArrayList<>();
         arrayList.add(new ItemStack(Items.ENDER_PEARL));
         arrayList.add(new ItemStack(Items.BLAZE_POWDER));
         return arrayList;
