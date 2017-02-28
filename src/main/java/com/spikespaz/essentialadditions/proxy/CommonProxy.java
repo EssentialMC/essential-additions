@@ -15,6 +15,7 @@ public class CommonProxy {
     public void preInit(FMLPreInitializationEvent event) {
         // Load the main mod classes.
         ModRegistry.registerItems();
+        ModRegistry.registerTileEntities();
         CraftingRecipes.mainRegistry();
     }
 

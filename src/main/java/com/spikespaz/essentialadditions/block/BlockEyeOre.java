@@ -44,10 +44,6 @@ public class BlockEyeOre extends BlockContainer {
         GameRegistry.register(new ItemBlock(this).setRegistryName(this.getRegistryName()));
     }
 
-    public TileEntity createNewTileEntity(World worldIn, int meta) {
-        return new TileEntityEyeOre();
-    }
-
     // If entity that is an instance of EnderDragon, disable destroy. Else allow.
     public boolean canEntityDestroy(IBlockState state, IBlockAccess world, BlockPos pos, Entity entity) {
         return !(entity instanceof EntityDragon);
@@ -72,6 +68,17 @@ public class BlockEyeOre extends BlockContainer {
                         (worldIn.rand.nextDouble() - 0.5D) * 2.0D, - worldIn.rand.nextDouble(),
                         (worldIn.rand.nextDouble() - 0.5D) * 2.0D);
         }
+    }
+
+    @Override
+    public TileEntity createNewTileEntity(World worldIn, int meta) {
+        return new TileEntityEyeOre();
+    }
+
+    @Override
+    public void breakBlock(World world, BlockPos pos, IBlockState state) {
+        super.breakBlock(world, pos, state);
+        world.removeTileEntity(pos);
     }
 
     // Used to determine ambient occlusion and culling when rebuilding chunks for render.

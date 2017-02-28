@@ -3,6 +3,8 @@ package com.spikespaz.essentialadditions.main;
 import com.spikespaz.essentialadditions.block.ModBlocks;
 import com.spikespaz.essentialadditions.item.ModItems;
 import com.spikespaz.essentialadditions.proxy.ClientProxy;
+import com.spikespaz.essentialadditions.tileentity.TileEntityEyeOre;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 
 import static com.spikespaz.essentialadditions.main.EssentialAdditions.proxy;
 
@@ -51,6 +53,10 @@ public class ModRegistry {
         proxy.registerModItem(ModItems.IRON_PLATING, "iron_plating");
         proxy.registerModItem(ModItems.GOLD_PLATING, "gold_plating");
         proxy.registerModItem(ModItems.CHAIN_LINK, "chain_link");
+    }
+
+    public static void registerTileEntities() {
+        GameRegistry.registerTileEntity(TileEntityEyeOre.class, "eye_ore_te");
     }
 
     // Entries to render all item.

@@ -1,13 +1,19 @@
 package com.spikespaz.essentialadditions.proxy;
 
 import com.spikespaz.essentialadditions.main.ModRegistry;
+import com.spikespaz.essentialadditions.tileentity.TileEntityEyeOreRenderer;
+import com.spikespaz.essentialadditions.tileentity.TileEntityEyeOre;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
+import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.model.ModelLoader;
+import net.minecraftforge.fml.client.registry.ClientRegistry;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+
+import static com.spikespaz.essentialadditions.main.EssentialAdditions.MODID;
 
 public class ClientProxy extends CommonProxy {
     @Override
@@ -20,6 +26,7 @@ public class ClientProxy extends CommonProxy {
     @Override
     public void init(FMLInitializationEvent event) {
         super.init(event);
+        ClientRegistry.bindTileEntitySpecialRenderer(TileEntityEyeOre.class, new TileEntityEyeOreRenderer());
     }
 
     @Override
@@ -37,4 +44,6 @@ public class ClientProxy extends CommonProxy {
             ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(block), 0, new ModelResourceLocation(block.getRegistryName(),"inventory"));
         }
     }
+
+    public static ResourceLocation EYE_BALL_TEXTURE = new ResourceLocation(MODID, "textures/entities/eye_ball.png");
 }
