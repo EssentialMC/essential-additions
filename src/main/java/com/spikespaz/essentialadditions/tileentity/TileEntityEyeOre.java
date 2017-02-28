@@ -5,6 +5,8 @@ import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.ITickable;
 
 public class TileEntityEyeOre extends TileEntity implements ITickable {
+    static float[] rotateTo;
+
     @Override
     public void update() {
         EntityPlayer nearestPlayer = this.getWorld().getClosestPlayer(
@@ -14,7 +16,9 @@ public class TileEntityEyeOre extends TileEntity implements ITickable {
             double offsetY = nearestPlayer.posY - this.pos.getY() + 0.5F;
             double offsetZ = nearestPlayer.posZ - this.pos.getZ() + 0.5F;
 
+            rotateTo = new float[] {(float) offsetX, (float) offsetY, (float) offsetZ};
         } else {
+            rotateTo = null;
         }
     }
 }
