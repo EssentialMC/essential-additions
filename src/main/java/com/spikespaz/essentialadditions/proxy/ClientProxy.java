@@ -14,11 +14,14 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
+import java.util.Random;
+
 import static com.spikespaz.essentialadditions.main.EssentialAdditions.MODID;
 
 public class ClientProxy extends CommonProxy {
     public static final ResourceLocation EYE_BALL_TEXTURE = new ResourceLocation(MODID, "textures/tileentities/eye_ball.png");
     public static final ModelEyeBall EYE_BALL_MODEL = new ModelEyeBall();
+    public static final Random UNIVERSAL_RANDOM = new Random();
 
     // Generic function to render every object in the mod, easier than separate.
     public static void renderModObject(Object object) {
