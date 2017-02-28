@@ -45,5 +45,5 @@ public class ClientProxy extends CommonProxy {
         }
     }
 
-    public static ResourceLocation EYE_BALL_TEXTURE = new ResourceLocation(MODID, "textures/entities/eye_ball.png");
+    public static ResourceLocation EYE_BALL_TEXTURE = new ResourceLocation(MODID, "textures/tileentities/eye_ball.png");
 }
