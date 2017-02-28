@@ -12,30 +12,6 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class CommonProxy {
-    public void preInit(FMLPreInitializationEvent event) {
-        // Load the main mod classes.
-        ModRegistry.registerItems();
-        ModRegistry.registerTileEntities();
-        CraftingRecipes.mainRegistry();
-    }
-
-    public void init(FMLInitializationEvent event) {
-        // Adjust maximum stack sizes.
-        modifyStacks();
-        GameRegistry.registerFuelHandler(new FuelHandler());
-        // modGenerationWeight being set to 10 is polite to other mods, and will take it's ore generation someplace last.
-        GameRegistry.registerWorldGenerator(new WorldGeneration(), 10);
-//        MinecraftForge.EVENT_BUS.register(new EventHandler());
-    }
-
-    public void postInit(FMLPostInitializationEvent event) {}
-
-    // Register item and block to the game. Easier than having two separate functions.
-    public void registerModItem(Item item, String name) {
-        item.setRegistryName(name);
-        GameRegistry.register(item);
-    }
-
     private static void modifyStacks() {
         // Change vanilla stack sizes.
         // Miscellaneous
@@ -74,5 +50,30 @@ public class CommonProxy {
         // Decoration
         Items.SIGN.setMaxStackSize(64);
         Items.BED.setMaxStackSize(16);
+    }
+
+    public void preInit(FMLPreInitializationEvent event) {
+        // Load the main mod classes.
+        ModRegistry.registerItems();
+        ModRegistry.registerTileEntities();
+        CraftingRecipes.mainRegistry();
+    }
+
+    public void init(FMLInitializationEvent event) {
+        // Adjust maximum stack sizes.
+        modifyStacks();
+        GameRegistry.registerFuelHandler(new FuelHandler());
+        // modGenerationWeight being set to 10 is polite to other mods, and will take it's ore generation someplace last.
+        GameRegistry.registerWorldGenerator(new WorldGeneration(), 10);
+//        MinecraftForge.EVENT_BUS.register(new EventHandler());
+    }
+
+    public void postInit(FMLPostInitializationEvent event) {
+    }
+
+    // Register item and block to the game. Easier than having two separate functions.
+    public void registerModItem(Item item, String name) {
+        item.setRegistryName(name);
+        GameRegistry.register(item);
     }
 }

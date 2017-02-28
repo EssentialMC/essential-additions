@@ -1,8 +1,8 @@
 package com.spikespaz.essentialadditions.proxy;
 
 import com.spikespaz.essentialadditions.main.ModRegistry;
-import com.spikespaz.essentialadditions.tileentity.TileEntityEyeOreRenderer;
 import com.spikespaz.essentialadditions.tileentity.TileEntityEyeOre;
+import com.spikespaz.essentialadditions.tileentity.TileEntityEyeOreRenderer;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
@@ -16,6 +16,19 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import static com.spikespaz.essentialadditions.main.EssentialAdditions.MODID;
 
 public class ClientProxy extends CommonProxy {
+    public static ResourceLocation EYE_BALL_TEXTURE = new ResourceLocation(MODID, "textures/tileentities/eye_ball.png");
+
+    // Generic function to render every object in the mod, easier than separate.
+    public static void renderModObject(Object object) {
+        if (object instanceof Item) {
+            Item item = (Item) object;
+            ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation(item.getRegistryName(), "inventory"));
+        } else if (object instanceof Block) {
+            Block block = (Block) object;
+            ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(block), 0, new ModelResourceLocation(block.getRegistryName(), "inventory"));
+        }
+    }
+
     @Override
     public void preInit(FMLPreInitializationEvent event) {
         super.preInit(event);
@@ -33,17 +46,4 @@ public class ClientProxy extends CommonProxy {
     public void postInit(FMLPostInitializationEvent event) {
         super.postInit(event);
     }
-
-    // Generic function to render every object in the mod, easier than separate.
-    public static void renderModObject(Object object) {
-        if (object instanceof Item) {
-            Item item = (Item) object;
-            ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation(item.getRegistryName(),"inventory"));
-        } else if (object instanceof Block) {
-            Block block = (Block) object;
-            ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(block), 0, new ModelResourceLocation(block.getRegistryName(),"inventory"));
-        }
-    }
-
-    public static ResourceLocation EYE_BALL_TEXTURE = new ResourceLocation(MODID, "textures/tileentities/eye_ball.png");
 }

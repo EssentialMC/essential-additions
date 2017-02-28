@@ -43,13 +43,14 @@ public class TileEntityEyeOre extends TileEntity implements ITickable {
 
         float f2;
 
-        for (f2 = this.tRot - this.eyeRotation; f2 >= Math.PI; f2 -= Math.PI * 2F) {}
+        for (f2 = this.tRot - this.eyeRotation; f2 >= Math.PI; f2 -= Math.PI * 2F) {
+        }
 
         while (f2 < -Math.PI) {
             f2 += Math.PI * 2F;
         }
 
         this.eyeRotation += f2 * 0.4F;
-        ++ this.tickCount;
+        ++this.tickCount;
     }
 }

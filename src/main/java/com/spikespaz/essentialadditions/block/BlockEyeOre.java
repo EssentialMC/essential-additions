@@ -26,6 +26,7 @@ import java.util.ArrayList;
 import java.util.Random;
 
 import static com.spikespaz.essentialadditions.main.EssentialAdditions.MODID;
+
 // This is for suppressing warnings about deprecation for some rendering code. I don't know how else to do it. (._.)
 @SuppressWarnings("deprecation")
 public class BlockEyeOre extends BlockContainer {
@@ -61,12 +62,12 @@ public class BlockEyeOre extends BlockContainer {
     @SideOnly(Side.CLIENT)
     public void randomDisplayTick(IBlockState stateIn, World worldIn, BlockPos pos, Random rand) {
         for (int i = 0; i < 20; ++i) {
-                worldIn.spawnParticle(EnumParticleTypes.PORTAL,
-                        pos.getX() + (worldIn.rand.nextDouble()),
-                        pos.getY() + worldIn.rand.nextDouble(),
-                        pos.getZ() + (worldIn.rand.nextDouble()),
-                        (worldIn.rand.nextDouble() - 0.5D) * 2.0D, - worldIn.rand.nextDouble(),
-                        (worldIn.rand.nextDouble() - 0.5D) * 2.0D);
+            worldIn.spawnParticle(EnumParticleTypes.PORTAL,
+                    pos.getX() + (worldIn.rand.nextDouble()),
+                    pos.getY() + worldIn.rand.nextDouble(),
+                    pos.getZ() + (worldIn.rand.nextDouble()),
+                    (worldIn.rand.nextDouble() - 0.5D) * 2.0D, -worldIn.rand.nextDouble(),
+                    (worldIn.rand.nextDouble() - 0.5D) * 2.0D);
         }
     }
 

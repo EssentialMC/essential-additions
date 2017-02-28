@@ -19,7 +19,8 @@ public class TileEntityEyeOreRenderer extends TileEntitySpecialRenderer<TileEnti
         GlStateManager.translate(0.0F, 0.1F + MathHelper.sin(f * 0.1F) * 0.01F, 0.0F);
         float f1;
 
-        for (f1 = te.eyeRotation - te.eyeRotationPrev; f1 >= Math.PI; f1 -= Math.PI * 2F) {}
+        for (f1 = te.eyeRotation - te.eyeRotationPrev; f1 >= Math.PI; f1 -= Math.PI * 2F) {
+        }
 
         while (f1 < -Math.PI) {
             f1 += Math.PI * 2F;
