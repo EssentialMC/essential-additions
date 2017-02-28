@@ -1,6 +1,7 @@
 package com.spikespaz.essentialadditions.proxy;
 
 import com.spikespaz.essentialadditions.main.ModRegistry;
+import com.spikespaz.essentialadditions.tileentity.ModelEyeBall;
 import com.spikespaz.essentialadditions.tileentity.TileEntityEyeOre;
 import com.spikespaz.essentialadditions.tileentity.TileEntityEyeOreRenderer;
 import net.minecraft.block.Block;
@@ -16,7 +17,8 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import static com.spikespaz.essentialadditions.main.EssentialAdditions.MODID;
 
 public class ClientProxy extends CommonProxy {
-    public static ResourceLocation EYE_BALL_TEXTURE = new ResourceLocation(MODID, "textures/tileentities/eye_ball.png");
+    public static final ResourceLocation EYE_BALL_TEXTURE = new ResourceLocation(MODID, "textures/tileentities/eye_ball.png");
+    public static final ModelEyeBall EYE_BALL_MODEL = new ModelEyeBall();
 
     // Generic function to render every object in the mod, easier than separate.
     public static void renderModObject(Object object) {

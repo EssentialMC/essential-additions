@@ -6,8 +6,6 @@ import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
 import net.minecraft.util.math.MathHelper;
 
 public class TileEntityEyeOreRenderer extends TileEntitySpecialRenderer<TileEntityEyeOre> {
-    private final ModelEyeBall modelEye = new ModelEyeBall();
-
     @Override
     public void renderTileEntityAt(TileEntityEyeOre te, double x, double y, double z, float partialTicks, int destroyStage) {
         GlStateManager.pushMatrix();
@@ -34,7 +32,7 @@ public class TileEntityEyeOreRenderer extends TileEntitySpecialRenderer<TileEnti
         GlStateManager.rotate(80.0F, 0.0F, 0.0F, 1.0F);
 
         GlStateManager.enableCull();
-        this.modelEye.render(null, f, 0, 0, 0, 0.0F, 0.0625F);
+        ClientProxy.EYE_BALL_MODEL.render(null, f, 0, 0, 0, 0.0F, 0.0625F);
 
         GlStateManager.popMatrix();
     }
