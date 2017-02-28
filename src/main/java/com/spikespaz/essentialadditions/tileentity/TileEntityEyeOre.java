@@ -43,7 +43,9 @@ public class TileEntityEyeOre extends TileEntity implements ITickable {
 
         float f2;
 
-        for (f2 = this.tRot - this.eyeRotation; f2 >= Math.PI; f2 -= Math.PI * 2F) {
+        f2 = this.tRot - this.eyeRotation;
+        while (f2 >= Math.PI) {
+            f2 -= Math.PI * 2F;
         }
 
         while (f2 < -Math.PI) {

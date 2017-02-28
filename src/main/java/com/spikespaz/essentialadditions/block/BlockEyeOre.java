@@ -1,6 +1,7 @@
 package com.spikespaz.essentialadditions.block;
 
 import com.spikespaz.essentialadditions.tileentity.TileEntityEyeOre;
+import mcp.MethodsReturnNonnullByDefault;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
@@ -22,6 +23,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
+import javax.annotation.ParametersAreNonnullByDefault;
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -29,6 +31,8 @@ import static com.spikespaz.essentialadditions.main.EssentialAdditions.MODID;
 
 // This is for suppressing warnings about deprecation for some rendering code. I don't know how else to do it. (._.)
 @SuppressWarnings("deprecation")
+@MethodsReturnNonnullByDefault
+@ParametersAreNonnullByDefault
 public class BlockEyeOre extends BlockContainer {
     BlockEyeOre(String name) {
         super(Material.ROCK);
