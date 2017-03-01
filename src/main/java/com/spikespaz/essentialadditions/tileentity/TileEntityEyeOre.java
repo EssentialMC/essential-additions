@@ -8,17 +8,13 @@ import static com.spikespaz.essentialadditions.proxy.ClientProxy.UNIVERSAL_RANDO
 import static java.lang.Math.*;
 
 public class TileEntityEyeOre extends TileEntity implements ITickable {
-    int delayedTickCount;
-    double idleRotation = 0F;
-    double verticalRotation;
-    double horizontalRotation;
-    double verticalSmoothFloat;
-    double horizontalSmoothFloat;
-    double smoothFloat;
+    private int delayedTickCount;
+    double idleRotation = 0F,
+            rotationX, rotationY,
+            verticalSmoothFloat, horizontalSmoothFloat, smoothFloat;
     EntityPlayer player;
     private boolean reversed;
-    private float lastChanged;
-    private float rotationSpeed;
+    private float lastChanged, rotationSpeed;
 
     @Override
     public void update() {
@@ -32,12 +28,10 @@ public class TileEntityEyeOre extends TileEntity implements ITickable {
             double offsetY = player.posY - this.pos.getY() + player.eyeHeight - 0.5D;
             double offsetZ = player.posZ - this.pos.getZ() - 0.5D;
 
-            double distance = sqrt(pow(offsetX, 2) + pow(offsetZ, 2));
+            double distance = hypot(offsetX, offsetZ);
 
-            verticalRotation = 0;
-            horizontalRotation = 0;
-//            verticalRotation = atan2(offsetY, distance) * (180D / Math.PI);
-            horizontalRotation = atan2(offsetX, offsetZ) * (180D / Math.PI) - 180D;
+            rotationX = atan2(offsetY, distance) * (180D / Math.PI);
+            rotationY = atan2(offsetX, offsetZ) * (180D / Math.PI) - 180D;
         }
 
         // Calculate how to translate for the bobbing effect.
