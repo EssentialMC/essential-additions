@@ -25,15 +25,16 @@ public class TileEntityEyeOre extends TileEntity implements ITickable {
             // X rotation is vertical.
             // Y rotation is horizontal.
 
-            double offsetX = player.posX - this.pos.getX() + 0.5D;
-            double offsetY = player.posY - this.pos.getY() + 1.36D;
-            double offsetZ = player.posZ - this.pos.getZ() + 0.5D;
+            double offsetX = player.posX - this.pos.getX() - 0.5D;
+            double offsetY = player.posY - this.pos.getY() + player.eyeHeight - 0.5D;
+            double offsetZ = player.posZ - this.pos.getZ() - 0.5D;
 
             double distance = sqrt(pow(offsetX, 2) + pow(offsetZ, 2));
 
-//            yRotation = atan(offsetX / offsetZ) * (180D / Math.PI);
+            xRotation = 0;
             yRotation = 0;
-            xRotation = atan(offsetY / distance) * (180D / Math.PI);
+            xRotation = atan2(offsetY, distance) * (180D / Math.PI);
+//            yRotation = atan2(offsetX, offsetZ) * (180D / Math.PI);
         }
 
         // Counts for 5 seconds for smoother and slower animations.
