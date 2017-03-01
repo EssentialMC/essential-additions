@@ -12,6 +12,7 @@ public class TileEntityEyeOre extends TileEntity implements ITickable {
     int delayedTickCount;
     private boolean reversed;
     private float lastChanged;
+    private float rotationSpeed;
     Float idleRotation = 0F;
     EntityPlayer nearestPlayer;
 
@@ -40,12 +41,13 @@ public class TileEntityEyeOre extends TileEntity implements ITickable {
         if (UNIVERSAL_RANDOM.nextInt(50) == 0 & abs(delayedTickCount - lastChanged) > 30) {
             reversed = !reversed;
             lastChanged = delayedTickCount;
+            rotationSpeed = 3.6F + UNIVERSAL_RANDOM.nextFloat() * 5.4F;
         }
 
         if (reversed) {
-            idleRotation += 3.6F;
+            idleRotation += rotationSpeed;
         } else {
-            idleRotation -= 3.6F;
+            idleRotation -= rotationSpeed;
         }
     }
 }
