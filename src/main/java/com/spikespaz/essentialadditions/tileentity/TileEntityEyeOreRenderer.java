@@ -13,14 +13,13 @@ public class TileEntityEyeOreRenderer extends TileEntitySpecialRenderer<TileEnti
         GlStateManager.translate(x + 0.5F, y + 0.5F, z + 0.5F);
 
         // If the player exists watch them.
-        if (te.nearestPlayer != null) {
-            GlStateManager.rotate(te.rotateTo[0], 1, 0, 0);
-            GlStateManager.rotate(te.rotateTo[1], 0, 1, 0);
-            GlStateManager.rotate(te.rotateTo[2], 0, 0, 1);
+        if (te.player != null) {
+            GlStateManager.rotate((float) te.xRotation, 1, 0, 0);
+            GlStateManager.rotate((float) te.yRotation, 0, 1, 0);
         } else {
             // If there is no close enough player just scan the surrounding terrain.
             // Randomly reverses direction of rotation.
-            GlStateManager.rotate(te.idleRotation, 0, 1, 0);
+            GlStateManager.rotate((float) te.idleRotation, 0, 1, 0);
 
             double smoothFloat = abs((te.delayedTickCount - 50) / 400D) - 0.0625;
             GlStateManager.translate(0, smoothFloat, 0);

@@ -5,29 +5,37 @@ import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.ITickable;
 
 import static com.spikespaz.essentialadditions.proxy.ClientProxy.UNIVERSAL_RANDOM;
-import static java.lang.Math.abs;
+import static java.lang.Math.*;
 
 public class TileEntityEyeOre extends TileEntity implements ITickable {
-    static float[] rotateTo;
     int delayedTickCount;
+    double idleRotation = 0F;
+    double xRotation;
+    double yRotation;
+    EntityPlayer player;
     private boolean reversed;
     private float lastChanged;
     private float rotationSpeed;
-    Float idleRotation = 0F;
-    EntityPlayer nearestPlayer;
 
     @Override
     public void update() {
-        nearestPlayer = this.getWorld().getClosestPlayer(
-                this.pos.getX() + 0.5F, this.pos.getY() + 0.5F, this.pos.getZ() + 0.5F, 5.0F, false);
-        if (nearestPlayer != null) {
-            double offsetX = nearestPlayer.posX - this.pos.getX() + 0.5F;
-            double offsetY = nearestPlayer.posY - this.pos.getY() + 0.5F;
-            double offsetZ = nearestPlayer.posZ - this.pos.getZ() + 0.5F;
+        player = this.getWorld().getClosestPlayer(
+                this.pos.getX() + 0.5F, this.pos.getY() + 0.5F, this.pos.getZ() + 0.5F, 10.0F, false);
+        if (player != null) {
+            // X rotation is vertical.
+            // Y rotation is horizontal.
 
-            rotateTo = new float[] {(float) offsetX, (float) offsetY, (float) offsetZ};
-        } else {
-            rotateTo = new float[] {0, 0, 0};
+            double offsetX = player.posX - this.pos.getX() + 0.5D;
+            double offsetZ = player.posZ - this.pos.getZ() + 0.5D;
+
+//            yRotation = atan(offsetX / offsetZ) * (180D / Math.PI);
+            yRotation = 0;
+
+            double distance = sqrt(pow(offsetX, 2) + pow(offsetZ, 2));
+
+            double offsetY = player.posY - this.pos.getY() + 0.5D;
+
+            xRotation = atan(offsetY / distance) * (180D / Math.PI);
         }
 
         // Counts for 5 seconds for smoother and slower animations.
