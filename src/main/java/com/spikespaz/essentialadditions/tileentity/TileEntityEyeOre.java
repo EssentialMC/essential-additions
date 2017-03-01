@@ -10,8 +10,10 @@ import static java.lang.Math.*;
 public class TileEntityEyeOre extends TileEntity implements ITickable {
     int delayedTickCount;
     double idleRotation = 0F;
-    double xRotation;
-    double yRotation;
+    double verticalRotation;
+    double horizontalRotation;
+    double verticalSmoothFloat;
+    double horizontalSmoothFloat;
     double smoothFloat;
     EntityPlayer player;
     private boolean reversed;
@@ -32,10 +34,10 @@ public class TileEntityEyeOre extends TileEntity implements ITickable {
 
             double distance = sqrt(pow(offsetX, 2) + pow(offsetZ, 2));
 
-            xRotation = 0;
-            yRotation = 0;
-            xRotation = atan2(offsetY, distance) * (180D / Math.PI);
-//            yRotation = atan2(offsetX, offsetZ) * (180D / Math.PI);
+            verticalRotation = 0;
+            horizontalRotation = 0;
+//            verticalRotation = atan2(offsetY, distance) * (180D / Math.PI);
+            horizontalRotation = atan2(offsetX, offsetZ) * (180D / Math.PI) - 180D;
         }
 
         // Calculate how to translate for the bobbing effect.
