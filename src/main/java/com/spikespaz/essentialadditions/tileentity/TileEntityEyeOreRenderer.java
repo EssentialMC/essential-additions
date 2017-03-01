@@ -4,8 +4,6 @@ import com.spikespaz.essentialadditions.proxy.ClientProxy;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
 
-import static java.lang.Math.abs;
-
 public class TileEntityEyeOreRenderer extends TileEntitySpecialRenderer<TileEntityEyeOre> {
     @Override
     public void renderTileEntityAt(TileEntityEyeOre te, double x, double y, double z, float partialTicks, int destroyStage) {
@@ -20,10 +18,10 @@ public class TileEntityEyeOreRenderer extends TileEntitySpecialRenderer<TileEnti
             // If there is no close enough player just scan the surrounding terrain.
             // Randomly reverses direction of rotation.
             GlStateManager.rotate((float) te.idleRotation, 0, 1, 0);
-
-            double smoothFloat = abs((te.delayedTickCount - 50) / 400D) - 0.0625;
-            GlStateManager.translate(0, smoothFloat, 0);
         }
+
+        // Makes the eye bob up and down slowly. Looks like it's floating.
+        GlStateManager.translate(0, te.smoothFloat, 0);
 
         GlStateManager.enableCull();
 

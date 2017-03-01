@@ -12,6 +12,7 @@ public class TileEntityEyeOre extends TileEntity implements ITickable {
     double idleRotation = 0F;
     double xRotation;
     double yRotation;
+    double smoothFloat;
     EntityPlayer player;
     private boolean reversed;
     private float lastChanged;
@@ -36,6 +37,9 @@ public class TileEntityEyeOre extends TileEntity implements ITickable {
             xRotation = atan2(offsetY, distance) * (180D / Math.PI);
 //            yRotation = atan2(offsetX, offsetZ) * (180D / Math.PI);
         }
+
+        // Calculate how to translate for the bobbing effect.
+        smoothFloat = abs((delayedTickCount - 50) / 400D) - 0.0625D;
 
         // Counts for 5 seconds for smoother and slower animations.
         if (delayedTickCount == 100) {
