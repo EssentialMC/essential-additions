@@ -12,8 +12,8 @@ public class TileEntityEyeOreRenderer extends TileEntitySpecialRenderer<TileEnti
 
         // If the player exists watch them.
         if (te.player != null) {
-            GlStateManager.rotate((float) te.verticalRotation, 1, 0, 0);
-            GlStateManager.rotate((float) te.horizontalRotation, 0, 1, 0);
+            GlStateManager.rotate((float) te.Pitch, 1, 0, 0);
+            GlStateManager.rotate((float) te.Rotation, 0, 1, 0);
         } else {
             // If there is no close enough player just scan the surrounding terrain.
             // Randomly reverses direction of rotation.
