@@ -5,13 +5,15 @@ import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.ITickable;
 
 import static com.spikespaz.essentialadditions.proxy.ClientProxy.UNIVERSAL_RANDOM;
-import static java.lang.Math.*;
+import static java.lang.Math.abs;
+import static java.lang.Math.atan2;
+import static java.lang.Math.hypot;
 
 public class TileEntityEyeOre extends TileEntity implements ITickable {
     private int delayedTickCount;
     double idleRotation = 0F,
             rotationX, rotationY,
-            verticalSmoothFloat, horizontalSmoothFloat, smoothFloat;
+            smoothFloat;
     EntityPlayer player;
     private boolean reversed;
     private float lastChanged, rotationSpeed;
@@ -32,6 +34,8 @@ public class TileEntityEyeOre extends TileEntity implements ITickable {
 
             rotationX = atan2(offsetY, distance) * (180D / Math.PI);
             rotationY = atan2(offsetX, offsetZ) * (180D / Math.PI) - 180D;
+
+
         }
 
         // Calculate how to translate for the bobbing effect.
