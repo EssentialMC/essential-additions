@@ -10,7 +10,7 @@ import static java.lang.Math.atan2;
 import static java.lang.Math.hypot;
 
 public class TileEntityEyeOre extends TileEntity implements ITickable {
-    private int delayedTickCount;
+    private int delayedTickCount = UNIVERSAL_RANDOM.nextInt(100);
     double idleRotation = 0F,
             rotationX, rotationY,
             smoothFloat;
