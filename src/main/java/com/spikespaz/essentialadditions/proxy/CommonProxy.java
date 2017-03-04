@@ -69,7 +69,6 @@ public class CommonProxy {
         Items.ender_pearl.setMaxStackSize(64);
         Items.egg.setMaxStackSize(64);
         Items.snowball.setMaxStackSize(64);
-        Items.potionitem.setMaxStackSize(16);
         // Doors
         Items.oak_door.setMaxStackSize(16);
         Items.spruce_door.setMaxStackSize(16);
