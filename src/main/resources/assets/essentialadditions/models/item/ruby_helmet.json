@@ -1,6 +1,6 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "essentialadditions:items/ruby_helmet"
+        "layer0": "eamod:items/ruby_helmet"
     }
 }

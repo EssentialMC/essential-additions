@@ -2,6 +2,6 @@
     "parent": "block/cube_all",
     "textures": {
         "particle": "blocks/end_stone",
-        "all": "essentialadditions:blocks/eye_ore"
+        "all": "eamod:blocks/eye_ore"
     }
 }

@@ -1,6 +1,6 @@
 {
     "parent": "block/cube_all",
     "textures": {
-        "all": "essentialadditions:blocks/sulfur_block"
+        "all": "eamod:blocks/sulfur_block"
     }
 }
