@@ -4,6 +4,7 @@ import com.spikespaz.essentialadditions.item.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
+import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 
@@ -17,7 +18,7 @@ public class ModBlocks {
     // Custom Ores
     public static Block SULFUR_BLOCK = new BlockBase(Material.ROCK, 0.5F, 0F,
             "pickaxe", 0, CreativeTabs.BUILDING_BLOCKS, SoundType.SAND, "sulfur_block") {
-        public Item getItemDropped(int par1, Random random, int par2) {
+        public Item getItemDropped(IBlockState state, Random rand, int fortune) {
             return ModItems.SULFUR;
         }
 
@@ -32,7 +33,7 @@ public class ModBlocks {
             "pickaxe", 1, CreativeTabs.BUILDING_BLOCKS, SoundType.METAL, "ruby_block");
     public static Block RUBY_ORE = new BlockBase(Material.ROCK, 3.0F, 5.0F,
             "pickaxe", 3, CreativeTabs.BUILDING_BLOCKS, SoundType.STONE, "ruby_ore") {
-        public Item getItemDropped(int par1, Random random, int par2) {
+        public Item getItemDropped(IBlockState state, Random rand, int fortune) {
             return ModItems.RUBY;
         }
 
