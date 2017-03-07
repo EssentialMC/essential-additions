@@ -1,10 +1,10 @@
-package com.spikespaz.essentialadditions.tileentity;
+package com.spikespaz.eamod.tileentity;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.ITickable;
 
-import static com.spikespaz.essentialadditions.proxy.ClientProxy.UNIVERSAL_RANDOM;
+import static com.spikespaz.eamod.proxy.ClientProxy.UNIVERSAL_RANDOM;
 import static java.lang.Math.abs;
 import static java.lang.Math.atan2;
 import static java.lang.Math.hypot;

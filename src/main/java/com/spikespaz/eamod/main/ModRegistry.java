@@ -1,12 +1,12 @@
-package com.spikespaz.essentialadditions.main;
+package com.spikespaz.eamod.main;
 
-import com.spikespaz.essentialadditions.block.ModBlocks;
-import com.spikespaz.essentialadditions.item.ModItems;
-import com.spikespaz.essentialadditions.proxy.ClientProxy;
-import com.spikespaz.essentialadditions.tileentity.TileEntityEyeOre;
+import com.spikespaz.eamod.block.ModBlocks;
+import com.spikespaz.eamod.item.ModItems;
+import com.spikespaz.eamod.proxy.ClientProxy;
+import com.spikespaz.eamod.tileentity.TileEntityEyeOre;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
-import static com.spikespaz.essentialadditions.main.EssentialAdditions.proxy;
+import static com.spikespaz.eamod.main.EssentialAdditions.proxy;
 
 public class ModRegistry {
     // Register all item and their registry names.

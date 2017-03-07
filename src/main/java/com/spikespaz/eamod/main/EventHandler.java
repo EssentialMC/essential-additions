@@ -1,4 +1,4 @@
-package com.spikespaz.essentialadditions.main;
+package com.spikespaz.eamod.main;
 
 public class EventHandler {
 //    @SubscribeEvent

@@ -1,11 +1,11 @@
-package com.spikespaz.essentialadditions.item;
+package com.spikespaz.eamod.item;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.util.EnumHelper;
 
-import static com.spikespaz.essentialadditions.main.EssentialAdditions.MODID;
+import static com.spikespaz.eamod.main.EssentialAdditions.MODID;
 import static net.minecraft.inventory.EntityEquipmentSlot.*;
 import static net.minecraft.item.ItemArmor.ArmorMaterial;
 import static net.minecraftforge.common.util.EnumHelper.addToolMaterial;

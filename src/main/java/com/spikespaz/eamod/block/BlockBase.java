@@ -1,4 +1,4 @@
-package com.spikespaz.essentialadditions.block;
+package com.spikespaz.eamod.block;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
@@ -7,7 +7,7 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemBlock;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
-import static com.spikespaz.essentialadditions.main.EssentialAdditions.MODID;
+import static com.spikespaz.eamod.main.EssentialAdditions.MODID;
 
 class BlockBase extends Block {
     BlockBase(Material material, Float hardness, Float resistance, String tool, Integer mineLevel, CreativeTabs creativeTab, SoundType sound, String name) {

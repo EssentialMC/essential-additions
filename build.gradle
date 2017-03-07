@@ -11,8 +11,8 @@ apply plugin: 'net.minecraftforge.gradle.forge'
 //Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
 
 version = "v1.7.0-1.11.2"
-group = "com.spikespaz.essentialadditions"
-archivesBaseName = "essentialadditions"
+group = "com.spikespaz.eamod"
+archivesBaseName = "eamod"
 
 sourceCompatibility = targetCompatibility = "1.8"
 compileJava {

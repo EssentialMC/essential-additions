@@ -1,6 +1,6 @@
-package com.spikespaz.essentialadditions.block;
+package com.spikespaz.eamod.block;
 
-import com.spikespaz.essentialadditions.tileentity.TileEntityEyeOre;
+import com.spikespaz.eamod.tileentity.TileEntityEyeOre;
 import mcp.MethodsReturnNonnullByDefault;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.SoundType;
@@ -27,7 +27,7 @@ import javax.annotation.ParametersAreNonnullByDefault;
 import java.util.ArrayList;
 import java.util.Random;
 
-import static com.spikespaz.essentialadditions.main.EssentialAdditions.MODID;
+import static com.spikespaz.eamod.main.EssentialAdditions.MODID;
 
 // This is for suppressing warnings about deprecation for some rendering code. I don't know how else to do it. (._.)
 @SuppressWarnings("deprecation")

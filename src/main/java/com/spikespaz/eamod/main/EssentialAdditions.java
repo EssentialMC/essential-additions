@@ -1,6 +1,6 @@
-package com.spikespaz.essentialadditions.main;
+package com.spikespaz.eamod.main;
 
-import com.spikespaz.essentialadditions.proxy.CommonProxy;
+import com.spikespaz.eamod.proxy.CommonProxy;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -9,11 +9,11 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 @Mod(modid = EssentialAdditions.MODID, name = EssentialAdditions.NAME, version = EssentialAdditions.VERSION)
 public class EssentialAdditions {
-    public static final String MODID = "essentialadditions";
+    public static final String MODID = "eamod";
     static final String NAME = "Essential Additions";
     static final String VERSION = "1.7.0";
-    private static final String CLIENTSIDE = "com.spikespaz.essentialadditions.proxy.ClientProxy";
-    private static final String SERVERSIDE = "com.spikespaz.essentialadditions.proxy.CommonProxy";
+    private static final String CLIENTSIDE = "com.spikespaz.eamod.proxy.ClientProxy";
+    private static final String SERVERSIDE = "com.spikespaz.eamod.proxy.CommonProxy";
 
     @SidedProxy(clientSide = CLIENTSIDE, serverSide = SERVERSIDE)
     public static CommonProxy proxy;

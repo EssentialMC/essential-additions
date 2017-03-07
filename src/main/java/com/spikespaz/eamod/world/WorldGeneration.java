@@ -1,7 +1,7 @@
-package com.spikespaz.essentialadditions.world;
+package com.spikespaz.eamod.world;
 
 import com.google.common.base.Predicate;
-import com.spikespaz.essentialadditions.block.ModBlocks;
+import com.spikespaz.eamod.block.ModBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.block.state.pattern.BlockMatcher;

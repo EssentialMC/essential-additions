@@ -1,6 +1,6 @@
-package com.spikespaz.essentialadditions.tileentity;
+package com.spikespaz.eamod.tileentity;
 
-import com.spikespaz.essentialadditions.proxy.ClientProxy;
+import com.spikespaz.eamod.proxy.ClientProxy;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
 

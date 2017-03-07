@@ -1,4 +1,4 @@
-package com.spikespaz.essentialadditions.item;
+package com.spikespaz.eamod.item;
 
 import net.minecraft.item.ItemHoe;
 

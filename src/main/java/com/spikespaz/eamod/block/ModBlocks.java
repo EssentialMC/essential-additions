@@ -1,6 +1,6 @@
-package com.spikespaz.essentialadditions.block;
+package com.spikespaz.eamod.block;
 
-import com.spikespaz.essentialadditions.item.ModItems;
+import com.spikespaz.eamod.item.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;

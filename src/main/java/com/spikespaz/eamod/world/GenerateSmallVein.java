@@ -1,4 +1,4 @@
-package com.spikespaz.essentialadditions.world;
+package com.spikespaz.eamod.world;
 
 import com.google.common.base.Predicate;
 import net.minecraft.block.state.IBlockState;

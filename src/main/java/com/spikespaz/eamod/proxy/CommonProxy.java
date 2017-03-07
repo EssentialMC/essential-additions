@@ -1,9 +1,9 @@
-package com.spikespaz.essentialadditions.proxy;
+package com.spikespaz.eamod.proxy;
 
-import com.spikespaz.essentialadditions.main.CraftingRecipes;
-import com.spikespaz.essentialadditions.main.FuelHandler;
-import com.spikespaz.essentialadditions.main.ModRegistry;
-import com.spikespaz.essentialadditions.world.WorldGeneration;
+import com.spikespaz.eamod.main.CraftingRecipes;
+import com.spikespaz.eamod.main.FuelHandler;
+import com.spikespaz.eamod.main.ModRegistry;
+import com.spikespaz.eamod.world.WorldGeneration;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
