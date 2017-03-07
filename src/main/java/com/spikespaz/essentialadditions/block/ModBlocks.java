@@ -23,7 +23,7 @@ public class ModBlocks {
         }
 
         public int quantityDropped(Random par1Random) {
-            return 4;
+            return 3;
         }
     };
 
@@ -38,7 +38,7 @@ public class ModBlocks {
         }
 
         public int quantityDropped(Random par1Random) {
-            return 2;
+            return 1;
         }
     };
     // Other
