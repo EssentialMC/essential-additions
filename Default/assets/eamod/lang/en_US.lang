@@ -1,0 +1,50 @@
+item.eamod.emerald_helmet.name=Emerald Helmet
+item.eamod.emerald_chestplate.name=Emerald Chestplate
+item.eamod.emerald_leggings.name=Emerald Leggings
+item.eamod.emerald_boots.name=Emerald Boots
+
+item.eamod.obsidian_helmet.name=Obsidian Helmet
+item.eamod.obsidian_chestplate.name=Obsidian Chestplate
+item.eamod.obsidian_leggings.name=Obsidian Leggings
+item.eamod.obsidian_boots.name=Obsidian Boots
+
+item.eamod.ruby_helmet.name=Ruby Helmet
+item.eamod.ruby_chestplate.name=Ruby Chestplate
+item.eamod.ruby_leggings.name=Ruby Leggings
+item.eamod.ruby_boots.name=Ruby Boots
+
+item.eamod.emerald_sword.name=Emerald Sword
+item.eamod.emerald_axe.name=Emerald Axe
+item.eamod.emerald_shovel.name=Emerald Shovel
+item.eamod.emerald_pickaxe.name=Emerald Pickaxe
+item.eamod.emerald_hoe.name=Emerald Hoe
+
+item.eamod.obsidian_sword.name=Obsidian Sword
+item.eamod.obsidian_axe.name=Obsidian Axe
+item.eamod.obsidian_shovel.name=Obsidian Shovel
+item.eamod.obsidian_pickaxe.name=Obsidian Pickaxe
+item.eamod.obsidian_hoe.name=Obsidian Hoe
+
+item.eamod.ruby_sword.name=Ruby Sword
+item.eamod.ruby_axe.name=Ruby Axe
+item.eamod.ruby_shovel.name=Ruby Shovel
+item.eamod.ruby_pickaxe.name=Ruby Pickaxe
+item.eamod.ruby_hoe.name=Ruby Hoe
+
+item.eamod.obsidian_shard.name=Obsidian Shard
+item.eamod.sulfur.name=Sulfur
+item.eamod.charcoal_dust.name=Charcoal Dust
+
+item.eamod.ruby.name=Ruby
+item.eamod.iron_plating.name=Iron Plating
+item.eamod.gold_plating.name=Gold Plating
+item.eamod.chain_link.name=Chain Link
+
+tile.eamod.sulfur_block.name=Block of Sulfur
+
+tile.eamod.eye_ore.name=Ender Ore
+
+tile.eamod.ruby_ore.name=Ruby Ore
+tile.eamod.ruby_block.name=Block of Ruby
+
+tile.eamod.charcoal_block.name=Block of Charcoal
