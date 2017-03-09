@@ -1,7 +1,0 @@
-{
-    "parent": "block/cube_all",
-    "textures": {
-        "particle": "blocks/end_stone",
-        "all": "eamod:blocks/eye_ore"
-    }
-}
