@@ -23,7 +23,7 @@ public class ModItems {
 
     // Tool Materials
     private static Item.ToolMaterial EMERALD_GEM = addToolMaterial(MODID + ".emerald", 3, 2740, 16.5F, 4.0F, 8);
-    private static Item.ToolMaterial OBSIDIAN_GEM = addToolMaterial(MODID + ".obsidian", 2, 1210, 20.0F, 6.5F, 5);
+    private static Item.ToolMaterial OBSIDIAN_GEM = addToolMaterial(MODID + ".obsidian", 2, 1210, 20.0F, 6.0F, 5);
     private static Item.ToolMaterial RUBY_GEM = addToolMaterial(MODID + ".ruby", 3, 2290, 16.0F, 4.5F, 7);
     private static Item.ToolMaterial PRISMARINE_GEM = addToolMaterial(MODID + ".prismarine", 3, 1320, 21.5F, 7.0F, 7);
 
