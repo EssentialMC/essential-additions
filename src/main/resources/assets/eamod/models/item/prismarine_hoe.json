@@ -1,6 +1,6 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "eamod:items/emerald_hoe"
+        "layer0": "eamod:items/prismarine_hoe"
     }
 }
