@@ -11,7 +11,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 public class EssentialAdditions {
     public static final String MODID = "eamod";
     static final String NAME = "Essential Additions";
-    static final String VERSION = "1.7.1";
+    static final String VERSION = "1.7.2";
     private static final String CLIENTSIDE = "com.spikespaz.eamod.proxy.ClientProxy";
     private static final String SERVERSIDE = "com.spikespaz.eamod.proxy.CommonProxy";
 
