@@ -74,11 +74,11 @@ public class ModItems {
     public static Item RUBY_HOE = new BaseHoe(RUBY_GEM, MODID + ".ruby_hoe");
 
     // Prismarine Tools
-    public static Item PRISMARINE_SWORD = new BaseSword(RUBY_GEM, MODID + ".prismarine_sword");
-    public static Item PRISMARINE_AXE = new BaseAxe(RUBY_GEM, -2.0F, MODID + ".prismarine_axe");
-    public static Item PRISMARINE_SHOVEL = new BaseSpade(RUBY_GEM, MODID + ".prismarine_shovel");
-    public static Item PRISMARINE_PICKAXE = new BasePickaxe(RUBY_GEM, MODID + ".prismarine_pickaxe");
-    public static Item PRISMARINE_HOE = new BaseHoe(RUBY_GEM, MODID + ".prismarine_hoe");
+    public static Item PRISMARINE_SWORD = new BaseSword(PRISMARINE_GEM, MODID + ".prismarine_sword");
+    public static Item PRISMARINE_AXE = new BaseAxe(PRISMARINE_GEM, -2.0F, MODID + ".prismarine_axe");
+    public static Item PRISMARINE_SHOVEL = new BaseSpade(PRISMARINE_GEM, MODID + ".prismarine_shovel");
+    public static Item PRISMARINE_PICKAXE = new BasePickaxe(PRISMARINE_GEM, MODID + ".prismarine_pickaxe");
+    public static Item PRISMARINE_HOE = new BaseHoe(PRISMARINE_GEM, MODID + ".prismarine_hoe");
 
     // Crafting Items
     public static Item OBSIDIAN_SHARD = new Item().setUnlocalizedName(MODID + ".obsidian_shard").setCreativeTab(CreativeTabs.MATERIALS);
