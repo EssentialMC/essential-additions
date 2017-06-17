@@ -23,6 +23,7 @@ public class CraftingRecipes {
                 "EEE", "E E", "E E", 'E', Items.EMERALD);
         GameRegistry.addRecipe(new ItemStack(ModItems.EMERALD_BOOTS, 1),
                 "   ", "E E", "E E", 'E', Items.EMERALD);
+        
         // Obsidian Armor
         GameRegistry.addRecipe(new ItemStack(ModItems.OBSIDIAN_HELMET, 1),
                 "OOO", "O O", "   ", 'O', ModItems.OBSIDIAN_SHARD);
@@ -32,7 +33,8 @@ public class CraftingRecipes {
                 "OOO", "O O", "O O", 'O', ModItems.OBSIDIAN_SHARD);
         GameRegistry.addRecipe(new ItemStack(ModItems.OBSIDIAN_BOOTS, 1),
                 "   ", "O O", "O O", 'O', ModItems.OBSIDIAN_SHARD);
-        // RUBY Armor
+
+        // Ruby Armor
         GameRegistry.addRecipe(new ItemStack(ModItems.RUBY_HELMET, 1),
                 "RRR", "R R", "   ", 'R', ModItems.RUBY);
         GameRegistry.addRecipe(new ItemStack(ModItems.RUBY_CHESTPLATE, 1),
@@ -41,6 +43,17 @@ public class CraftingRecipes {
                 "RRR", "R R", "R R", 'R', ModItems.RUBY);
         GameRegistry.addRecipe(new ItemStack(ModItems.RUBY_BOOTS, 1),
                 "   ", "R R", "R R", 'R', ModItems.RUBY);
+
+        // Prismarine Armor
+        GameRegistry.addRecipe(new ItemStack(ModItems.PRISMARINE_HELMET, 1),
+                "RRR", "R R", "   ", 'R', Items.PRISMARINE_SHARD);
+        GameRegistry.addRecipe(new ItemStack(ModItems.PRISMARINE_CHESTPLATE, 1),
+                "R R", "RRR", "RRR", 'R', Items.PRISMARINE_SHARD);
+        GameRegistry.addRecipe(new ItemStack(ModItems.PRISMARINE_LEGGINGS, 1),
+                "RRR", "R R", "R R", 'R', Items.PRISMARINE_SHARD);
+        GameRegistry.addRecipe(new ItemStack(ModItems.PRISMARINE_BOOTS, 1),
+                "   ", "R R", "R R", 'R', Items.PRISMARINE_SHARD);
+        
         // Chainmail Armor
         GameRegistry.addRecipe(new ItemStack(Items.CHAINMAIL_HELMET, 1),
                 "CCC", "C C", "   ", 'C', ModItems.CHAIN_LINK);
@@ -50,6 +63,7 @@ public class CraftingRecipes {
                 "CCC", "C C", "C C", 'C', ModItems.CHAIN_LINK);
         GameRegistry.addRecipe(new ItemStack(Items.CHAINMAIL_BOOTS, 1),
                 "   ", "C C", "C C", 'C', ModItems.CHAIN_LINK);
+        
         // Emerald Tools
         GameRegistry.addRecipe(new ItemStack(ModItems.EMERALD_SWORD, 1),
                 " E ", " E ", " S ", 'S', Items.STICK, 'E', Items.EMERALD);
@@ -61,6 +75,7 @@ public class CraftingRecipes {
                 "EEE", " S ", " S ", 'S', Items.STICK, 'E', Items.EMERALD);
         GameRegistry.addRecipe(new ItemStack(ModItems.EMERALD_HOE, 1),
                 "EE ", " S ", " S ", 'S', Items.STICK, 'E', Items.EMERALD);
+        
         // Obsidian Tools
         GameRegistry.addRecipe(new ItemStack(ModItems.OBSIDIAN_SWORD, 1),
                 " O ", " O ", " S ", 'S', Items.STICK, 'O', ModItems.OBSIDIAN_SHARD);
@@ -72,7 +87,8 @@ public class CraftingRecipes {
                 "OOO", " S ", " S ", 'S', Items.STICK, 'O', ModItems.OBSIDIAN_SHARD);
         GameRegistry.addRecipe(new ItemStack(ModItems.OBSIDIAN_HOE, 1),
                 "OO ", " S ", " S ", 'S', Items.STICK, 'O', ModItems.OBSIDIAN_SHARD);
-        // RUBY Tools
+
+        // Ruby Tools
         GameRegistry.addRecipe(new ItemStack(ModItems.RUBY_SWORD, 1),
                 " R ", " R ", " S ", 'S', Items.STICK, 'R', ModItems.RUBY);
         GameRegistry.addRecipe(new ItemStack(ModItems.RUBY_AXE, 1),
@@ -83,6 +99,19 @@ public class CraftingRecipes {
                 "RRR", " S ", " S ", 'S', Items.STICK, 'R', ModItems.RUBY);
         GameRegistry.addRecipe(new ItemStack(ModItems.RUBY_HOE, 1),
                 "RR ", " S ", " S ", 'S', Items.STICK, 'R', ModItems.RUBY);
+
+        // Prismarine Tools
+        GameRegistry.addRecipe(new ItemStack(ModItems.PRISMARINE_SWORD, 1),
+                " R ", " R ", " S ", 'S', Items.STICK, 'R', Items.PRISMARINE_SHARD);
+        GameRegistry.addRecipe(new ItemStack(ModItems.PRISMARINE_AXE, 1),
+                "RR ", "RS ", " S ", 'S', Items.STICK, 'R', Items.PRISMARINE_SHARD);
+        GameRegistry.addRecipe(new ItemStack(ModItems.PRISMARINE_SHOVEL, 1),
+                " R ", " S ", " S ", 'S', Items.STICK, 'R', Items.PRISMARINE_SHARD);
+        GameRegistry.addRecipe(new ItemStack(ModItems.PRISMARINE_PICKAXE, 1),
+                "RRR", " S ", " S ", 'S', Items.STICK, 'R', Items.PRISMARINE_SHARD);
+        GameRegistry.addRecipe(new ItemStack(ModItems.PRISMARINE_HOE, 1),
+                "RR ", " S ", " S ", 'S', Items.STICK, 'R', Items.PRISMARINE_SHARD);
+        
         // Vanilla Items
         GameRegistry.addRecipe(new ItemStack(Items.SADDLE, 1),
                 "LLL", "LIL", "S S", 'L', Items.LEATHER, 'I', Items.IRON_INGOT, 'S', Items.STRING);
@@ -94,6 +123,7 @@ public class CraftingRecipes {
                 "SSS", "SSS", "SSS", 'S', Items.STRING);
         GameRegistry.addShapelessRecipe(new ItemStack(Items.GUNPOWDER, 2),
                 ModItems.CHARCOAL_DUST, ModItems.SULFUR);
+        
         // Vanilla Blocks
         GameRegistry.addRecipe(new ItemStack(Blocks.OBSIDIAN, 1),
                 "OOO", "OOO", "OOO", 'O', ModItems.OBSIDIAN_SHARD);
@@ -104,6 +134,7 @@ public class CraftingRecipes {
                 "  G", "GGG", "GWG", 'W', Blocks.WOOL, 'G', ModItems.GOLD_PLATING);
         GameRegistry.addRecipe(new ItemStack(Items.DIAMOND_HORSE_ARMOR, 1),
                 "DDD", "DAD", "DDD", 'A', Items.IRON_HORSE_ARMOR, 'D', Items.DIAMOND);
+        
         // Mod Blocks
         GameRegistry.addRecipe(new ItemStack(Blocks.OBSIDIAN, 1),
                 "   ", " OO", " OO", 'O', ModItems.OBSIDIAN_SHARD);
@@ -113,6 +144,7 @@ public class CraftingRecipes {
                 "CCC", "CCC", "CCC", 'C', new ItemStack(Items.COAL, 1, 1));
         GameRegistry.addRecipe(new ItemStack(ModBlocks.RUBY_BLOCK, 1),
                 "RRR", "RRR", "RRR", 'R', ModItems.RUBY);
+        
         // Mod Resources
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.SULFUR, 4),
                 ModBlocks.SULFUR_BLOCK);
