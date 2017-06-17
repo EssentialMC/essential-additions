@@ -13,6 +13,11 @@ item.eamod.ruby_chestplate.name=Ruby Chestplate
 item.eamod.ruby_leggings.name=Ruby Leggings
 item.eamod.ruby_boots.name=Ruby Boots
 
+item.eamod.prismarine_helmet.name=Prismarine Helmet
+item.eamod.prismarine_chestplate.name=Prismarine Chestplate
+item.eamod.prismarine_leggings.name=Prismarine Leggings
+item.eamod.prismarine_boots.name=Prismarine Boots
+
 item.eamod.emerald_sword.name=Emerald Sword
 item.eamod.emerald_axe.name=Emerald Axe
 item.eamod.emerald_shovel.name=Emerald Shovel
@@ -30,6 +35,12 @@ item.eamod.ruby_axe.name=Ruby Axe
 item.eamod.ruby_shovel.name=Ruby Shovel
 item.eamod.ruby_pickaxe.name=Ruby Pickaxe
 item.eamod.ruby_hoe.name=Ruby Hoe
+
+item.eamod.prismarine_sword.name=Prismarine Sword
+item.eamod.prismarine_axe.name=Prismarine Axe
+item.eamod.prismarine_shovel.name=Prismarine Shovel
+item.eamod.prismarine_pickaxe.name=Prismarine Pickaxe
+item.eamod.prismarine_hoe.name=Prismarine Hoe
 
 item.eamod.obsidian_shard.name=Obsidian Shard
 item.eamod.sulfur.name=Sulfur
