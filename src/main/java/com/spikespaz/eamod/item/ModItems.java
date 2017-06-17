@@ -18,11 +18,14 @@ public class ModItems {
             MODID + ":obsidian_armor", 47, new int[]{6, 7, 6, 5}, 5, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 1.5F);
     private static ArmorMaterial RUBY_ARMOR = EnumHelper.addArmorMaterial(MODID + ".ruby_armor",
             MODID + ":ruby_armor", 85, new int[]{4, 8, 5, 4}, 6, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.5F);
+    private static ArmorMaterial PRISMARINE_ARMOR = EnumHelper.addArmorMaterial(MODID + ".prismarine_armor",
+            MODID + ":prismarine_armor", 80, new int[]{6, 7, 6, 5}, 6, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.5F);
 
     // Tool Materials
     private static Item.ToolMaterial EMERALD_GEM = addToolMaterial(MODID + ".emerald", 3, 2740, 16.5F, 4.0F, 8);
-    private static Item.ToolMaterial OBSIDIAN_GEM = addToolMaterial(MODID + ".obsidian", 2, 1210, 23.5F, 6.5F, 5);
+    private static Item.ToolMaterial OBSIDIAN_GEM = addToolMaterial(MODID + ".obsidian", 2, 1210, 20.0F, 6.5F, 5);
     private static Item.ToolMaterial RUBY_GEM = addToolMaterial(MODID + ".ruby", 3, 2290, 16.0F, 4.5F, 7);
+    private static Item.ToolMaterial PRISMARINE_GEM = addToolMaterial(MODID + ".prismarine", 3, 1320, 21.5F, 7.0F, 7);
 
     // Static declarations of all item and their properties.
     // Emerald Armor
@@ -42,6 +45,12 @@ public class ModItems {
     public static Item RUBY_CHESTPLATE = new BaseArmor(MODID + ".ruby_chestplate", RUBY_ARMOR, 1, CHEST);
     public static Item RUBY_LEGGINGS = new BaseArmor(MODID + ".ruby_leggings", RUBY_ARMOR, 2, LEGS);
     public static Item RUBY_BOOTS = new BaseArmor(MODID + ".ruby_boots", RUBY_ARMOR, 1, FEET);
+
+    // Prismarine Armor
+    public static Item PRISMARINE_HELMET = new BaseArmor(MODID + ".prismarine_helmet", PRISMARINE_ARMOR, 1, HEAD);
+    public static Item PRISMARINE_CHESTPLATE = new BaseArmor(MODID + ".prismarine_chestplate", PRISMARINE_ARMOR, 1, CHEST);
+    public static Item PRISMARINE_LEGGINGS = new BaseArmor(MODID + ".prismarine_leggings", PRISMARINE_ARMOR, 2, LEGS);
+    public static Item PRISMARINE_BOOTS = new BaseArmor(MODID + ".prismarine_boots", PRISMARINE_ARMOR, 1, FEET);
 
     // Emerald Tools
     public static Item EMERALD_SWORD = new BaseSword(EMERALD_GEM, MODID + ".emerald_sword");
@@ -63,6 +72,13 @@ public class ModItems {
     public static Item RUBY_SHOVEL = new BaseSpade(RUBY_GEM, MODID + ".ruby_shovel");
     public static Item RUBY_PICKAXE = new BasePickaxe(RUBY_GEM, MODID + ".ruby_pickaxe");
     public static Item RUBY_HOE = new BaseHoe(RUBY_GEM, MODID + ".ruby_hoe");
+
+    // Prismarine Tools
+    public static Item PRISMARINE_SWORD = new BaseSword(RUBY_GEM, MODID + ".prismarine_sword");
+    public static Item PRISMARINE_AXE = new BaseAxe(RUBY_GEM, -2.0F, MODID + ".prismarine_axe");
+    public static Item PRISMARINE_SHOVEL = new BaseSpade(RUBY_GEM, MODID + ".prismarine_shovel");
+    public static Item PRISMARINE_PICKAXE = new BasePickaxe(RUBY_GEM, MODID + ".prismarine_pickaxe");
+    public static Item PRISMARINE_HOE = new BaseHoe(RUBY_GEM, MODID + ".prismarine_hoe");
 
     // Crafting Items
     public static Item OBSIDIAN_SHARD = new Item().setUnlocalizedName(MODID + ".obsidian_shard").setCreativeTab(CreativeTabs.MATERIALS);
