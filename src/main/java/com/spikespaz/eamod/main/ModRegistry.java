@@ -155,5 +155,6 @@ public class ModRegistry {
 
         // Other
         ClientProxy.renderModObject(ModBlocks.CHARCOAL_BLOCK);
+        ClientProxy.renderModObject(ModBlocks.FOREST_MULCH);
     }
 }
