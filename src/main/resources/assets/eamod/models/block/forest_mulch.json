@@ -1,6 +1,7 @@
 {   "parent": "block/thin_block",
     "textures": {
-        "all": "eamod:blocks/forest_mulch"
+        "all": "eamod:blocks/forest_mulch",
+        "particle": "eamod:blocks/forest_mulch"
     },
     "elements": [
         {   "from": [ 0, 0, 0 ],
